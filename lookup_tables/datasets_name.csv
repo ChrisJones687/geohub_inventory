@@ -1,0 +1,189 @@
+,Var1,name
+1,"•	Meals for Kids Sites",Meals for Kids Sites
+2,"•	SNAP Retailer data",SNAP Retailer data
+9,ACE,ACE
+11,Aerial imagery and satellite imagery,imagery
+12,AERMOD Meteorological NWS sounding data,AERMOD
+13,AERMOD Meteorological Surface Data,AERMOD
+14,Ag CROS,AgCROS
+15,Ag Data Commons,Ag Data Commons
+16,AgCros,AgCROS
+17,AgCROS,AgCROS
+18,AgCROS Data,AgCROS
+20,Agricultural Collaborative Research Outcomes System (AgCROS),AgCROS
+21,AgriMet,AgriMet
+24,ALB Program Database,ALB Program Database
+26,Ameriflux,Ameriflux
+27,Ameriflux network,Ameriflux
+28,"AmeriFlux, FluxNet",Ameriflux
+29,Animal-Genetic Resource Information Network,Genomic data
+31,APHIS e-file,E-file
+32,ARC GIS,ArcGIS
+33,ArcGIS,ArcGIS
+34,"ArcGIS Collector, Survey 123 and Field Maps",ArcGIS
+35,ArcGIS Field Maps,ArcGIS
+36,ArcMap / Arc GIS Pro,ArcGIS
+38,ARM,ARM Application and Data Mart
+39,ARM Application and Data Mart,ARM Application and Data Mart
+41,ARS Micronet,USDA Micronet
+42,AWIS (Agricultural  Weather Information Service),weather
+45,Big Spring Meteorological Tower,weather
+46,Biosafety Clearing-House (BCH),Biosafety Clearing-House (BCH)
+54,Climate data,Climate data
+55,"Climate data sets (NOAA temeprature, wind, precipitation, humidity, solar radiation)",Climate data
+56,ClimateNA,Climate data
+58,Collected data set of canopy temperature,weather
+59,Common Land Unit (CLU) Dataset,common land units
+60,common land units,common land units
+61,Common land units,common land units
+70,Crop Data Layer,Cropland Data Layer
+72,cropland data layer,Cropland Data Layer
+73,Cropland Data Layer,Cropland Data Layer
+77,"Data Archive for the PSWC Meteorological Tower, Lubbock, Texas",weather
+79,Data Gateway,USDA NRCS Geospatial Data Gateway
+84,Digital Photo Indexes,Photo
+90,Drone image data,UAS imagery
+91,Drone Image Datasets,UAS imagery
+92,Drone imagery,UAS imagery
+93,E-file,E-file
+95,E Trap,eTRAP
+97,Eddy Covariance Data for Water Management,Eddy Covariance Data
+98,Eddy Covariance Flux Tower Observations,Eddy Covariance Data
+99,efile,E-file
+100,Elevation data,Elevation
+106,Ensembl Genome Database,Genomic data
+107,Enterprise Database Warehouse,Enterprise Database Warehouse
+108,Enterprise DataWarehouse SDE,Enterprise Database Warehouse
+111,"ERSI Database of Federal Lands, Tribal Lands (Authoritative)",ESRI Living Atlas
+112,ESA Sentinel,imagery
+114,ESRI,ESRI Living Atlas
+115,ESRI Living Atlas,ESRI Living Atlas
+116,eTRAP Admin Console,eTRAP
+124,Farming Systems Project data,Farming Systems Project data
+125,Farming Systems Project Management Records (metadata),Farming Systems Project data
+127,FIA DataMart,Forest Inventory and Analysis Database (FIADB)
+133,Forest Inventory and Analysis Database (FIADB),Forest Inventory and Analysis Database (FIADB)
+135,FPAC GEO NAIP imagery,NAIP
+136,FSA Common Land Unit (CLU),common land units
+142,"GCM projections (CMIP5, CMIP6)",Climate data
+143,GCMC (found within ACE),ACE
+144,Genomic Sequencing data,Genomic data
+145,"Genomics (plants, animals, microbial sequences) and Bioinformatic databases",Genomic data
+146,Genomics data,Genomic data
+149,Germplasm Resources Information Network (GRIN),GRIN-Global
+152,GIS NCLU - Common Land Unit Layer,common land units
+154,Global Pest and Disease Database,Global Pest and Disease Database
+155,Global pest and disease database + CABI + ARM + Google scholar,Global Pest and Disease Database
+158,Gridded National Soil Survey Geographic Database (gNATSGO,gNATSGO
+159,GridMET climate data,Climate data
+160,GRIN-Global,GRIN-Global
+161,grin global,GRIN-Global
+163,GRL Soil Water Content Network,Soils
+168,gSSURGO.gNATSGO,SSURGO
+170,High-frequency proximal plant phenotyping custom applications,Genomic data
+171,high resolution remote sensing imagery,imagery
+173,Historical Aerial Photography Photo Center Points,Photo
+176,Historical USDA Photo Center Point Index,Photo
+179,https://bch.cbd.int/en/,Biosafety Clearing-House (BCH)
+180,https://data.chc.ucsb.edu/products/CHIRPS-2.0/,CHIRPS
+183,Hymenoptera Genome Database,Genomic data
+184,Hyperspectral Reflectance for Forage Quality,imagery
+185,Hyperspectral Reflectance for Soil Health,imagery
+186,Illumina genome biosequence data,Genomic data
+187,Illumina RNA-Seq biosequence data,Genomic data
+188,Imagery,imagery
+193,Integrated Plant Health Information System,Integrated Plant Health Information System (IPHIS)
+196,IPHIS-Integrated Plant Health Information System,Integrated Plant Health Information System (IPHIS)
+197,Landsat,imagery
+198,"Landsat, NAIP, Digital Elevation, Sentinel 2, MODIS, Land Cover, etc.",Elevation
+204,LiDAR,LiDAR
+205,LIDAR,LiDAR
+206,LIDAR (3DEP),LiDAR
+207,LiDAR Data,LiDAR
+209,LOCA downscaled CMIP5 climate projections,Climate data
+211,local weather data collected at various sites across Texas,weather
+217,MarkSimGCM,Climate data
+220,Meteorological station data,weather
+221,MicaSense RedEdge multispectral camera flown on Cessna Aircraft at 1000ft and 10000ft,imagery
+225,MODIS,imagery
+226,Multi Model Manifest (accessed through ACE),ACE
+227,Multimodal hyperspectral image data,imagery
+228,NAIP Aerial Photography,NAIP
+229,NAIP Digital Imagery,NAIP
+230,NAIP Imagery,NAIP
+231,NAIP Imagery Seamlines,NAIP
+232,NASA and USGS Satellite data products,imagery
+233,NASA Global Imagery,imagery
+234,NASA Soil Moisture Active/Passive data products,Soils
+235,NASIS,National Soil Infortmation System (NASIS)
+238,National Land Cover Database,National Land Cover Database
+239,National Land Cover Database | U.S. Geological Survey,National Land Cover Database
+242,National Soil Infortmation System (NASIS),National Soil Infortmation System (NASIS)
+243,National Weather Service,weather
+246,NCBI,NCBI
+247,NCBI BioProject,NCBI
+248,NCBI BioSample,NCBI
+249,NCBI Genome Database,NCBI
+250,NCBI/GenBank,NCBI
+252,NDAWN weather data,weather
+253,NFC Employee data in HUE,NFC
+254,NFC Mainframe/PPS,NFC
+255,NFC Reporting Center,NFC
+260,NLDAS Weather Forcing Data,weather
+266,NWS climate data,Climate data
+268,Oracle,Oracle Database
+269,Oracle Database,Oracle Database
+270,Oracle Database Metadata for Imagery,Oracle Database
+271,PacBio genome biosequence data,Genomic data
+280,PhenoCam,PhenoCam
+281,phenocam (four sites),PhenoCam
+283,Photos of the Llano Estacado,Photo
+284,Photos of the Rolling Plains of Texas and Oklahoma,Photo
+286,Planet,imagery
+287,Plant Stress & Water Conservation Meteorological Tower,weather
+289,POLARIS Soil Data,Soils
+293,PRISM climate data,PRISM
+294,PRISM Climate Data - Oregon State University,PRISM
+295,PRISM Climate group,PRISM
+307,Remote Sensing,imagery
+308,Remote sensing data,imagery
+314,SAR (synthetic aperture radar) data,imagery
+316,satellite imagery,imagery
+317,"Satellite Imagery (Landsat, HLS, Sentinel, ECOSTRESS, etc)",imagery
+320,Sequence Data,Genomic data
+321,Sequence Read Archive (SRA),Genomic data
+327,Soil Data Explorer,Soils
+331,Soil Water Data,Soils
+332,SoilGrids,Soils
+333,Soils,Soils
+334,Soils (SSURGO),SSURGO
+335,Soils Data,Soils
+336,SoilWeb,Soils
+337,South Carolina leaf-off statewide imagery,imagery
+341,SSURGO,SSURGO
+342,SSURGO and grid SSURGO data sets,SSURGO
+348,Stored product insect genomes + annotations,Genomic data
+349,Survey123,ArcGIS
+353,"TerraClimate https://www.climatologylab.org/terraclimate.html, gridMET https://www.climatologylab.org/gridmet.html",Climate data
+361,UAS data from drone flights over research fields,UAS imagery
+362,UAS imagery,UAS imagery
+363,"UAV Imagery data near Ames, IA",UAS imagery
+364,UAV LiDAR datasets,UAS imagery
+365,UAV/UAS imagery,UAS imagery
+367,US Census Data,US Census of Agriculture
+368,US Census of Agriculture,US Census of Agriculture
+373,USDA-NASS Agricultural Chemical Use Program survey data,USDA NASS
+375,USDA ArcGIS Portal,ArcGIS
+376,USDA Climate Hubs,Climate data
+379,USDA Historical Aerial Photography,Photo
+380,USDA Micronet,USDA Micronet
+382,USDA NASS Cropland Data Layer,Cropland Data Layer
+383,USDA NASS data,USDA NASS
+384,USDA NRCS Geospatial Data Gateway,USDA NRCS Geospatial Data Gateway
+385,USDA Pecan Provenance Orchard Imagery,imagery
+396,weather and precipitation data PRISM,PRISM
+397,Weather data,weather
+398,Weather data from Swan Lake Research Farm,weather
+399,Web Soil Survey,Soils
+403,WISKI,WISKI
+404,WISKI Database Management System (Kisters North America),WISKI

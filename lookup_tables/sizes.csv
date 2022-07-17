@@ -1,0 +1,16 @@
+,Var1,Continous,Imagery,Obersvational
+1,"continous,imagery,observational",Yes,Yes,Yes
+2,continuous,Yes,No,No
+3,"continuous,imagery",Yes,Yes,No
+4,"continuous,imagery,observational",Yes,Yes,Yes
+5,"continuous,imagery,other",Yes,Yes,No
+6,"continuous,observational",Yes,No,Yes
+7,"continuous,observational,other",Yes,No,Yes
+8,"continuous,other",Yes,No,No
+9,imagery,No,Yes,No
+10,"imagery,observational",No,Yes,Yes
+11,"imagery,observational,other",No,Yes,Yes
+12,"imagery,other",No,Yes,No
+13,observational,No,No,Yes
+14,"observational,other",No,No,Yes
+15,other,No,No,No
