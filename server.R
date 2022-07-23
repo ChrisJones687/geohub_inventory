@@ -7,8 +7,14 @@ library(readxl)
 
 
 function(input, output, session) {
-  output$number_res <- renderText({
+  output$number_responses <- renderText({
     paste0("Total Responses: ", n_respon)
+  })
+  output$number_resources <- renderText({
+    paste0("Total Reources: ", n_res)
+  })
+  output$number_agencies <- renderText({
+    paste0("Agencies Reporting: ", agencies)
   })
 
   } # server closing bracket

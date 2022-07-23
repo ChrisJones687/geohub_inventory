@@ -40,34 +40,34 @@ t <- data.frame(table(datasets$name))
 
 myColors = c("#A6611A", "#DFC27D", "#6e6c6b", "#80CDC1", "#018571")
 
-ui <- fluidPage(
-  navbarPage("GeoHUB survey", theme = shinytheme("lumen"),
-
-             tabPanel("Summary Overview", icon = icon("globe-americas"),
-                      sidebarPanel(
-                        textOutput("number_res"),
-
-                        # cat(paste("Total Responses: ", n_respon,
-                        # "\nUSDA Agencies Represented: ", agencies,
-                        # "\nDigital Resources: ", n_res), sep = " ")
-                      )),
-
-             tabPanel("Datasets", icon = icon("database")),
-
-             tabPanel("In-house Application", icon = icon("desktop")),
-
-             tabPanel("Off-The_Shelf", icon = icon("chart-bar")),
-
-  ) # end navbar page
-
-) # end fluid page
-
-
-server <- function(input, output, session) {
-  output$number_res <- renderText({
-    paste0("Total Responses: ", n_respon)
-  })
-} # end server function
-
+# ui <- fluidPage(
+#   navbarPage("GeoHUB survey", theme = shinytheme("lumen"),
+#
+#              tabPanel("Summary Overview", icon = icon("globe-americas"),
+#                       sidebarPanel(
+#                         textOutput("number_res"),
+#
+#                         # cat(paste("Total Responses: ", n_respon,
+#                         # "\nUSDA Agencies Represented: ", agencies,
+#                         # "\nDigital Resources: ", n_res), sep = " ")
+#                       )),
+#
+#              tabPanel("Datasets", icon = icon("database")),
+#
+#              tabPanel("In-house Application", icon = icon("desktop")),
+#
+#              tabPanel("Off-The_Shelf", icon = icon("chart-bar")),
+#
+#   ) # end navbar page
+#
+# ) # end fluid page
+#
+#
+# server <- function(input, output, session) {
+#   output$number_res <- renderText({
+#     paste0("Total Responses: ", n_respon)
+#   })
+# } # end server function
+#
 
 shinyApp(ui = ui, server = server)
