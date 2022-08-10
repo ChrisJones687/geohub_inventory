@@ -1,0 +1,637 @@
+,name,type,details,ownership_status,app_type,private_public,agency,Respondent Full Name,app_details
+1,AGOL -  ArcGIS Online,ots,"AGOL is an online information sharing, web application development and analysis, and data repository for individual, group and enterprise data that can be shared internally or publicly.  The Forest Service uses this platform for multiple data formats and web applications, shared across the organization and partnerships, as well as with the public.  
+
+Website definition:  ArcGIS Online enables you to connect people, locations, and data by using interactive maps. Work with smart, data-driven styles and intuitive analysis tools that deliver location intelligence. Share your insights with the world or specific groups.",commercial,webapp,hybrid,FS,Reid_Shawna,NA
+2,ArcGIS Pro,ots,"ArcGIS Pro is a powerful single desktop GIS application, is a feature-packed software developed with enhancements and ideas from the ArcGIS Pro user community. ArcGIS Pro supports data visualization; advanced analysis; and authoritative data maintenance in 2D, 3D, and 4D. It supports data sharing across a suite of ArcGIS products such as ArcGIS Online and ArcGIS Enterprise, and enables users to work across the ArcGIS system through Web GIS.",commercial,desktop,hybrid,FS,Reid_Shawna,NA
+3,ArcGIS Desktop,ots,"ArcGIS Desktop is a foundational piece for GIS professionals to create, analyze, manage, and share geographic information so decision-makers can make intelligent, informed decisions. It allows you to create maps, perform spatial analysis, and manage data. You can import multiple data formats and use powerful analytical tools and workflows to identify spatial patterns, trends, and non-obvious relationships.",commercial,desktop,hybrid,FS,Reid_Shawna,NA
+4,ERDAS Imagine,ots,"ERDAS IMAGINE is easy-to-use, raster-based software designed specifically to extract information from images. 
+Imagery and LiDAR are the primary sources of data for mapping and managing features or resources.  For organizations with extensive collections of geospatial data, ERDAS IMAGINE supports enterprise-enabled geospatial image processing that utilizes a centralized relational database to store geospatial information.
+ERDAS IMAGINE is the most powerful package for derived information (data production), supporting multiple workflows, including:
+
+• Data conversion
+
+• Orthorectification
+
+• Color balancing, mosaicking, and compression
+
+• Land-cover mapping and terrain categorization
+
+• LiDAR editing and classification
+
+• Map and report generation and printing through the map composer, PowerPoint®, or Word
+
+• Feature capture and update
+
+• Spatial modeling and analysis
+
+• Terrain creation, editing, and analysis",commercial,desktop,hybrid,FS,Reid_Shawna,NA
+5,SyncroSim,ots,Spatially explicity state and transition modelling platform.  I use it for vegetation simulations.,freeware,desktop,public,FS,Anderson_David,NA
+6,DSSAT Cropping System Model,ots,"Comprehensive suite of crop growth modeling software
+
+https://github.com/DSSAT/dssat-csm-os",opensource,desktop,public,ARS,Thorp_Kelly,NA
+7,QGIS,ots,"Open-source GIS software
+
+https://qgis.org/en/site/",opensource,desktop,public,ARS,Thorp_Kelly,NA
+8,Microsoft Applications,ots,"Use word, excel, teams programs.",owned,desktop,private,AMS,Smit_Tiffany,NA
+9,R,ots,R statistical package for analyzing datasets,opensource,desktop,public,ARS,Winzeler_Edwin,NA
+10,Arc Map Pro,ots,GADAS,owned,dashboard,public,FAS,McWilliams_Denise,NA
+11,ArcGIS Online,ots,"https://ruraldevelopment.maps.arcgis.com/home/index.html
+",commercial,webapp,hybrid,RD,Cherniss_Jerad,NA
+12,ArcGIS,ots,Geographical Information System,commercial,desktop,private,ARS,Langendoen_Eddy,NA
+13,QGis,ots,Geographical Information Sytem,opensource,desktop,private,ARS,Langendoen_Eddy,NA
+14,OnX App,ots,"a mobile app that shows ownership names.  We have purchased a license for Idaho, but they have coverage for the whole US.  https://www.onxmaps.com/",commercial,input,private,NRCS,Buehler_Eric,NA
+15,Avenza Maps App,ots,"Mobile app for data collection which allows users to create their own pdf maps and then use them in the app.  Great for NRCS planners and field workers.
+https://www.avenzamaps.com/",commercial,input,private,NRCS,Buehler_Eric,NA
+16,Esri software,ots,"Many different Esri products for mapping potentially mobile data collection.
+https://www.esri.com/",commercial,desktop,private,NRCS,Buehler_Eric,NA
+17,R,ots,r-project.org,opensource,desktop,public,ARS,Goslee_Sarah,NA
+18,GRASS GIS,ots,GIS software https://grass.osgeo.org/,opensource,desktop,public,ARS,Goslee_Sarah,NA
+19,postgreSQL,ots,https://www.postgresql.org/ relational database,opensource,networked,public,ARS,Goslee_Sarah,NA
+20,Arc GIS Online (AGOL),ots,https://usfs.maps.arcgis.com/,owned,webapp,public,FS,Shipley_Doug,NA
+21,Spatial analysis software,ots,ESRI Arc GIS,commercial,desktop,private,ARS,Owens_Phillip,NA
+22,Microsoft Excel for Windows 10,ots,Database spreadsheet software,commercial,desktop,private,ARS,Moran_Patrick,NA
+23,SAS/STAT,ots,Statistical software,commercial,desktop,private,ARS,Moran_Patrick,NA
+24,Citrix Workspace,ots,Virtual desktop application.,commercial,desktop,private,FPAC,Blankley_Brent,NA
+25,ESRI ArcGIS Pro,ots,GIS Software,commercial,desktop,public,FPAC,Blankley_Brent,NA
+26,IrfanView,ots,Imagery viewer software.,opensource,desktop,public,FPAC,Blankley_Brent,NA
+27,Google Earth Pro,ots,Imagery viewing software.,commercial,desktop,public,FPAC,Blankley_Brent,NA
+28,Box,ots,File transfer application that is used to transfer aerial imagery to customers.,commercial,desktop,hybrid,FPAC,Blankley_Brent,NA
+29,Google Earth Engine,ots,"Google Earth Engine is a spatial data aggregation system that allows access and analysis of a variety of publicly available satellite and spatial data. It provides an API that facilitates the development of application and analyses using Python or JavaScript programming languages. https://earthengine.google.com/
+While many features of GEE are freely available to users, some are only limited to paying customers.",commercial,webapp,public,ARS,Nouwakpo_Kossi,NA
+30,Google Earth,ots,Used to determine areas of interest,opensource,desktop,public,ARS,Anderson_William,NA
+31,SAS,ots,analyze data,commercial,desktop,private,ARS,adamczyk_John,NA
+32,Agricultural models,ots,Agricultural models estimate items of interest such as nitrate loss in runoff or crop production based on user input such as weather and field operations.,opensource,desktop,public,ARS,Malone_Robert,NA
+33,PC,ots,Microsoft Excel,commercial,desktop,private,ARS,Shackelford_Steven,NA
+34,APEX,ots,"This is an agricultural system model developed by Texas A&M University at Temple, Texas. It is open source. https://epicapex.tamu.edu/",shared,desktop,public,ARS,Ma_Liwang,NA
+35,softwares/programs,ots,Softwares such as Qiime,opensource,desktop,public,ARS,Proszkowiec-Weglarz_Monika,NA
+36,software,ots,Galaxy,opensource,webapp,public,ARS,Proszkowiec-Weglarz_Monika,NA
+37,softwares,ots,"SAS, Microsoft office, EndNote, CLC workbench",commercial,desktop,public,ARS,Proszkowiec-Weglarz_Monika,NA
+38,program,ots,R studio,opensource,desktop,public,ARS,Proszkowiec-Weglarz_Monika,NA
+39,SAS,ots,Statistical analyses,commercial,desktop,private,ARS,Polley_Wayne,NA
+40,ArcMap,ots,Used for geospatial processing of remote sensing signals,commercial,desktop,private,ARS,Polley_Wayne,NA
+41,Microsoft Excel,ots,"Data spreadsheet program used to store, organize, and analyze data sets.",commercial,desktop,public,ARS,Tarkalson_David,NA
+42,Microsoft Office,ots,"Standard office software, data entry, database, statistics, publishable materials",commercial,desktop,private,ARS,Hapeman_Cathleen,NA
+43,SigmaPlot,ots,"used to process data, provide publishable figures, conduct statistics 
+",commercial,desktop,private,ARS,Hapeman_Cathleen,NA
+44,GraphPad,ots,"used to process data, provide publishable figures, conduct statistics 
+https://www.graphpad.com/",commercial,desktop,private,ARS,Hapeman_Cathleen,NA
+45,Chemwindows,ots,"drawing chemical structures, chemical calculations, energy minimization estimates, etc.
+https://sciencesolutions.wiley.com/chemwindow-chemical-structure-drawing-software/",commercial,desktop,private,ARS,Hapeman_Cathleen,NA
+46,MatLab,ots,"calculations, programming",commercial,desktop,private,ARS,Hapeman_Cathleen,NA
+47,Waters MassLynx Software,ots,"Runs instruments, acquires and analyzes data, outputs data to applications, provides reports
+https://www.waters.com/waters/en_US/MassLynx-Mass-Spectrometry-Software-/nav.htm?cid=513164&locale=en_US
+",commercial,input,private,ARS,Hapeman_Cathleen,NA
+48,Agilent MassHunter Software,ots,"Runs instruments, acquires and analyzes data, outputs data to applications, provides reports
+https://www.agilent.com/en/product/software-informatics/mass-spectrometry-software
+",commercial,input,private,ARS,Hapeman_Cathleen,NA
+49,SAS,ots,Statistical analysis.,owned,desktop,private,ARS,Burkey_Kent,NA
+50,R,ots,Programming language,opensource,desktop,public,ARS,Clark_Patrick,NA
+51,SAS,ots,Statistical analysis software,commercial,desktop,private,ARS,Clark_Patrick,NA
+52,ArcGIS Pro,ots,https://pro.arcgis.com/en/pro-app/2.8/get-started/get-started.htm,commercial,desktop,private,ARS,Clark_Patrick,NA
+53,Google Earth Pro,ots,https://www.google.com/earth/versions/,freeware,desktop,hybrid,ARS,Clark_Patrick,NA
+54,MS Teams,ots,Meeting and project coordination software,commercial,desktop,private,ARS,Clark_Patrick,NA
+55,Microsoft Excel,ots,"Data storage, organization and analysis",commercial,desktop,public,ARS,Tarkalson_David,NA
+56,ESRI ArcGIS,ots,Geographic spatial data storage and analysis,commercial,desktop,public,ARS,Tarkalson_David,NA
+57,Statistix,ots,Statistical data analysis.,commercial,desktop,public,ARS,Tarkalson_David,NA
+58,Sigma Plot,ots,Data graphics and statistical analysis,commercial,desktop,public,ARS,Tarkalson_David,NA
+59,ArcGIS Pro,ots,"GIS tool for producing, manipulating, and analyzing spatial data including points, polygons, vectors, and imagery. Used in countless tasks during my everyday work.",commercial,desktop,hybrid,ARS,Messinger_Lindsey,NA
+60,ArcGIS Online,ots,"Used to administer and produce data collection tools (Survey123), dashboards (Operations Dashboard, Insights, Experience), and informational products (StoryMaps).",commercial,webapp,hybrid,ARS,Messinger_Lindsey,NA
+61,Program R,ots,Used for data cleaning and manipulation and analysis,opensource,desktop,public,ARS,Messinger_Lindsey,NA
+62,DNAStar Software Suite,ots,"A commercial software package for Assembly and analysis of nucleotide sequence data. In addition to de novo assemblies, gene expression also can be profiled.",commercial,desktop,private,ARS,Perera_Omaththage,NA
+63,Blast Station 64 Local,ots,Blast Station 64 is a software package for creating custom local databases of nucleotide sequences for BLAST searching.  This search tool facilitates custom searches of large number of queries without having to utilize public databases such as NCBI. https://www.blaststation.com/intl/en/local64.php,private,desktop,private,ARS,Perera_Omaththage,NA
+64,CLC Genome workbench,ots,Commercially available software package for nucleotide data analysis.,commercial,desktop,private,ARS,Perera_Omaththage,NA
+65,OmixBox,ots,Software package for annotation of nucleotide sequences using public databases.,private,desktop,private,ARS,Perera_Omaththage,NA
+66,"Google Earth, Sentinel Explorer",ots,My technician looks for satellite images that help us see how uniform different areas of a field is. That and handheld GPS for re-locating field sites is about all we do with geospatial stuff. My guess is that you are not interested in what we do.,freeware,webapp,public,ARS,Wuest_Stewart,NA
+67,Survey 123,ots,We use Survey 123 as a regular tool in coordinating and implementing science and research management.,commercial,webapp,hybrid,ARS,Kleinman_Peter,NA
+68,DAYCENT,ots,"ARS and Colorado State University maintain DAYCENT as a means of estimating greenhouse gas emissions as part of a national inventory they perform. The model is used widely by others, but this team is regularly turned to in order to provide comprehensive updates on the outcomes of practice and policy changes.
+
+https://www2.nrel.colostate.edu/projects/daycent/
+
+Dr. Steven DelGrosso would be the USDA Point of Contact.",freeware,desktop,public,ARS,Kleinman_Peter,NA
+69,Dashboard and tools for data visualization,ots,"ESRI based dashboards for displaying and assessing datasets. These are widely varied and developed by our PDI team. Some of these are related to ARS program management or facilities management, others are related to field data collected at ARS or collaborator locations.",opensource,dashboard,hybrid,ARS,Eve_Marlen,NA
+70,Microsoft Office Package,ots,"Word program for writing, 
+Excel program for calculation and data processing, 
+PowerPoint program for presentations, 
+Microsoft Outlook program for e-mail,
+Microsoft Teams program for meeting and text.",commercial,desktop,private,ARS,Mikha_Maysoon,NA
+71,SAS,ots,Statistical analysis for the research data,commercial,desktop,private,ARS,Mikha_Maysoon,NA
+72,Sigma Plot,ots,Graphic software and statistical analysis for the research data,commercial,desktop,private,ARS,Mikha_Maysoon,NA
+73,Adobe Acrobat,ots,Official documents,commercial,desktop,private,ARS,Mikha_Maysoon,NA
+74,Google Chrome,ots,"Search engine for research information, publications, societies web pages, and training.",opensource,networked,public,ARS,Mikha_Maysoon,NA
+75,Microsoft Edge,ots,"Search engine for research information, publications, and societies & Journals web pages.",opensource,networked,public,ARS,Mikha_Maysoon,NA
+76,R-Studio,ots,"Statistical analysis for the research data.  I start using it recently for data analysis.  
+
+https://www.rstudio.com/products/rstudio/download/",opensource,networked,public,ARS,Mikha_Maysoon,NA
+77,MATLAB,ots,https://www.mathworks.com/products/matlab.html,commercial,desktop,public,ARS,Colaizzi_Paul,NA
+78,Ag Sense,ots,https://www.agsense.com/,commercial,webapp,public,ARS,Colaizzi_Paul,NA
+79,ArcGIS,ots,GIS software used to located wetlands utilized in grant.,commercial,webapp,public,ARS,Osborne_Shannon,NA
+80,Geneious Software,ots,Geneious is a suite of molecular biology tools including genomes assemblies and analyses.,commercial,desktop,private,ARS,Clawson_Michael,NA
+81,EDGAR,ots,Website with a suite of bioinformatic applications for genome analysis.,private,webapp,hybrid,ARS,Clawson_Michael,NA
+82,MacVector,ots,Suite of programs for bioinformatic analysis of molecular data,commercial,desktop,private,ARS,Clawson_Michael,NA
+83,"Microsoft Office Excel, Powerpoint, Word, Publisher, Outlook",ots,"We use all the MS Office products to create digital content, including PDF files of documents, drawings, etc., We use Excel to manage field data, and we have developed algorithms in Excel to develop secondary data products, particularly with regard to soil water content, change in soil water content, calibration of instruments, evapotranspiration of crops (crop water use), energy and water balances of crops and fallow soils.",commercial,desktop,public,ARS,Evett_Steven,NA
+84,Techware Logbook,ots,Laboratory Information Management System for fiber and yarn testing data,commercial,networked,private,ARS,Delhom_Chris,NA
+85,FileMarker Pro,ots,Software is use to maintain our database. Software allows us to link different data streams in a relational database.,owned,desktop,private,ARS,Trabue_Steven,NA
+86,"Programming languages: Python, Fortran, R, Matlab, CRBasic",ots,Programs for the flexible manipulation and analysis of data.,commercial,desktop,private,ARS,Heilman_Philip,NA
+87,GIS tools,ots,"ESRI GIS tools, Google Earth Engine, Terrestrial lidar tools",commercial,desktop,private,ARS,Heilman_Philip,NA
+88,Unit Website,ots,"ars.usda.gov/pacific-west-area/tucson-az/southwest-watershed-research-center/
+
+Also contains some custom-built pages.",owned,webapp,public,ARS,Heilman_Philip,NA
+89,SAS,ots,statistical analysis software,commercial,desktop,private,ARS,Holt_Greg,NA
+90,R and R-Studio Software,ots,"The R-Project for statistical computing and R-studio IDE.
+https://www.r-project.org/
+https://www.rstudio.com/",opensource,desktop,public,ARS,Humphreys_John,NA
+91,HPCs (ARS Atlas and Ceres Clusters),ots,ARS HPC resources.,owned,networked,private,ARS,Humphreys_John,NA
+92,Google Earth Engine,ots,Google Earth Engine used for access and download of geospatial data: https://earthengine.google.com/,opensource,webapp,public,ARS,Humphreys_John,NA
+93,ArcGIS Pro,ots,Geographical Information System software,owned,webapp,private,ARS,Conley_Matthew,NA
+94,Agisoft Metashape Pro,ots,Structure from motion photogrammetric software,commercial,desktop,private,ARS,Conley_Matthew,NA
+95,ArcGIS,ots,We use ArcGIS to find locations of research plots and weed infestations in aquatic sites.,owned,desktop,private,ARS,Madsen_John,NA
+96,Lakes Environmental AERMOD View,ots,Dispersion Modeling Front End for EPA AERMOD,commercial,desktop,private,ARS,Whitelock_Derek,NA
+97,GeoData,ots,"GeoData (https://geodata.nal.usda.gov) is currently a pilot geospatial data catalog at the National Agricultural Library, it's based on an open-source geospatial data catalog system. The catalog is fully compliant with the ISO 19115 standards, so the metadata created or managed by GeoData can also be managed by any ISO 19115-based catalog.",opensource,webapp,public,ARS,Zhou_Zhuoyue,NA
+98,Tableau & Dashboard,ots,Tableau/Dashboards,commercial,dashboard,hybrid,ARS,Veal_Pamela,NA
+99,Qiime2,ots,"https://qiime2.org/
+
+QIIME 2™ is a next-generation microbiome bioinformatics platform that is extensible, free, open source, and community developed.",opensource,webapp,public,ARS,Summers_Katie,NA
+100,R  and R Studio,ots,"https://www.r-project.org/
+
+R is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS.
+",opensource,desktop,public,ARS,Summers_Katie,NA
+101,Silva,ots,"https://www.arb-silva.de/
+
+A comprehensive on-line resource for quality checked and aligned ribosomal RNA sequence data.
+
+SILVA provides comprehensive, quality checked and regularly updated datasets of aligned small (16S/18S, SSU) and large subunit (23S/28S, LSU) ribosomal RNA (rRNA) sequences for all three domains of life (Bacteria, Archaea and Eukarya).
+
+SILVA are the official databases of the software package ARB.",opensource,webapp,public,ARS,Summers_Katie,NA
+102,Ribosomal Database Project,ots,"http://rdp.cme.msu.edu/
+
+RDP provides quality-controlled, aligned and annotated Bacterial and Archaeal 16S rRNA sequences, and Fungal 28S rRNA sequences, and a suite of analysis tools to the scientific community. New to RDP release 11:
+
+RDP tools have been updated to work with the new fungal 28S rRNA sequence collection.
+A new Fungal 28S Aligner and updated Bacterial and Archaeal 16S Aligner. We optimized the parameters for these secondary-structure based Infernal aligners to provide improved handling for partial sequences.
+Updated RDPipeline offers extended processing and analysis tools to process high-throughput sequencing data, including single-strand and paired-end reads.
+Most of the RDP tools are now available as open source packages for users to incorporate in their local workflow.",opensource,webapp,public,ARS,Summers_Katie,NA
+103,Excel,ots,Spreadsheet program.,commercial,webapp,private,ARS,Bretting_Peter,NA
+104,Word,ots,Word processing program,commercial,webapp,private,ARS,Bretting_Peter,NA
+105,PowerPoint,ots,Presentation software.,commercial,webapp,private,ARS,Bretting_Peter,NA
+106,Outlook,ots,E-mail and file sharing program,commercial,webapp,private,ARS,Bretting_Peter,NA
+107,Linux operating system (Ubuntu),ots,"This open source, frequently safety-hardened operating system is indispensable for the kinds of research we do in biological sequence analysis. The combination of multifactor authentication and explicit listings of hosts allowed to connect via SSH result in a very secure system, and the myriad of built-in utilities enable manipulation of data with ease.",opensource,other,private,ARS,Sparks_Michael,operating system
+108,"PrimerPlex version 2.62 (PREMIER Biosoft, Palo Alto, CA, USA)",ots,Used for batch design of quantitative PCR primers.,commercial,desktop,private,ARS,Sparks_Michael,NA
+109,Various laboratory-stationed analytical instruments having proprietary operational and quantification software.,ots,"There are many different ones in our labs. These come with complications, because company software development often lags Windows system updates be several to many years. These systems are thus prohibited by USDA CEC from being connected to USDA-Net. This creates a huge need to have a team of analytical, engineering, software, security, and procurement agents working together to set minimum specifications and possibly even write and/or approve new code to automate data acquisition from systems now running on local area networks, and that must be manually scanned for security and incorporated into our databases.",commercial,other,private,ARS,Strickland_Tim,Vendor developed operational software on stand-alone desktop systems.
+110,SAS,ots,Do not generate large data sets. Data sets are usually stored in Excel and transferred to SAS for manipulation.,commercial,desktop,hybrid,ARS,Hogsette_Jerry,NA
+111,GeneMapper,ots,DNA fragment analysis tool,private,desktop,private,ARS,fang_david,NA
+112,SnapGene,ots,"This commercial software allows us the ability to analyze DNA, RNA, and protein sequence. It also has the capabilities of importing plasmid sequence, maps, and assists in assay design. https://www.snapgene.com/",commercial,desktop,private,ARS,Redel_Bethany,NA
+113,SAS,ots,Statistical analysis software. https://www.sas.com/en_us/software/stat.html,commercial,desktop,private,ARS,Redel_Bethany,NA
+114,A Plasmid Editor (ApE),ots,"ApE is an integrated program for plasmid construction and visualization. It includes a sequence editor, a linear text map identifying sequence features such as restriction sites and ORFs, and a graphic view that highlights sites and features in your sequences. https://jorgensen.biology.utah.edu/wayned/ape/",opensource,webapp,public,ARS,Redel_Bethany,NA
+115,AutoCad,ots,Computer Aid Design software,commercial,desktop,private,ARS,Kornecki_Ted,NA
+116,SAS,ots,Statistical analyses software,commercial,desktop,private,ARS,Kornecki_Ted,NA
+117,MS OFFICE,ots,"Extensively used software including MS Word, Excel, Power Point, Outlook, One Note",commercial,desktop,private,ARS,Kornecki_Ted,NA
+118,One Drive,ots,Document and data cloud storage,commercial,networked,private,ARS,Kornecki_Ted,NA
+119,BOX,ots,Cloud Storage/Sharing Tool,commercial,webapp,hybrid,ARS,Kornecki_Ted,NA
+120,github,ots,data sharing service,freeware,webapp,public,ARS,Gleason_Sean,NA
+121,Terrestrial Regional Ecosystem Exchange Simulator (TREES) model,ots,"Physiological plant growth model (C++)
+https://github.com/dscottmackay",opensource,desktop,public,ARS,Gleason_Sean,NA
+122,Linux operating systems,ots,"Linux operating systems to integrate semi-automated lab equipment (cameras, microscopes, microscope stages, physiology equipment, etc) with other existing open source software (R, Python, Arduino, FreeCAD, Cura 3d print app, Atom, bash, etc).  Raspian OS is used to run equipment in the lab via custom-built Python, Bash, and R scripts).  Ubuntu OS or Lubuntu OS is used (off network) as our main science/engineering platforms and are used to run/write models, analyze data, create figures, and write manuscripts.",opensource,desktop,hybrid,ARS,Gleason_Sean,NA
+123,Office 365,ots,"Microsoft Word, Excel, Teams, Publisher, Power Point, 
+",commercial,desktop,public,ARS,Campbell_Paul,NA
+124,Microsoft Visio,ots,Visio is used to make diagrams and field maps,commercial,desktop,public,ARS,Campbell_Paul,NA
+125,Farm Works,ots,Farm works is used for GPS farming data,commercial,desktop,public,ARS,Campbell_Paul,NA
+126,Praxidyn Intersect,ots,Software used for pesticide mixing system and records,commercial,webapp,public,ARS,Campbell_Paul,NA
+127,SAS,ots,SAS,commercial,desktop,public,ARS,Campbell_Paul,NA
+128,pix4D,ots,Pix4D is used for Drone  image processing,commercial,desktop,public,ARS,Campbell_Paul,NA
+129,Agisoft MetaShape,ots,Agisoft MetaShape drone image processing,commercial,desktop,public,ARS,Campbell_Paul,NA
+130,Loggernet,ots,Loggernet used to communicate with data loggers,commercial,desktop,public,ARS,Campbell_Paul,NA
+131,Mission Planner,ots,Mission Planner is used to build flight plans for drones,commercial,desktop,public,ARS,Campbell_Paul,NA
+132,ArcGIS Pro,ots,ArcGIS Pro- used for field GPS mapping and interpolation.,commercial,desktop,public,ARS,Campbell_Paul,NA
+133,PathFinder,ots,PathFinder used for GPS mapping,commercial,desktop,public,ARS,Campbell_Paul,NA
+134,", R + RStudio",ots,Used for statics,opensource,desktop,public,ARS,Campbell_Paul,NA
+135,LI7700 1.0.5,ots,Licor product To connect to and adjust parameters for LI7700 methane analyzer,commercial,desktop,public,ARS,Campbell_Paul,NA
+136,LI7X00 A RS DS 8.8.36,ots,Licor product To connect to and set parameters for Eddy Covariance flux tower,commercial,desktop,public,ARS,Campbell_Paul,NA
+137,EddyPro,ots,Licor product to Processes Eddy Covariance data,commercial,desktop,public,ARS,Campbell_Paul,NA
+138,GHG File Transfer 2.0.1,ots,Utility for downloading data from Eddy Covariance tower,commercial,desktop,public,ARS,Campbell_Paul,NA
+139,Blueprint Utility 1.1.2,ots,Licor product Utility for connecting to and adjusting parameters for biomet sensors on Eddy Covariance tower,commercial,desktop,public,ARS,Campbell_Paul,NA
+140,Tovi,ots,Licor product Post processing of Eddy Covariance data,commercial,desktop,public,ARS,Campbell_Paul,NA
+141,Excel,ots,Statistical analysis of data given through phis,commercial,desktop,private,FSIS,Johnson_Molly,NA
+142,ArcGIS and ArcGIS Pro,ots,"We use the ArcGIS software suite and are in the process of transitioning to ArcGIS Pro.  In the agency, the software is available for download on desktop/laptops, or available via the web using the Citrix interface.  All FS corporate data are stored as ArcGIS geodatabases.",commercial,desktop,private,FS,Daugherty_Caine,NA
+143,R (stat program),ots,"R is a free software environment for statistical computing and graphics. 
+https://www.r-project.org/",opensource,desktop,private,APHIS,Hong_Steve,NA
+144,MATLAB,ots,computational software including neural network models,commercial,desktop,private,ARS,King_Bradley,NA
+145,SAS,ots,Statistical analysis software,commercial,desktop,private,ARS,King_Bradley,NA
+146,SigmaPlot,ots,Graphical software,commercial,desktop,private,ARS,King_Bradley,NA
+147,ArcMap and Google earth,ots,ArcMap for Cultural Resource Maps.,owned,other,private,NRCS,Miranda _Valvina,loaded on my labtop.
+148,commercially available software programs,ots,"Programs such as R and Python to assist with data analysis and creating figures for publications and presentations.  Also trying to use GitHub as a repository for data and data analyses to promote more reproducibility.  Still use SAS, but trying to transition to open source software when possible.
+
+Still use licensed software primarily associated with Microsoft.",opensource,desktop,public,ARS,Balkcom_Kip,NA
+149,Microsoft Excel,ots,Standard spreadsheet used for management of data sets.,commercial,desktop,hybrid,ARS,Stout_Robert,NA
+150,"Campbell Scientific software (PC 400, Insight)",ots,Commercially available software for programming data recorders and managing data generated from remote data collection sites.,commercial,desktop,hybrid,ARS,Stout_Robert,NA
+151,ESRI Products,ots,"https://www.esri.com/en-us/arcgis/about-arcgis/overview
+
+Which of the following best describes the type of application?  It is all of the options selected below.",commercial,desktop,hybrid,APHIS,Hofer_Daniel,NA
+152,ArcAPEX,ots,"ArcAPEX ArcGIS Interface for Agricultural Policy/Environmental
+eXtender Model watershed and land management simulation model
+https://epicapex.tamu.edu/software/",freeware,desktop,private,ARS,Gamble_Josh,NA
+153,OpenWebStart,ots,OpenWebStart is an open source reimplementation of the Java Web Start technology,opensource,webapp,public,ARS,Tatarko_John,NA
+154,GFORTRAN,ots,Fortran compiler,opensource,desktop,public,ARS,Tatarko_John,NA
+155,NETBEANS,ots,"NetBeans is an integrated development environment for Java. NetBeans allows applications to be developed from a set of modular software components called modules. NetBeans runs on Windows, macOS, Linux and Solaris.",opensource,desktop,public,ARS,Tatarko_John,NA
+156,Mantis,ots,"Mantis Bug Tracker is a bug tracking system. The most common use of MantisBT is to track software defects. However, MantisBT is often configured by users to serve as a more generic issue tracking system and project management tool.",opensource,webapp,public,ARS,Tatarko_John,NA
+157,Jenkins,ots,"Jenkins is an open source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery.",opensource,webapp,public,ARS,Tatarko_John,NA
+158,OpenJDK,ots,OpenJDK is a free and open-source implementation of the Java Platform,opensource,desktop,public,ARS,Tatarko_John,NA
+159,Geographic Resources Analysis Support System (GRASS),ots,"Geographic Resources Analysis Support System is a geographic information system software suite used for geospatial data management and analysis, image processing, producing graphics and maps, spatial and temporal modeling, and visualizing. It can handle raster, topological vector, image processing, and graphic data.",opensource,webapp,public,ARS,Tatarko_John,NA
+160,QGIS,ots,"QGIS is a free and open-source cross-platform desktop geographic information system application that supports viewing, editing, printing, and analysis of geospatial data.",opensource,desktop,public,ARS,Tatarko_John,NA
+161,Worldwind,ots,"NASA WorldWind is an open-source virtual globe. It is a virtual globe API. WorldWind allows developers to quickly and easily create interactive visualizations of 3D globe, map and geographical information.",opensource,desktop,public,ARS,Tatarko_John,NA
+162,JavaScript,ots,"JavaScript is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.",opensource,webapp,public,ARS,Tatarko_John,NA
+163,ESRI Field Maps,ots,"We utilize ESRI Field Maps to collect insect trapping and survey data. For our field office, we specifically use this application for the National Spotted Lanternfly Survey Program and the USDA Exotic Wood Borer and Bark Beetle Survey Program although there are other surveys within this application that are used by other field offices in our agency. We can collect pest survey data via this app (GPS coordinates, dates, activity, comments, pest name) as well as use the application to get directions to our survey sites. The app includes highly detailed maps with fillable forms.",commercial,input,private,APHIS,Swink_Whitney,NA
+164,ArcGIS Pro,ots,ArcGIS is critical to many data analysis and products produced.,commercial,desktop,private,NASS,Hunt_Kevin,NA
+165,Google Earth Engine,ots,GEE is critical to producing data products.,commercial,webapp,private,NASS,Hunt_Kevin,NA
+166,Esri Suite of Software,ots,"Simply google Esri for more information (https://www.esri.com/en-us/home). Esri's suite of tools are invaluable for sophisticated acquisition, analysis, and management of geographic data. This suite of tools includes (but is not limited to) Desktop ArcGIS, ArcGIS Pro, various field apps (such as Survey1234, Field Maps, etc), ArcGIS Online (AGOL), Geoplanner, Data Reviewer, and many more.",commercial,other,hybrid,FS,Lammie_Samuel,This suite of tools covers all types of applications...
+167,R,ots,https://www.r-project.org/,opensource,desktop,public,ARS,GREEN_TIMOTHY,NA
+168,Python,ots,"https://www.python.org/
+scripting language and open libraries",freeware,webapp,public,ARS,GREEN_TIMOTHY,NA
+169,ERDAS IMAGINE,ots,"Raster graphics editor and remote sensing application. Used at work for ortho-rectification.
+
+https://www.hexagongeospatial.com/products/power-portfolio/erdas-imagine",commercial,desktop,private,NRCS,Chan_Keith,NA
+170,ArcMap,ots,"Used to display and explore Geographic Information System datasets for your study area.
+
+https://desktop.arcgis.com/en/arcmap/10.3/main/map/what-is-arcmap-.htm",commercial,desktop,private,NRCS,Chan_Keith,NA
+171,ATLAS High Performance Computer,ots,High performance USDA ARS computer available to ARS employees.,shared,other,private,ARS,Jenkins_Johnie,High performance computer on SciNet located at Mississippi State University
+172,Excel data sets,ots,Most of our data are in excel sheets,commercial,input,private,ARS,Jenkins_Johnie,NA
+173,ERDAS IMAGINE,ots,Software licensed from ERDAS,commercial,input,private,ARS,Jenkins_Johnie,NA
+174,Campbell Scientific LoggerNet,ots,"purchased software that allows programming, downloading, and communication with Campbell Scientific equipment.",owned,monitor,private,ARS,Gonet_Jeffery,NA
+175,Trimble GPS Pathfinder,ots,purchased software that connects with Trimble GPS units,owned,input,private,ARS,Gonet_Jeffery,NA
+176,ARC GIS,ots,"GIS software, Agency License",commercial,desktop,private,ARS,Gonet_Jeffery,NA
+177,Li-Cor EddyPro,ots,downloadable software to analyze Eddy Covariance data,freeware,desktop,private,ARS,Gonet_Jeffery,NA
+178,UgCS,ots,– flight planning and autopilot software for M600,commercial,desktop,private,ARS,Adler_Paul,NA
+179,Pilot – flight planning and autopilot software for M210 and X7 sensors,ots,Pilot – flight planning and autopilot software for M210 and X7 sensors,commercial,desktop,private,ARS,Adler_Paul,NA
+180,Atlas Flight – flight planning and autopilot software for M210 and RedEdge sensor; also used to set up RedEdge sensor for data capture,ots,Atlas Flight – flight planning and autopilot software for M210 and RedEdge sensor; also used to set up RedEdge sensor for data capture,commercial,desktop,private,ARS,Adler_Paul,NA
+181,HyperSpec III – hyperspec and lidar software for setting up sensors for data capture;  also used for downloading and processing hyperspec and lidar data,ots,HyperSpec III – hyperspec and lidar software for setting up sensors for data capture;  also used for downloading and processing hyperspec and lidar data,commercial,desktop,private,ARS,Adler_Paul,NA
+182,LiDAR360 – processing LiDAR data,ots,LiDAR360 – processing LiDAR data,commercial,desktop,private,ARS,Adler_Paul,NA
+183,Metashape Professional – used for processing RGB and RedEdge imagery,ots,Metashape Professional – used for processing RGB and RedEdge imagery,commercial,desktop,private,ARS,Adler_Paul,NA
+184,POSPac UAV – used to generate a post-corrected drone trajectory file from M600 and Applanix High Precison GPS/IMU,ots,POSPac UAV – used to generate a post-corrected drone trajectory file from M600 and Applanix High Precison GPS/IMU,commercial,desktop,private,ARS,Adler_Paul,NA
+185,ArcGIS: including ArcMap and ArcGIS Pro,ots,ArcGIS: including ArcMap and ArcGIS Pro,owned,desktop,private,ARS,Adler_Paul,NA
+186,"Google Earth Engine, Google Colab",ots,"Google Earth Engine, Google Colab",freeware,webapp,public,ARS,Adler_Paul,NA
+187,"RStudio (R environment), and PyCharm (python environment)",ots,"RStudio (R environment), and PyCharm (python environment).",freeware,desktop,private,ARS,Adler_Paul,NA
+188,ArcGIS - ArcMap,ots,"ArcMap is the main component of Esri's ArcGIS suite of geospatial processing programs, and is used primarily to view, edit, create, and analyze geospatial data. ArcMap allows the user to explore data within a data set, symbolize features accordingly, and create maps.",owned,desktop,hybrid,FSA,Hancock_Nicholas,NA
+189,Critical Mention,ots,Media monitoring,commercial,dashboard,private,RD,Drury_Shawn,NA
+190,PoPS (Pest or Pathogen Spread) Model,ots,"The PoPS (Pest or Pathogen Spread) model is a model and web application being developed by the USDA and North Carolina State University. It simulates invasive species spread (ex: sudden oak death, spotted lanternfly) and allows the user to conduct management experiments. 
+
+The PoPS website is currently under development, so it's not fully available. With time, it'll be fully open-source and publicly available. However, users will have login accounts and be able to upload their own data which will not be publicly available. https://popsmodel.org/",opensource,webapp,hybrid,APHIS,Gaydos_Devon,NA
+191,Esri ArcGIS,ots,"I use COTS, and BTW, do not work for an agency or ARS, I work for USDA OCIO EGMO - you did not provide for USDA other or for USDA offices like OCIO.",commercial,webapp,private,ARS,Manduley_Suzette,NA
+192,Google Earth,ots,Global Mapping tool,commercial,webapp,private,ARS,Manduley_Suzette,NA
+193,Google,ots,COTS,commercial,webapp,private,ARS,Manduley_Suzette,NA
+194,Microsoft,ots,"I use mostly COTS tools for my work with EGMO.
+Btw, I had to select an Agency, and chose ARS, as you did not provide for Other or OCIO or any other office or USDA Department.",commercial,webapp,private,ARS,Manduley_Suzette,NA
+195,Raw and processed data from instruments used for soil and water chemical measurements,ots,Science equipment comes with specialized software. I believe there is a need for a reliable data backup system (oftentimes these instruments are not connected to the network). There also should be a way to align the instrument software computer requirements with CEC requirements.,commercial,input,private,ARS,Pisani_Oliva,NA
+196,Google Cloud,ots,"Use Sites and Drive to manage my research program data, images, resources.",opensource,webapp,private,ARS,Abendroth_Lori,NA
+197,github,ots,Use when working with programmers on some data sets,opensource,webapp,public,ARS,Abendroth_Lori,NA
+198,Kisters WISKI,ots,"We use Kisters WISKI to house all data produced from all of our unit's SYs. This includes hydrologic, soils, imagery, and agronomic (crop production) data. This effort is a work in progress and has only recently gotten off the ground with the hiring of our database manager.",commercial,networked,private,ARS,Pisarello_Katie,NA
+199,ArcGIS Online (AGOL),ots,https://www.arcgis.com/index.html#,commercial,webapp,hybrid,FS,Perry_Christian,NA
+200,R Statistical Programming Language,ots,https://www.r-project.org/,opensource,other,hybrid,FS,Perry_Christian,R is a free software environment for statistical computing and graphics.
+201,ArcGIS Pro,ots,https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview,commercial,desktop,private,FS,Perry_Christian,NA
+202,Microsoft Desktop & Web 360 suite of products,ots,"Word, Excel, Teams, Access, Outlook, Planner, Calendar, SharePoint, OneNote, OneDrive, etc.",commercial,desktop,hybrid,FS,Perry_Christian,NA
+203,ESRI Survey-123,ots,https://www.esri.com/en-us/arcgis/products/arcgis-survey123/overview,commercial,desktop,hybrid,FS,Perry_Christian,NA
+204,Graph Pad Prism,ots,statistical software,private,desktop,private,ARS,Miska_Kate,NA
+205,MS Office+EndNote+HSC Chemistry+Eddy Pro+JMP+WindTrax+Polymath+R+XLSTAT+Graphad+REFPROP+SAS,ots,"MSOffice: Word, PPT, Excel, MSTeams
+HSC Chemistry: thermochemical equilibrium calculation software
+WindTrax, Eddy Pro: Wind turbulence and other weather data processing softwares
+JMP, XLSTAT, GraphPad, SAS : statistical  and graphic softwares",commercial,desktop,hybrid,ARS,Ro_Kyoung,NA
+206,"Microsoft Office (Excel, Word, Access, etc.)",ots,"Certain information is derived from other databases, written as case remarks, or otherwise included in files for various Microsoft Office products.",commercial,desktop,private,APHIS,Young_Stephen,NA
+207,ESRI-ARC GIS,ots,"Accessed through the government community cloud. We use lots of layers:
+1, Basemaps ArcGIS
+2. Fish and Wildlife Environmental Conservation Online system. https://ecos.fws.gov/ecp/
+3. FWS Critical Habitat lines
+4. National Oceanic and Atmospheric Administration Critical Habitat lines
+5. NOAA critical habitat polygons
+6. From US Census Bureau layer, American Indian Reservations and Trust Land
+7. From USGS, Federal Lands
+8. From DOD, Hawaiian DOD parcels
+9. Named streams and rivers from ESRI
+10. From US Census Bureau-counties
+11. From FWS, Rusty Patch Bumblebee occurrence high potential zones
+12. From FWS, Rusty Patch Bumblebee occurrence low potential zones
+",commercial,networked,private,APHIS,Hoffman_Neil,NA
+208,ESRI ARC GIS Pro,ots,used to support Climex modelling,commercial,desktop,private,APHIS,Hoffman_Neil,NA
+209,Climex,ots,Predictive modelling of organism distribution,commercial,desktop,private,APHIS,Hoffman_Neil,NA
+210,Google Earth,ots,satellite images of earth,opensource,desktop,private,APHIS,Hoffman_Neil,NA
+211,ArcGIS Server,ots,ArcGIS Server is part of the ArcGIS Enterprise system.  It is used for data storage and access for specified users in our research unit.,commercial,networked,hybrid,ARS,Eyster_Ritchie,NA
+212,TerrSet GIS software,ots,"Raster and Vector GIS analysis software 
+clarklabs@clarku.edu
+",owned,desktop,private,ARS,Eyster_Ritchie,NA
+213,MicaSense Python apps for image processing,ots,Software to read and process the MicaSense RedEdge camera images and align the 5 separate band images.,freeware,desktop,private,ARS,Eyster_Ritchie,NA
+214,"Esri ArcGIS Pro, Server, Image Analysis extension, and AcrGIS Online ARS account",ots,ArcGIS software,commercial,other,hybrid,ARS,Eyster_Ritchie,Desktop and Web based Geospatial data processing software.
+215,ArcGIS,ots,Geospatial software,commercial,desktop,private,ARS,Knipper_Kyle,NA
+216,Python,ots,Open-source coding language,opensource,networked,public,ARS,Knipper_Kyle,NA
+217,R,ots,Open-source coding language,opensource,networked,public,ARS,Knipper_Kyle,NA
+218,Filezilla,ots,"Desktop application designed to move data easily between FTP servers and local machines (i.e., Windows-based desktops).",commercial,desktop,public,ARS,Knipper_Kyle,NA
+219,Visual Studio Code,ots,Microsoft-based GUI used to streamline coding. Also used to remote into local Linux-based servers and develop models (in Python or R) while remaining on the local Windows machine.,freeware,desktop,public,ARS,Knipper_Kyle,NA
+220,Fulcrum,ots,"Data collection system we started at least 5 year ago, before we saw ArcGIS Survey123 widely available. We are planning to transition to the agency-supported option (ArgGIS Survey 123) https://www.fulcrumapp.com/",commercial,other,private,ARS,Manoukis_Nicholas,"web app, data input tool, mobile app"
+221,Microsoft Excel,ots,Need I say more? Heavily used.,commercial,desktop,private,ARS,Manoukis_Nicholas,NA
+222,R,ots,Statistical analysis,opensource,desktop,public,ARS,Manoukis_Nicholas,NA
+223,SAS/JMP,ots,Commercial statistical software,commercial,desktop,private,ARS,Manoukis_Nicholas,NA
+224,Esri Field Maps,ots,"Mobile collection tool that is customized to the needs of the Asian Longhorned Beetle Eradication program. Field Maps is used on iDevices and can also be used on a desktop computer through the APHIS GIS Portal. Collects geospatial data for various work flows, which feeds into the large ALB dataset/database.",commercial,input,private,APHIS,Dean_Kimberly,NA
+225,ArcGIS,ots,"ArcGIS is licensed from ESRI but we have a secure version of it on our system. It is used to map coordinates of proposed release sites of regulated genetically engineered organisms. As a user of this software and following approved Work Instructions, I load/open the basemap and layer package provided by another staff member in my organization, then I upload the CSV file with the GPS coordinates. I assess whether the proposed sites are appropriate to use as a release site. I then take screenshots of the map to include in a Release Site Analysis report. Because some sites are claimed as Confidential Business Information by the applicant, our website (https://maps.mrp.usda.gov/arcgis/home/index.html) is not open to viewing by non-authorized users. Authorized users must have completed CBI training before being allowed access to this tool.",commercial,networked,private,APHIS,Strachan_Janice,NA
+226,DSSAT,ots,"Decision Support System for Agritechnology Transfer
+https://dssat.net
+",opensource,desktop,public,ARS,White_Paul,NA
+227,SAS,ots,"statistical analysis software. Scientist would reject enterprise solutions that don't allow them to tailor how the program functions on a daily basis (e.g., input windows, output format, etc).",commercial,desktop,public,ARS,Lents_Clay,NA
+228,Golden Helix,ots,"Next-Gen genomic sequence analysis. 
+https://www.goldenhelix.com/",commercial,desktop,public,ARS,Lents_Clay,NA
+229,ArcGIS,ots,Geographic Information System,owned,desktop,private,ARS,Russ_Andrew,NA
+230,Pix4D,ots,UAV image processing / image stitching / photogrammetry / structure from motion /multispectral,commercial,desktop,private,ARS,Russ_Andrew,NA
+231,Routescene LiDARviewer,ots,Proprietary LiDAR processing software,owned,desktop,private,ARS,Russ_Andrew,NA
+232,SpectralView,ots,Headwall Hyperspectral Image software,commercial,desktop,private,ARS,Russ_Andrew,NA
+233,Toad Datapoint,ots,database management and SQL development. Custom query and retrieve biological data from Oracle relational database,commercial,desktop,public,ARS,Lents_Clay,NA
+234,Sigma Plot,ots,Used to receive data from gamma counter for interpolation of hormone concentrations from radioimmunoassays.,commercial,desktop,public,ARS,Lents_Clay,NA
+235,R studio,ots,statistical analysis platform,opensource,desktop,public,ARS,Lents_Clay,NA
+236,EndNote,ots,reference manager,commercial,desktop,public,ARS,Lents_Clay,NA
+237,LAS X,ots,"Microscope software platform for life science
+https://www.leica-microsystems.com/products/microscope-software/p/leica-las-x-ls/",commercial,desktop,public,ARS,Lents_Clay,NA
+238,Scaffold,ots,Proteomic data analysis,opensource,desktop,public,ARS,Lents_Clay,NA
+239,Ingenuity pathway  analysis (IPA),ots,"This is used for transcriptomics, proteomics data analysis https://digitalinsights.qiagen.com/products-overview/discovery-insights-portfolio/analysis-and-visualization/qiagen-ipa/",commercial,webapp,private,ARS,Wang_Tom,NA
+240,CLC genomic work bench,ots,This is for analysis of next generation sequencing data,private,webapp,private,ARS,Wang_Tom,NA
+241,JMP genomics,ots,For statistical analysis of transcriptomics data https://www.jmp.com/en_be/academic/offers/genomics-linkedin.html,private,webapp,private,ARS,Wang_Tom,NA
+242,R package,ots,This is used for transcriptomics analysis,freeware,other,private,ARS,Wang_Tom,statistical analysis software for gene expression analysis
+243,ArcGIS Pro,ots,"ESRIs next generation GIS software for viewing, managing, and analyzing spatial and tabular data.",commercial,desktop,public,NRCS,Capezza_Robert,NA
+244,mothur,ots,Software for analyzing DNA sequence data.  Available from: https://mothur.org/,opensource,desktop,public,ARS,Tyler_Heather,NA
+245,JMP,ots,Statistical analysis program.,commercial,desktop,public,ARS,Tyler_Heather,NA
+246,ArcGIS,ots,"Use ArcGIS 10.3.1 to create maps, provide program analysis and imagery interpretation.",owned,desktop,private,FSA,Flocke_John,NA
+247,Microsoft Excel,ots,Nothing follows,commercial,desktop,private,FNS,Dixon-Mills_Sharon,NA
+248,SciNet,ots,We are using Geneious,owned,webapp,private,ARS,Reardon_Catherine,NA
+249,XToolsPro,ots,"Full-featured third party extensions for ArcGIS Desktop end users providing a comprehensive set of tools for vector spatial analysis, shape conversion and table management. https://xtools.pro/",private,desktop,hybrid,FS,Wroblewski_Becky,NA
+250,Aquarius,ots,"Automatically upload tele-transmitted data in a database and provides means to perform quality control, corrections, and approval of the data, assign a quality grade and associate notes and comments to each data point. Records and saves metadata for any modification of the data. https://aquaticinformatics.com/products/aquarius-environmental-water-data-management/",commercial,networked,private,ARS,Baffaut_Claire,NA
+251,Sample Master LIMS (Laboratory Information Management System),ots,"Provides a single system for data entry, QA/QC, electronic data transfer and overall management of laboratory data.
+https://atlab.com/products/sample-master/",commercial,networked,private,ARS,Baffaut_Claire,NA
+252,Wireless infrared thermometers,ots,Digital output of surface temperature measurements,shared,monitor,public,ARS,O'Shaughnessy_Susan,NA
+253,OneDrive + R,ots,I store my data on OneDrive and analyze it in R software.,opensource,desktop,private,ARS,Ellsworth_Patrick,NA
+254,Image processing software and GIS software,ots,"ENVI/IDL
+Erdas Imagine
+Pix4D
+ArcGIS Pro",commercial,desktop,hybrid,ARS,Yang_Chenghai,NA
+255,Pix4D,ots,https://www.pix4d.com/,commercial,desktop,private,ARS,Jin_Virginia,NA
+256,combine yield monitor,ots,"Yield data collected from commercial combine software - data must often be converted to another more compatible application in order to process in software that is not proprietary to the combine (i.e. John Deere, Case, ALMACO, etc).",commercial,input,private,ARS,Jin_Virginia,NA
+257,Canopeo,ots,"https://canopeoapp.com/#/login
+
+Imaging software that can determine percent plant cover vs bare soil in still images or on-the-go.",freeware,input,public,ARS,Jin_Virginia,NA
+258,DSSAT model,ots,"The Decision Support System for Agrotechnology Transfer (DSSAT) is a software application program that comprises crop simulation models for over 42 crops (as of Version 4.7.5) as well as tools to facilitate effective use  of the models. The tools include database management programs for soil, weather, crop management and experimental data, utilities, and application programs. The crop simulation models simulate growth, development and yield as a function of the soil-plant-atmosphere dynamics.
+
+https://dssat.net/",freeware,desktop,public,ARS,Jin_Virginia,NA
+259,SAS and JMP,ots,"Statistical software
+
+https://www.sas.com/en_us/home.html
+
+https://www.jmp.com/en_us/home.html",commercial,desktop,private,ARS,Jin_Virginia,NA
+260,Microsoft Products,ots,General office/data entry/data archival purposes,commercial,desktop,private,ARS,Jin_Virginia,NA
+261,"ESRI products (ArcMap, ArcPro, FieldMaps, ArcGIS Online)",ots,Used for geospatial research,commercial,desktop,private,ARS,Jin_Virginia,NA
+262,SAS,ots,Statistical and data analysis  tool,commercial,desktop,private,ARS,Flerchinger_Gerald,NA
+263,MATLAB,ots,"MATLAB is a programming and data analysis environment that allows me to process, analyze, and visualize time-series data.  It contains functions such as wavelet analysis, curve fitting, statistical functions, and geospatial functions.  The software package is also supported by an active community writing code that is available through a file exchange, which can drastically reduce the time need to implement some types of specialized data analysis.",commercial,desktop,private,ARS,Wren_Daniel,NA
+264,LabView,ots,"LabView is used for writing custom code for data acquisition. It allows me to synchronize movements with a motion control system with the acquisition of acoustic in laboratory flume experiments.  The control and customization that I can achieve with LabView enhances the quality of data collection, since it ultimately reduces the number of repetitive tasks that a technician must perform.",commercial,desktop,private,ARS,Wren_Daniel,NA
+265,Cogito Studio Express (CSE),ots,"https://www.expert.ai/products/expert-ai-platform/?
+Platform developed by Expert System for natural language processing. 
+We use it to index NAL Thesaurus (NALT) terms for articles entered in the Agricola database.  Several features that we used in testing (e.g., adding terms to the NALT) have not yet been configured for use in normal production and work routines.",commercial,webapp,private,ARS,McGervey_Teresa,NA
+266,VocBench,ots,"http://vocbench.uniroma2.it/
+""VocBench is a web-based, multilingual, collaborative development platform for managing OWL ontologies, SKOS(/XL) thesauri, Ontolex-lemon lexicons and generic RDF datasets."" 
+We use it to support indexing ARIS projects that are managed outside CSE. We also use it to manage NALT terms (e.g., add new terms, provide descriptions or usage notes, adjust term hierarchies). It sits on the SciNet platform so we must log out of the ARS VPN and log into the SciNet VPN to use VocBench.",commercial,webapp,private,ARS,McGervey_Teresa,NA
+267,Survey 123,ots,Template for USDA surveys based on ArcGIS program Survey 123,private,input,private,APHIS,Ryan_Kelly,NA
+268,Minitab,ots,Statistical analysis software,commercial,other,private,ARS,Ducey_Thomas,Statistical softrware
+269,PCORD,ots,Phylogenetic analysis software,commercial,desktop,private,ARS,Ducey_Thomas,NA
+270,ARIS,ots,"Stores all ARS project information (project plans, annual reports, publication reports, personnel info, budget codes, etc.) in a way that is supposed to be searchable, but is difficult to use.",owned,webapp,private,ARS,Beebout_Sarah,NA
+271,Lindsay FieldNet,ots,"This website interface allows for delineation of plot boundaries with variable rate irrigation systems. We wish to work more closely with Lindsay to be able to integrate our internal water balance models and data collection systems with the software, however creating relationships and formal collaborative agreements has proven difficult.
+
+https://www.lindsay.com/usca/en/irrigation/brands/fieldnet/",private,webapp,private,ARS,DeJonge_Kendall,NA
+272,ESRI ArcGIS Enterprise Software,ots,"ArcGIS Enterprise for server and portal
+",commercial,webapp,hybrid,RD,Cherniss_Jerad,NA
+273,"Remote sensing imagery including Google Earth Engine, MS Office 365, SAS, SigmaPlot, Google Earth, NRCS Web Soil Survey, Google Chrome, Zoom Webex",ots,"Off the shelf imagery, mapping, and communication tools along with productivity software",commercial,desktop,private,ARS,Van Pelt_Robert,NA
+274,FPAC Qualtrics,ots,"Qualtrics XM Software is externally hosted and provides the Farm Production and Conservation Business Center (FBC) with the tools needed to conduct secure online surveys. The Farm Service Agency and the Natural Resources Conservation Service within the FBC mission area are designated as High Impact Service Providers (HISP) by the Office of Management and Budget (OMB) and are required to collect and publish the results of this feedback quarterly.  This software provides the ability to create, implement, manage, analyze and report web-based surveys and to upload mailed survey data to meet the requirement.  The system is leveraged to manage CX data and directories for both internal and external customer feedback projects, across all four FPAC agencies, providing teams with transactional feedback and sentiment results to improve services.",owned,other,private,FPAC,Snow_Laurie,"This provides a web application (SaaS) that serves as a Data Collection, Continuous Monitoring and Dashboarding tool for all Customer Experience Feedback collected."
+275,Vistrails/SAHM,ots,"SAHM is a modeling package for species distribution modeling developed by USGS for use with Vistrails open-source scientific workflow software. Unfortunately Vistrails is no longer being maintained by the developers, so its lifespan is probably limited to the point that an OS update breaks it.",opensource,desktop,private,APHIS,Warden_Melissa,NA
+276,R,ots,Open source statistical modeling software with spatial analysis capabilities,opensource,desktop,public,APHIS,Warden_Melissa,NA
+277,Climex/Dymex,ots,Climate suitability modeling software,commercial,desktop,private,APHIS,Warden_Melissa,NA
+278,AdobeCreativeCloudDesktop,ots,Image editing and management tools,commercial,webapp,private,ARS,Pearson_Matthew,NA
+279,Alma-D,ots,enterprise library collection management platform,commercial,webapp,hybrid,ARS,Pearson_Matthew,NA
+280,archiveit,ots,Web Archiving tools and hosting,commercial,webapp,hybrid,ARS,Pearson_Matthew,NA
+281,Archivematica,ots,digital preservation microservices suite,opensource,networked,private,ARS,Pearson_Matthew,NA
+282,Archives Space,ots,Archives processing and discovery platform for digital and physical collections,opensource,networked,hybrid,ARS,Pearson_Matthew,NA
+283,Audacity,ots,audio editing tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+284,AudioVisualPreservationSolutionsFixityPro,ots,Digital preservation transfer tool,commercial,desktop,private,ARS,Pearson_Matthew,NA
+285,bagger,ots,digital preservation transfer tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+286,BitCurator,ots,digital forensics suite,opensource,desktop,private,ARS,Pearson_Matthew,NA
+287,Box,ots,data transfer tool,commercial,webapp,private,ARS,Pearson_Matthew,NA
+288,bulk_extractor,ots,digital forensics tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+289,CaptureOne Pro CH,ots,image capture and editing tool,commercial,desktop,private,ARS,Pearson_Matthew,NA
+290,ClamAV,ots,antivirus software,opensource,desktop,private,ARS,Pearson_Matthew,NA
+291,CloneSpy,ots,digital forensics tool,commercial,desktop,private,ARS,Pearson_Matthew,NA
+292,colorchecker display plus,ots,color management and monitor calibrating tool,commercial,desktop,private,ARS,Pearson_Matthew,NA
+293,dupeGuru,ots,digital forensics tool,commercial,desktop,private,ARS,Pearson_Matthew,NA
+294,EclipseFoundationOxygen,ots,cataloging and XML editing tool,commercial,desktop,private,ARS,Pearson_Matthew,NA
+295,EvolusPencil,ots,webpage design mockup tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+296,exactly,ots,Digital transfer tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+297,Exiftool,ots,metadata editor,opensource,desktop,private,ARS,Pearson_Matthew,NA
+298,FFMpeg,ots,video codec tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+299,fromthepage,ots,crowdsource transcription platform,commercial,webapp,hybrid,ARS,Pearson_Matthew,NA
+300,Handbrake,ots,video editing tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+301,7zip,ots,file compression / data transfer tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+302,ImageMagick,ots,image manipulation library,opensource,desktop,private,ARS,Pearson_Matthew,NA
+303,Internet archive metamanager,ots,metadata editing platform,commercial,webapp,private,ARS,Pearson_Matthew,NA
+304,internetarchive commandline tool,ots,mass digitization workflow tool,commercial,webapp,private,ARS,Pearson_Matthew,NA
+305,Irfanview,ots,image editing tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+306,JAMTreeSizeProfessional,ots,digital preservation tool,commercial,desktop,private,ARS,Pearson_Matthew,NA
+307,JIRA,ots,project management tool,commercial,networked,private,ARS,Pearson_Matthew,NA
+308,Confluence,ots,feature rich wiki and communication tool,commercial,networked,private,ARS,Pearson_Matthew,NA
+309,Karens-Directory-Printer,ots,digital processing tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+310,MicrosoftPowerShell,ots,scripting library and language,commercial,desktop,private,ARS,Pearson_Matthew,NA
+311,MS O365 Suite,ots,productivity tools,commercial,webapp,private,ARS,Pearson_Matthew,NA
+312,MSVisioStandard,ots,diagramming tool,commercial,desktop,private,ARS,Pearson_Matthew,NA
+313,NationalArchivesUKDROID,ots,format identification tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+314,Omeka,ots,online exhibits tool,opensource,networked,hybrid,ARS,Pearson_Matthew,NA
+315,OpenRefine,ots,data transformation tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+316,PDFSAM,ots,PDF tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+317,Strawberry Perl,ots,programming,opensource,desktop,private,ARS,Pearson_Matthew,NA
+318,Postman,ots,scripting development tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+319,Primo,ots,enterprise Library discovery platform,commercial,networked,hybrid,ARS,Pearson_Matthew,NA
+320,pycharm,ots,scripting library,opensource,desktop,private,ARS,Pearson_Matthew,NA
+321,Python,ots,scripting language,opensource,desktop,private,ARS,Pearson_Matthew,NA
+322,reftracker,ots,reference request ticketing system,commercial,networked,private,ARS,Pearson_Matthew,NA
+323,ReNamer,ots,file renaming tool,commercial,desktop,private,ARS,Pearson_Matthew,NA
+324,ScooterBeyondCompare,ots,digital forensics tool,commercial,desktop,private,ARS,Pearson_Matthew,NA
+325,silverfast,ots,scanning and image editing tool,commercial,desktop,private,ARS,Pearson_Matthew,NA
+326,PuTTY,ots,remote work and data transfer tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+327,tableau,ots,dashboard development tool,commercial,webapp,private,ARS,Pearson_Matthew,NA
+328,Camtasia,ots,screencast recording and editing tool,commercial,desktop,private,ARS,Pearson_Matthew,NA
+329,TerraCopy,ots,digital forensics tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+330,MarcEdit,ots,metadata editing tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+331,DROID,ots,digital forensics tool,opensource,desktop,private,ARS,Pearson_Matthew,NA
+332,Voyager,ots,enterprise library cataloging and discovery platform,commercial,networked,hybrid,ARS,Pearson_Matthew,NA
+333,WebTA,ots,management and timekeeping tool,private,webapp,private,ARS,Pearson_Matthew,NA
+334,AgLearn,ots,training and development management and resources,private,webapp,private,ARS,Pearson_Matthew,NA
+335,MyEPP,ots,personnel records management,private,webapp,private,ARS,Pearson_Matthew,NA
+336,EPMS,ots,Employee management system,private,networked,private,ARS,Pearson_Matthew,NA
+337,ArcGIS Pro,ots,"ESRI owned GIS application. Used for mapping, analysis, and other GIS data tasks on a daily basis",commercial,desktop,public,FSA,Kennedy_Megan,NA
+338,Digital Globe,ots,"an open source , web application that you can view, analyze, and download Maxar data that is available to you via Global Enhanced GEOINT Delivery (G-EGD).",opensource,webapp,hybrid,FSA,Kennedy_Megan,NA
+339,R studio,ots,R studio is an analytical tool for data analysis,opensource,desktop,private,ARS,Snyder_Keirith,NA
+340,ARC GIS,ots,Geospatial tool,commercial,desktop,private,ARS,Snyder_Keirith,NA
+341,Microsoft Office,ots,Microsoft office very standard,commercial,desktop,private,ARS,Snyder_Keirith,NA
+342,JMP,ots,statistical package,commercial,desktop,private,ARS,Snyder_Keirith,NA
+343,ArcMap,ots,GIS,commercial,desktop,private,ARS,Vories_Earl,NA
+344,GeoDa,ots,spatial analysis software,freeware,desktop,public,ARS,Vories_Earl,NA
+345,Microsoft Office,ots,"spreadsheet, word processor, presentation, e-mail",commercial,desktop,private,ARS,Vories_Earl,NA
+346,SAS,ots,statistical analyses,commercial,desktop,private,ARS,Vories_Earl,NA
+347,SMS Basic,ots,Ag Leader data management,commercial,desktop,private,ARS,Vories_Earl,NA
+348,Yield Editor,ots,yield monitor data cleaning,freeware,desktop,private,ARS,Vories_Earl,NA
+349,Vesper,ots,data kriging,freeware,desktop,private,ARS,Vories_Earl,NA
+350,Climex,ots,"Climex and Dymex Suite Training is needed for proper usage
+Tools for species occurrence pattern and risk assessment
+https://www.hearne.software/Software/CLIMEX-DYMEX/Editions",commercial,desktop,private,APHIS,Shen_Zhengxing,NA
+351,Maximum Entropy Species Distribution Modeling (MaxEnt),ots,"https://biodiversityinformatics.amnh.org/open_source/maxent/ 
+
+Maxent is a highly studied and open source software used for species distribution modeling that requires presence only data. It is regarded as one of the best preforming presence only data modeling software when the correct methods are taken. It runs with Java, but requires a good amount of geoprocessing to set up the model to run correctly. Many papers have been published using maxent, and there is a google group and introduction packet that answers common questions and walks the user through setting up a run.",opensource,desktop,public,APHIS,Nicolette_Jordan,NA
+352,USDA Tableau Server,ots,"Tableau is a visual analytics platform transforming the way we use data to solve problems—empowering people and organizations to make the most of their data.
+
+https://cxodashboard.dl.usda.gov/#/home",commercial,dashboard,private,ARS,Perez de Leon_Adalberto,NA
+353,Enterprise Performance Management Application,ots,https://ehrapps.usda.gov/systems/epma/,commercial,input,private,ARS,Perez de Leon_Adalberto,NA
+354,CONCURGOV,ots,"SAP Concur offers solutions and network of travel suppliers that help create an automated, integrated corporate travel system to meet travel and expense goals.",commercial,webapp,private,ARS,Perez de Leon_Adalberto,NA
+355,AgLearn,ots,"The AgLearn system is USDA's Department-wide system for managing training records and activity at USDA. It is Powered by Totara Learns and hosted on AWS GovCloud (US). Totara Learns is an open-source enterprise LMS for corporate learning to educate, manage, and connect employees, partners, or constituents.",opensource,networked,hybrid,ARS,Perez de Leon_Adalberto,NA
+356,WebTA,ots,"Time & Attendance System
+",private,webapp,private,ARS,Perez de Leon_Adalberto,NA
+357,USAStaffing,ots,USA Staffing® is an Official U.S. Government System for authorized use only.,private,webapp,private,ARS,Perez de Leon_Adalberto,NA
+358,USAJOBS,ots,"As the Federal Government’s official employment site, USAJOBS connects job seekers with federal employment opportunities across the United States and around the world.",commercial,webapp,public,ARS,Perez de Leon_Adalberto,NA
+359,CLC Genomics Workbench,ots,comprehensive software for the analysis of nextgen sequence data,commercial,networked,private,ARS,Baerson_Scott,NA
+360,Google Maps,ots,"Commercial mapping tool, mostly used for plotting trap or survey locations and plotting routes",freeware,webapp,public,APHIS,Kimitch_Miyeko,NA
+361,SWAT-LUT,ots,"A standalone, user-friendly desktop-based tool for updating land use in the SWAT model that allows users to process multi-year land use data for long-term agricultural model runs.
+
+https://www.ars.usda.gov/research/software/download/?softwareid=SWAT-LUT&modecode=30-70-05-00",owned,desktop,public,ARS,Moriasi_Daniel,NA
+362,SAS,ots,Statistical analysis software,commercial,desktop,public,ARS,Soder_Kathy,NA
+363,SAS,ots,Statistical analysis software,commercial,desktop,public,ARS,Saporito_Lou,NA
+364,Microsoft Office,ots,"Word, Excel, Powerpoint",commercial,desktop,public,ARS,Saporito_Lou,NA
+365,Photoshop,ots,Photo editing and creative drawing software,commercial,desktop,public,ARS,Saporito_Lou,NA
+366,Microsoft office,ots,"Word processing, spreadsheet, and presentation software",commercial,desktop,private,ARS,Dell_Curtis,NA
+367,SAS,ots,Statistical software,commercial,desktop,private,ARS,Dell_Curtis,NA
+368,SigmaPlot,ots,Graphics software,opensource,desktop,private,ARS,Dell_Curtis,NA
+369,Matrix Gemini,ots,"https://www.autoscribeinformatics.com/lims/matrix-gemini
+This product is a customizable/off the shelf LIMS system for tracking laboratory samples from receipt to reporting of results.  This system can also be used to report data out to customers.   We are currently working with the design and configuration team to customize the workflow and build tables for SQL
+Challenges have been initial cost, contracting paperwork, maintenance cost and slow turn around.",private,webapp,private,ARS,Fishel_Sarah,NA
+370,ChemDraw,ots,Facilitates drawing chemical structures.,commercial,desktop,public,ARS,Kagan_Isabelle,NA
+371,Microsoft Office,ots,"Platform for word processing, calculations, and presentations.",commercial,desktop,public,ARS,Kagan_Isabelle,NA
+372,JMP,ots,Facilitates statistical analyses.,commercial,desktop,public,ARS,Kagan_Isabelle,NA
+373,KaleidaGraph,ots,"Graphics software with spreadsheet and statistics capabilities. https://www.synergy.com/plots/?gclid=CjwKCAjwtIaVBhBkEiwAsr7-cwdW3jkOmGdUDy7vclefqwVNPdAztuNM0be34iEhXj3ZZdGfW3vn1RoChcUQAvD_BwE
+",commercial,desktop,public,ARS,Flythe_Michael,NA
+374,NFC webTA (KRONOS),ots,Time and Attendance Application,private,webapp,private,FSIS,Antonetti_John,NA
+375,NFC EmpowHR (Peoplesoft),ots,"HR Processing, HSPD-12 and other modules are used",private,other,private,FSIS,Antonetti_John,all of the above
+376,CLEAR - Thomson Reuters,ots,Investigative tool related to Workers Compensation.,shared,webapp,hybrid,FSIS,Antonetti_John,NA
+377,Reasonable Accommodation,ots,Excel file tracking reasonable accommodation,commercial,desktop,private,FSIS,Antonetti_John,NA
+378,USA Staffing - OPM,ots,Hiring and Onboarding software,shared,webapp,private,FSIS,Antonetti_John,NA
+379,NFC's Insight (Oracle),ots,Reporting Tool,shared,webapp,private,FSIS,Antonetti_John,NA
+380,R programming language,ots,I use R Studio as an IDE for the R programming language and its packages to conduct analysis and modeling of environmental data.,opensource,desktop,private,ARS,Millar_David,NA
+381,ESRI ArcGIS,ots,I use ESRI products for geospatial analyses.,commercial,desktop,private,ARS,Millar_David,NA
+382,Python programming language,ots,I use Spyder as an IDE for the Python programming language and its packages to conduct analysis and modeling of environmental data.,opensource,desktop,private,ARS,Millar_David,NA
+383,Q Ground Control,ots,I use Q Ground Control for automated unoccupied aerial vehicle (UAV) data collection missions.,opensource,desktop,private,ARS,Millar_David,NA
+384,Ag Data Commons,ots,"The Ag Data Commons is a public, government, scientific research data catalog and repository available to help the agricultural research community share and discover research data funded by the United States Department of Agriculture and meet Federal open data and public access requirements.
+
+Services
+Through the Ag Data Commons, the USDA National Agricultural Library (NAL) provides services to make USDA funded research data systems and data products Findable, Accessible, Interoperable, and Reusable (FAIR). Critical functions the Ag Data Commons provides include:
+
+Scientific metadata creation and curation
+Public access to data through a catalog of USDA funded research and public APIs
+Data repository for long-term archiving (as required to support DOI service)
+The Ag Data Commons is a general repository for research data related to food and agriculture, which enables the USDA’s compliance with both public access and open data requirements to make federally funded research data open, accessible, and machine-readable. Services offered increase discoverability for open agricultural research data and provide a repository for data without a discipline-specific repository. Thus, the Ag Data Commons helps USDA-funded researchers find data of interest and meet publisher requirements to provide access to data associated with publications.
+
+https://data.nal.usda.gov/
+More information about Ag Data Commons: https://data.nal.usda.gov/about-ag-data-commons",opensource,webapp,public,ARS,Chkhenkeli_Nino,NA
+385,Tableau Desktop,ots,Data visualization software. www.tableau.com,commercial,desktop,hybrid,FNS,Kieyoomia_Lonnie,NA
+386,Microsoft Excel,ots,Microsoft Office spreadsheet application.,commercial,desktop,hybrid,FNS,Kieyoomia_Lonnie,NA
+387,ACL Analytics,ots,Data extraction and analysis software.,commercial,desktop,hybrid,FNS,Kieyoomia_Lonnie,NA
+388,Jupyter Notebook,ots,Open source tool utilizing Python to extract and model data.,opensource,desktop,private,FNS,Kieyoomia_Lonnie,NA
+389,Google Data Studio,ots,"We use Data Studio to create reports and data visualizations from own Google Analytics account, the government wide DAP account, and our CFI account for HISP metrics. 
+
+As an example, this table is created using the curators of a page on our main website (e.g. at the bottom of this page https://www.nal.usda.gov/animal-health-and-welfare/animal-welfare-act ) exported from Drupal with the page's statistics in DAP:  https://datastudio.google.com/reporting/b7f460c9-aedb-4733-94f4-11801c3221db
+
+
+And this is created with an export of our CFI data: https://datastudio.google.com/u/0/reporting/ee64b1c6-50c3-41b9-9f9b-f7ace3d5b868/page/p_pxkfy1qulc",freeware,webapp,private,ARS,Donahue_Rachel,NA
+390,OpenRefine,ots,"OpenRefine is an open source tool used for data normalization and reconciliation against external sources. We use it for various purposes, such as making sure capitalization is consistent in metadata.",opensource,desktop,private,ARS,Donahue_Rachel,NA
+391,Choptank Watershed database,ots,Database for storage of field observations.,commercial,desktop,private,ARS,McCarty_Greg,NA
+392,Matlab,ots,"High-level computer language for research modelling, data processing and analysis.  
+
+https://www.mathworks.com/products/matlab.html",commercial,desktop,private,ARS,Crow_Wade,NA
+393,JMP,ots,"This is a data analysis and graphing tool used in the Phoenix Rearing Facility, for data analysis of testing and production work in insect mass-production.",commercial,desktop,private,APHIS,Davis_Eoin,NA
+394,R,ots,Most of our SYs use R,opensource,desktop,public,ARS,Beck_John,NA
+395,SAS,ots,I think only one SY uses SAS,commercial,desktop,private,ARS,Beck_John,NA
+396,ESRI ArcGIS Pro,ots,ArcGIS PRO has taken the place of Arc GIS Desktop as our primary GIS geoprocessing software. Approximately 75% of OHS geospatial processes are completed using ArcGIS Pro software.,commercial,desktop,private,ARS,Presny_Cody,NA
+397,Google Earth Pro,ots,"Google Earth Pro (GEP) is utilized as a first line decision support application in the OHS EPD Watch Office. GEP is maintained by GIS staff to display USDA global, mission critical features. This software is utilized as an easy-to-approach analytic GIS tool.",commercial,desktop,private,ARS,Presny_Cody,NA
+398,ESRI ArcGIS Online,ots,"OHS EPD utilizes Enterprise AGOL to host and share GIS resources within our immediate organization. GIS hosted features, dashboards, and web-applications are used internally and not shared to a greater audience.",commercial,webapp,private,ARS,Presny_Cody,NA
+399,Sales Genie,ots,SITC resource.,commercial,networked,hybrid,APHIS,Davis_Eoin,NA
+400,SQL Server Management Studio,ots,"Resource utilized by SITC.
+Back end read only of SNICAS, the old AQAS – EAN & Min data base, AQAS EANs, the old ARM EAN in Data Mart Version 1 and now working on a new read-only site with Dave K with the new Version Data Mart 2.",commercial,networked,private,APHIS,Davis_Eoin,NA
+401,COGNOS,ots,"This is a SITC-utilized resource.
+PPQ access to seizure data from ARM, AQAS, and MIN.",commercial,networked,private,APHIS,Davis_Eoin,NA
+402,SalesForce,ots,Resource utilized by SITC to generate reports and data queries.,commercial,networked,private,APHIS,Davis_Eoin,NA
+403,PowerBI - Metrics,ots,"Resource utilized by SITC.
+Microsoft PowerBI reports from PPQ internal database(s).",commercial,networked,private,APHIS,Davis_Eoin,NA
+404,SharePoint,ots,SITC utilizes various SharePoint sites across APHIS.,commercial,desktop,private,APHIS,Davis_Eoin,NA
+405,MetaStorm,ots,"Utilized by SITC.
+https://bpm.aphis.usda.gov/Metastorm/Default.aspx",commercial,networked,private,APHIS,Davis_Eoin,NA
+406,Azure,ots,"Utilized by SITC.
+USDA resource.",commercial,networked,private,APHIS,Davis_Eoin,NA
+407,DataWalk,ots,"Utilized by SITC.  Still under development.
+https://datawalk.com/
+
+Almost-complete project to utilize this software to extract and present data from existing APHIS databases.",commercial,networked,private,APHIS,Davis_Eoin,NA
+408,DNASTAR,ots,"Commercially licensed suite of software for analysis of molecular sequences (DNA, protein, etc.)",commercial,desktop,private,ARS,Mitchell_Teddi,NA
+409,MEGA (Molecular Evolutionary Genetics Analysis,ots,Free software for alignment and phylogenetic analysis of molecular sequences,opensource,desktop,private,ARS,Mitchell_Teddi,NA
+410,raxmlGUI 2.0,ots,Free GUI for phylogenetic analysis of molecular sequences using maximum likelihood via the raxml servers.,freeware,desktop,private,ARS,Mitchell_Teddi,NA
+411,Box,ots,"https://www.box.com/en-gb/home
+It is a secure cloud-based content management, collaboration, and file sharing tool. It helps in securing documents from stakeholders to easily be accessible to NIFA staff. In addition, it is utilized as a collection site for a Peer Review System for panels. This is selected to only those external users who are invited and available to those internally with a license that are USDA staff.",private,webapp,private,NIFA,Azevedo_Marline,NA
+412,Microsoft Tools,ots,"The VMLRP program utilizes access database for storage of application and award data with no mechanism of publicly providing information efficiently. Microsoft excel and other programs within this tool are utilized to keep track of applications, awards, and stakeholder contacts/inputs. Sharepoint is utilized throughout the agency for ease of storage and sharing capabilities of information.",commercial,desktop,private,NIFA,Azevedo_Marline,NA
+413,OneDrive,ots,"Microsoft tool for storing and sharing data
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+414,MS Office,ots,"Microsoft suite of tools for composing documents, spreadsheets, and presentations
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+415,Visio,ots,"Microsoft tool for creating charts and drawings
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+416,EndNote,ots,"Microsoft tool for managing references
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+417,Adobe Acrobat,ots,"Software for reading and making PDF documents
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+418,SAS,ots,"Statistical software https://www.sas.com/en_us/home.html
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+419,SolidWorks,ots,"3D Parametric CAD modeling software https://www.solidworks.com/
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+420,AutoCAD,ots,"2D CAD software https://www.autodesk.com/products/autocad/overview
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+421,Arduino IDE,ots,"Software for programming Arduino compatable microcontrollers https://www.arduino.cc/en/software
+",opensource,desktop,private,ARS,Thomas_Joe,NA
+422,Python,ots,"Programming language https://www.python.org/
+",opensource,desktop,private,ARS,Thomas_Joe,NA
+423,TensorFlow,ots,"Machine learning/AI platform https://www.tensorflow.org/
+",opensource,desktop,private,ARS,Thomas_Joe,NA
+424,TensorFlow Object Detection API,ots,"Software used to train AI based object detection models https://github.com/tensorflow/models/tree/master/research/object_detection
+",opensource,desktop,private,ARS,Thomas_Joe,NA
+425,OpenCV,ots,"Software library for computer vision https://opencv.org/
+",opensource,desktop,private,ARS,Thomas_Joe,NA
+426,Anaconda,ots,"Software distribution containing python and other related packages as well as a package manager https://www.anaconda.com/
+",opensource,desktop,private,ARS,Thomas_Joe,NA
+427,KiCad,ots,"CAD Software for designing circuits and circuit boards https://www.kicad.org/
+",opensource,desktop,private,ARS,Thomas_Joe,NA
+428,Labview,ots,"Graphical programming software https://www.ni.com/en-us/shop/labview.html
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+429,Ultimake Cura,ots,"Software for prepairing 3D models for 3D printing https://ultimaker.com/software
+",opensource,desktop,private,ARS,Thomas_Joe,NA
+430,Mathcad,ots,"Freeform software interface with a comprehensive math engine https://www.mathsoft.com/
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+431,PCC Phantom Camera Control,ots,"Software for working with high speed camera files https://www.phantomhighspeed.com/resourcesandsupport/phantomresources/pccsoftware
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+432,Zoom,ots,"Software for video calls https://zoom.us/
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+433,MCC DAQ,ots,"Software to interface with MC brand DAQ hardware https://www.mccdaq.com/Software-Downloads
+",commercial,desktop,private,ARS,Thomas_Joe,NA
+434,BioEdit,ots,"Free molecular sequence analysis software, used primarily for concatenating multiple sequence alignments.",freeware,desktop,private,ARS,Mitchell_Teddi,NA
+435,Phylogenetic Analysis by Maximum Likelihood (PAML),ots,Free phylogenetic inference software with models for quantifying selection pressure from codon alignments.,freeware,desktop,private,ARS,Mitchell_Teddi,NA
+436,Chromas,ots,Free trace viewer for visualizing dideoxy sequencing electropherograms,freeware,desktop,private,ARS,Mitchell_Teddi,NA
+437,Sequence Demarcation Tool,ots,Free software for visualizing divergence among molecular sequences,freeware,desktop,private,ARS,Mitchell_Teddi,NA
+438,PoloSuite v. 2.0,ots,Commercially licensed software for analysis of bioassay data using probit or logit regression analyses,commercial,desktop,private,ARS,Mitchell_Teddi,NA
+439,GNU Image Manipulation Program (GIMP),ots,Free/Open-Source software used for figure preparation.,opensource,desktop,private,ARS,Mitchell_Teddi,NA
+440,Inkscape,ots,Free vector graphics software used for figure preparation,freeware,desktop,private,ARS,Mitchell_Teddi,NA
+441,SnapGene Viewer,ots,Free software for plasmid drawing and sequence annotation; used primarily for figure preparation,freeware,desktop,private,ARS,Mitchell_Teddi,NA
+442,MPI Bioinformatics Toolkit,ots,"Suite of programs for molecular sequence analysis; features HHpred, a sensitive database query/homology and structural prediction program using hidden Markov model profiles.",freeware,webapp,private,ARS,Mitchell_Teddi,NA
+443,FGENESV,ots,Software for identifying genes and coding sequences in virus genomes,freeware,webapp,private,ARS,Mitchell_Teddi,NA
+444,GeneMark,ots,Software for identifying genes and coding sequences in genomes,freeware,webapp,private,ARS,Mitchell_Teddi,NA
+445,Tandem Repeats Finder,ots,Program for detecting repeated sequences in genomes,freeware,webapp,private,ARS,Mitchell_Teddi,NA
+446,Reputer,ots,Program for detecting repeated sequences in genomes,freeware,webapp,private,ARS,Mitchell_Teddi,NA
+447,Google Colab,ots,"Jupyter Notebook-like environment used to share and run Python code on user-uploaded data and cloud-hosted datasets, available with a Google login",freeware,webapp,hybrid,ARS,White_Alex,NA
+448,ArcGIS Online,ots,An online platform for storing and sharing GIS layers and associated data tables with groups of collaborators.,commercial,webapp,private,ARS,White_Alex,NA
+449,ArcGIS Pro,ots,"Desktop application for creating, manipulating, and visualizing GIS data.",commercial,desktop,private,ARS,White_Alex,NA

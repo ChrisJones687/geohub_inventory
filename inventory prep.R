@@ -62,7 +62,7 @@ for (i in seq_len(nrow(sizes))) {
 
 
 ggplot(resources, aes(x = `Which of the following best describes the digital resource?`)) +
-  geom_bar(aes(fill = `Which of the following best describes the digital resource?`)) +
+  geom_bar(aes(fill = `Managing Agency or Business Center:`)) +
   theme_classic() +
   labs(title = "Digital Assets by type",
        x = "Digital Asset Type",
@@ -72,7 +72,8 @@ ggplot(resources, aes(x = `Which of the following best describes the digital res
   theme(axis.title = element_text(),
         text = element_text(family = "Rubik"),
         plot.title = element_text(hjust = 0.5),
-        legend.position = "none") +
+        # legend.position = "none"
+        ) +
   geom_text(aes(label = ..count..),
             stat = "count",
             vjust = 1.5,
@@ -298,3 +299,22 @@ ggplot(in_house, aes(x = `Is this item kept private or made publicly accessible?
             size = 8.0) +
   scale_fill_brewer(palette = "Dark2")
 ggsave("outputs/in_house_privacy.jpeg")
+
+
+ggplot(datasets, aes(x = `In what format is data stored?`)) +
+  geom_bar(aes(fill = `In what format is data stored?`)) +
+  theme_classic() +
+  labs(title = "Is the data collected observational",
+       x = "Observational",
+       y = "Number of Datasets",
+       fill = "Ownership/license status") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "Dark2")
