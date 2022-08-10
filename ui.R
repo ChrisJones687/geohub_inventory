@@ -48,5 +48,3 @@ ui <- fluidPage(
   ) # end navbar page
 
 ) # end fluid page
-
-

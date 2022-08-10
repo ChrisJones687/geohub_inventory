@@ -318,3 +318,25 @@ ggplot(datasets, aes(x = `In what format is data stored?`)) +
             vjust = 1.5,
             size = 8.0) +
   scale_fill_brewer(palette = "Dark2")
+
+ggsave("outputs/dataset_privacy.jpeg")
+
+ggplot(ots, aes(x = `Is this item kept private or made publicly accessible?`)) +
+  geom_bar(aes(fill = `Is this item kept private or made publicly accessible?`)) +
+  theme_classic() +
+  labs(title = "OTS Application Privacy Status",
+       x = "Privacy Status",
+       y = "Number of Datasets",
+       fill = "Ownership/license status") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "Dark2")
+ggsave("outputs/ots_privacy.jpeg")
+
