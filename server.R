@@ -4,8 +4,6 @@ library(ggplot2)
 library("shiny")
 library("shinycssloaders")
 library("shinythemes")
-library(folderfun)
-library(readxl)
 library("ggthemes")
 library(extrafont)
 
@@ -230,6 +228,28 @@ function(input, output, session) {
                 vjust = 1.5,
                 size = 8.0)
   })
+
+  size_plus <- reactive({
+    ggplot(datasets2, aes(x = size, fill = format)) +
+      geom_bar(position = position_dodge()) +
+      theme_classic() +
+      labs(title = "Data Size",
+           x = "Data Size",
+           y = "Number of Datasets",
+           fill = "Ownership/license status") +
+      theme_fivethirtyeight() +
+      theme(axis.title = element_text(),
+            text = element_text(family = "Rubik"),
+            plot.title = element_text(hjust = 0.5)) +
+      # geom_text(aes(label = ..count.., y = ..count.., fill = format),
+      #            stat = "count",
+      #            show.legend = FALSE,
+      #            # inherit.aes = TRUE,
+      #            # check_overlap = FALSE,
+      #            size = 8.0) +
+      scale_fill_brewer(palette = "PuOr")
+  })
+
   # Return the requested graph
   graphInput <- reactive({
     switch(input$question_id,
@@ -254,9 +274,9 @@ function(input, output, session) {
     ggplot(inhouse, aes(x = app_type)) +
       geom_bar(aes(fill = app_type)) +
       theme_classic() +
-      labs(title = "Is the data collected observational",
-           x = "Observational",
-           y = "Number of Datasets",
+      labs(title = "Application Type",
+           x = "Application type",
+           y = "Number of Applications",
            fill = "Ownership/license status") +
       theme_fivethirtyeight() +
       theme(axis.title = element_text(),
@@ -276,7 +296,7 @@ function(input, output, session) {
       theme_classic() +
       labs(title = "App Ownership status",
            x = "Ownership/license status",
-           y = "Number of Datasets",
+           y = "Number of Applications",
            fill = "Ownership/license status") +
       theme_fivethirtyeight() +
       theme(axis.title = element_text(),
@@ -296,7 +316,7 @@ function(input, output, session) {
       theme_classic() +
       labs(title = "App Privacy Status",
            x = "Privacy Status",
-           y = "Number of Datasets",
+           y = "Number of Applications",
            fill = "Ownership/license status") +
       theme_fivethirtyeight() +
       theme(axis.title = element_text(),
@@ -314,9 +334,9 @@ function(input, output, session) {
     ggplot(inhouse, aes(x = app_purpose)) +
       geom_bar(aes(fill = app_purpose)) +
       theme_classic() +
-      labs(title = "Is the data collected observational",
-           x = "Observational",
-           y = "Number of Datasets",
+      labs(title = "Application Purpose",
+           x = "Application Purpose",
+           y = "Number of Applications",
            fill = "Ownership/license status") +
       theme_fivethirtyeight() +
       theme(axis.title = element_text(),
