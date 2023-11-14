@@ -1,0 +1,125 @@
+"","Name","app_purpose","private_public","agency","ownership_status","Details"
+"1","FUSION","Data Access","hybrid","FS","owned","FUSION provides fast, efficient, and flexible access to LIDAR, IFSAR and terrain datasets.
+
+FUSION is a suite of software developed by station scientists to visualize and analyze airborne lidar data. The visualization components display project data using a 2D display typical of geographic information systems (GIS). Users interact with the 2D display to select subsets of LIDAR data for display in an interactive 3D visualization environment allowing the examination of spatially-explicit data subsets including lidar returns, images, surface models, and 3D objects (e.g. tree models). To support complex analyses, FUSION includes a comprehensive set of command-line tools that help users assess the overall quality and completeness of lidar data, develop a basic set of derived products, and automate a variety of processing and analysis tasks. FUSION also provides workflow tools to automate the application of these tools over large lidar datasets.
+
+The analysis and visualization system consists of two main programs, FUSION and LDV (LIDAR data viewer), and a collection of task-specific command line programs."
+"4","pyfao56","Model","public","ARS","opensource","Python-based formulation of the FAO-56 dual crop coefficient method for crop evapotranspiration estimation and irrigation scheduling
+
+https://github.com/kthorp/pyfao56"
+"5","GeoSim","Model","public","ARS","opensource","A model-independent, open-source geospatial tool for managing point-based environmental model simulations at multiple spatial locations
+
+https://github.com/kthorp/GeoSim"
+"7","ESRI",NA,"private","ARS","commercial","Arc GIS online and Desktop
+DSSAT
+https://www.arcgis.com/index.html
+"
+"11","CONCEPTS","Model","public","ARS","opensource","Computer model to simulate the impact of land use and land management on the physical integrity of the stream system."
+"13","GIS Dataset Viewer","Data Viz","private","FPAC","owned","ESRI map document that provides access and visualization of GIS datasets used to fulfill customer aerial imagery requests."
+"17","Salesforce/SpringCM",NA,"private","APHIS","commercial","A content holder for all regulatory documents."
+"18","Soil and Water","Decision Support","private","ARS","owned","We create data bases. We use the data bases for existing decision support software and improving those decision support software. We also do a bit of software development."
+"19","Integrated Farm System Model (IFSM)","Model","public","ARS","owned","A process level simulation of farming systems that estimates the performance, environmental impact and economics of production systems. A tool used to evaluate the potential benefits of alternative strategies for improving the sustainability of farms."
+"20","At the FRR unit, we develop new plant materials for the range, pastures ,and turf.  As part of that process we have expanded the scope of research to include bioinformatics and high-through put phenotyping by using sensors on carts, drones, and satellites","Model","public","ARS","owned","The lab will be developing models predicting agronomic traits based on geospatial data.  This will include ground truthing.  The lab is currently working on models to predict bloom abundance from satellites to enhance the ability of honey farmers to utilize pollen better.  We are also working on a grant from BLM to model future habitat associated with climate change variables and wild horse habitat."
+"22","Soil and Water Assessment Tool - SWAT watershed model","Model","public","ARS","opensource","SWAT is a watershed to river basin scale model designed to determine the impact of climate and land use and management on off site water quality and ag production. The model operates on a daily time step and requires data on soils, climate, land use and management, rivers, and reservoirs. It simulates runoff and associated sediment, nutrients, and pesticide fate and transport. It is currently used in national assessments to determine the impact of USDA conservation programs and to guide development of conservation policy. ARS is actively supporting and maintaining the model -
+https://swat.tamu.edu/"
+"23","Almanac simulation model","Model","public","ARS","owned","A process based, daily time step model for plant growth including water balance, nutrient balance, and NRCS soils info"
+"25","RUSLE2","Decision Support","public","ARS","shared","Conservation planning tool. Primary user is NRCS."
+"26","RZWQM2","Model","public","ARS","owned","This is a system model developed solely by ARS to simulate agricultural management effects on crop production and environmental quality. https://www.ars.usda.gov/plains-area/fort-collins-co/center-for-agricultural-resources-research/rangeland-resources-systems-research/docs/system/rzwqm/"
+"27","SWAT","Model","private","ARS","owned","Soil & Water Assessment  Tool"
+"28","Root Zone Water Quality Model (RZWQM)","Model","private","ARS","owned","Two-dimensional modelling software for water and solute simulation in the soil-plant-atmosphere interphase."
+"29","Root Zone Water Quality Model 2","Model","public","ARS","owned","This is an agricultural system simulation model developed by USDA Scientists. Currently, some of them are part of the Rangeland systems research unit, Fort Collins, CO.
+https://www.ars.usda.gov/plains-area/fort-collins-co/center-for-agricultural-resources-research/rangeland-resources-systems-research/docs/system/rzwqm/#Developer
+
+This is an agricultural system simulation model developed by USDA Scientists."
+"30","National Agroecosystems Model","Model","public","ARS","opensource","The National Agroecosystems model is a framework of data and models used to predict how changes in agricultural practices/policy impact the environment.  It uses many public data sources: DEM, hydrography, climate, land use/cover, irrigation, ag census, aerial photography, soils etc."
+"34","Integrated Farm System Model","Model","public","ARS","freeware","A whole farm model that we regularly use to coordinate national research and perform national assessments of agriculture. 
+
+https://www.ars.usda.gov/northeast-area/up-pa/pswmru/docs/integrated-farm-system-model/"
+"35","WEPP model","Model","public","ARS","opensource","this is an ARS in-house soil erosion prediction model"
+"41","ENWATBAL","Model","public","ARS","opensource","ENWATBAL is an energy and water balance simulation model of crop and soil processes. it uses a two surface radiation and energy balance between soil and atmosphere and plant canopy and atmosphere, and it uses finite difference methods to model soil water and heat fluxes, root water uptake, and evaporation from the soil surface. It uses irrigation data for irrigation applied to the soil surface or at some depth below the surface (buried drip irrigation lines). It uses input data of weather (solar irradiance, wind speed, air temperature and humidity) at daily or subdaily (e.g., hourly, half-hourly, 15-minute) intervals, irrigation and precipitation (start time, stop time, amount), leaf area index, and rooting pattern. It also uses input data files of soil hydraulic properties of different soil layers (horizons). Its soil discretization allows for variable vertical distances between computational nodes, including distances as small as 1 mm near the surface. It outputs evapotranspiration, energy balance components, radiation balance components, soil heat flux, soil water content, soil temperature, etc. on user-chosen intervals (typically half-hourly). It is used for investigations of crop water use, evaporation from soil surface, effects of subsurface irrigation compared with surface irrigation, effects of weather and interannual weather variations, etc."
+"47","Simulation models","Model","public","ARS","opensource","Models of hillslope erosion (tucson.ars.ag.gov/rhem/)and watershed scale hydrologic processes (tucson.ars.ag.gov/agwa/)."
+"48","Python data pipelines","Data Creation","hybrid","ARS","owned","Anaconda data platform, jyputer notebooks, python interpreter - used to develop custom data pre-processing pipelines that move field collected datasets from a variety of datalogger configurations, and standardize null characters, replace error values, make basic calculations, statistics and charts, add attributions, and output analysis ready datasets, typically for the principal investigators and GIS software."
+"49","Crop Sequence Calculator","Decision Support","public","ARS","opensource","The Cover Crop Chart (v. 3.0) is designed to assist producers with decisions on the use of cover crops in crop and forage production systems. The chart, patterned after the periodic table of elements, includes information on 66 crop species that may be planted individually or in cocktail mixtures. Information on growth cycle, relative water use, plant architecture, seeding depth, forage quality, pollination characteristics, and nutrient cycling are included for most crop species.
+
+The Cover Crop Chart is easy to use, requiring only Adobe Acrobat software. Using the chart as a guide, users can select individual crop species by clicking on the name which will direct them to additional information about the selected crop. Icons within each crop page return the user to the chart, thereby easily allowing comparisons of different crops.  
+
+https://www.ars.usda.gov/plains-area/mandan-nd/ngprl/docs/cover-crop-chart/"
+"50","Crop Sequence Calculator","Decision Support","public","ARS","opensource","The Crop Sequence Calculator (version 3.1) is a user-friendly program that runs directly from a CD-ROM, eliminating the need for additional disk space or installation procedures. The program has been expanded to provide crop sequence information on two research projects (Phase II and Phase III) conducted from 1998 through 2005 at the Northern Great Plains Research Laboratory. Information on crop production, economics, plant diseases, weeds, water use, and surface soil properties has been expanded to aid producers in their evaluation of management risks associated with different crop sequences. The user can select which group of crops are of most interest in either Phase II (above-average precipitation and a higher percentage of cool-season crops) or Phase III (below-average precipitation and a higher percentage of warm-season crops). Then choose the residue crop and expected crop from pull-down menus to view estimated yields and summary statements about production economics, disease, soil water, weeds, and surface soil properties. Information on 16 crops are covered by the two research projects, four of which were common to both. Photographs of weeds and insects along with additional resource information (e.g. many related Internet links) are also included.
+
+Version 3.1 contains the previous version, 3.0, and adds new information gathered from additional cropping sequence research, as well as supplemental information related to use of annual crops as cover crops.
+
+https://www.ars.usda.gov/plains-area/mandan-nd/ngprl/docs/crop-sequence-calculator/"
+"51","AgroEcoSystem Performance Assessment Tool","Decision Support","public","ARS","opensource","The AgroEcosystem Performance Assessment Tool is a computer program used to evaluate the agronomic and environmental performance of management practices in long-term agroecosystem experiments.  The program employs a simple scoring method to quantify the performance of management practices using indicators grouped within agroecosystem functions.  Management practices are evaluated on a relative basis using the method, thereby internalizing comparisons.  Because of its specialized application to long-term experiments, the program is designed primarily for use by agricultural researchers.
+
+https://www.ars.usda.gov/plains-area/mandan-nd/ngprl/docs/agroecosystem-performance-assessment-tool/"
+"59","MAIZSIM","Model","public","ARS","opensource","This is a maize model developed by USDA ARS ACSL."
+"60","SPUDSIM","Model","public","ARS","opensource","This is a potato model developed by the USDA ARS ACSL."
+"61","CLASSIM","Model","public","ARS","opensource","This is a GUI for the cotton, corn, soybean, and potato models developed by USDA ARS ACSL."
+"65","Yield Editor3","Model","private","ARS","owned","Yield Editor 3 used for Farming harvest gps data. developed by ARS"
+"67","PHIS",NA,"hybrid","FSIS","owned","PHIS allows IPP to input data from food safety tasks allowing agency control of industry"
+"68",NA,NA,"hybrid","APHIS","commercial","N/A"
+"70","Computer models","Model","public","ARS","owned","The products are Mechanistic, Process Level Computer Models for major crops like cotton, soybean, corn, potato and rice.  These models can be used for resource management at the form level."
+"71","STM2","Model","public","ARS","opensource","The STM2 model predicts the hourly variation in soil temperature and moisture conditions based on very limited user inputs.  
+The input requirements are:
+1.      A general soil characterization (soil texture and organic matter content)
+2.      Daily weather information limited to maximum and minimum air temperatures with daily precipitation
+"
+"72","SEEDCHASER","Model","public","ARS","opensource","SeedChaser is a 1-D empirical vertical soil tillage distribution model with 1 cm grid spacing that predicts vertical redistribution of weed seeds following user selected (a) sequences of tillage implements, and (b) initial seed distribution values. Results of this model are particularly suited for weed seed emergence modeling. However, the model can be adapted easily to any surface broadcasted agrochemical or incorporated residues."
+"73","SolarCalc","Model","public","ARS","opensource","SolarCalc is a computer model to estimate hourly incoming solar radiation from limited meteorological data."
+"74","SolarCalQ","Model","public","ARS","opensource","The purpose of the SolarCalQ Version 1 JAVA model is to simulate the spectral quality of incident solar radiation for any location on the globe, down to one minute time steps."
+"75","GlobalTempSim","Model","public","ARS","opensource","The purpose of Global TempSIM is to estimate daily maximum and minimum air temperatures for a yearly cycle at any location on the globe. Global TempSIM predicts the daily average air temperature based upon 30-yr (1961 • 1990) temperature records that were compiled and interpolated by Legates and Willmott (1990a and 1990b) with further improvements by Willmott and Matsuura (1995)."
+"76","Global RainSim","Model","public","ARS","opensource","The purpose of this tool is to estimate daily precipitation patterns for a yearly cycle at any location on the globe.  The user input is simply the latitude and longitude of the selected location."
+"77","Arduino Data Logger","Data Creation","public","ARS","opensource","Windows based serial data logging program originally written for Arduino microcontrollers, but can be used for any serial data source."
+"78","CALMIM","Model","public","ARS","opensource","The California Landfill Methane Inventory Model is a 1-dimensional soil gas transport and oxidation model that calculates annual landfill methane emissions based on the cover soil characteristics and annual climatic data for a given global location."
+"87","Li-Cor Tovi","Data Creation","private","ARS","owned","purchased software that helps further refine Eddy Flux data"
+"95","Tableau Creator",NA,"hybrid","FS","commercial","https://www.tableau.com/"
+"99","Medfoes","Model","public","ARS","opensource","Agent based simulation to help program managers effectively eradicate invasive Medfly. See http://medfoes.sourceforge.net/ for more details. We have some custom versions for comprehensive analysis."
+"100","TrapGrid","Model","public","ARS","opensource","Simulates layout of traps in an area with insect outbreak and dispersal; calculates capture probability; see https://github.com/manoukis/TrapGrid and linked sites/papers for more info"
+"106","APEX, SWAT and other computer simulation tools","Model","public","ARS","opensource","These models simulate the movement of water and solutes in and on the soil as affected by climate, land use, land management, and soil properties."
+"107","APEX-CUTE","Model","public","ARS","owned","Enables and simplifies the sensitivity analysis and auto-calibration process of APEX input parameters."
+"112","ESAP model","Model","public","ARS","owned","https://www.ars.usda.gov/pacific-west-area/riverside-ca/agricultural-water-efficiency-and-salinity-research-unit/docs/model/esap-model/"
+"114","Simultaneous Heat and Water Model","Model","public","ARS","owned","The SHAW model simulates heat, water and solute transfer in a one-dimensional profile extending from the top of a plant canopy or the snow, residue or soil surface to a specified depth within the soil. The system is represented by integrating detailed physics of vegetative cover, snow, residue and soil into one simultaneous solution. The model is sufficiently flexible to represent a broad range of conditions and the system may or may not include a vegetative canopy, snow, or a residue layer. Interrelated heat, water and solute fluxes are computed throughout the system and include the effects of soil freezing and thawing. Daily or hourly predictions include evaporation, transpiration, percolation, soil frost depth, snow depth, runoff and soil profiles of temperature, water, ice and solutes."
+"117","iSnobal","Model","public","ARS","owned","iSnobal is a spatially distributed snow energy and mass balance model developed at the USDA Agricultural Research Service (ARS) in Boise, ID."
+"122","Plutonium-based soil redistribution rate estimator","Model","private","ARS","owned","Converts 239+240Pu inventories by depth into decadal estimates of soil redistribution rates"
+"123","Agricultural conservation planning framework","Decision Support","public","ARS","owned","The Agricultural Conservation Planning Framework was developed by ARS in Ames, Iowa and consists of a conceptual framework, a geospatial database, and set of ArcGIS tools that facilitates precision conservation planning at a HUC12 watershed scale. The ACPF core database structure includes a variety of spatial and tabular datasets, including: field boundaries and land use (crop rotations derived from the NASS Cropland Data Layer), a custom extraction of the USDA gSSURGO database, and watershed boundary information. Users can freely download this database structure for each HUC12 watershed where the core data structure has been developed. 
+
+A high resolution elevation dataset is then added by the user to the data structure. A set of custom-built ArcGIS tools enables the user to perform a wide variety of conservation planning within each HUC12 watershed, including:
+Hydro-conditioning of the input LIDAR-derived digital elevation model
+Stream network and catchment development
+Field characterization (tile-drainage estimation, by-field slope statistics, and runoff risk assessment)
+Within field conservation siting: bioreactors, grassed waterways, contour buffer strips, controlled drainage, WASCOBs
+Below field conservation siting: nutrient removal wetlands
+Riparian siting: saturated buffers, riparian buffer design. 
+
+"
+"124","Lymantria dispar dispar risk model","Model","private","APHIS","owned","Species distribution model that is run annually to predict nationwide areas that have high risk of introduction of gypsy moth."
+"125","Sawmills Cluster/Outlier analysis tool","Model","private","APHIS","commercial","Modeling tool that is written in Python for use with ArcGIS cluster/outlier analysis. Input data are location of primary processing facilities for lumber and trap data for gypsy moth. Outputs hotspots for possible introduction of gypsy moth by movement of lumber to sawmills."
+"126","Asian longhorned beetle spread model","Model","private","APHIS","shared","Model written in C++ and R to generalize patterns of ALB spread."
+"127","EAB overwintering model","Model","private","APHIS","owned","Model written in R to predict probability of EAB overwintering as larvae accessible to biocontrol agents, based on degree days."
+"128","Degree day thresholds","Data Viz","private","APHIS","owned","Map products developed in R and displayed in ArcGIS demonstrating the week of the year that certain degree days are expected to be met (300, 450, 600, 800, 1400, 1800, 2500 degrees C). Used for estimating EAB phenology."
+"129","The two-step nitrification (2SN) model of soil nitrogen transformation","Model","private","ARS","owned","FOTRAN-based model described in the following publication:
+https://doi.org/10.1016/j.soilbio.2021.108341
+"
+"130","The two-step nitrification (2SN) model","Model","private","ARS","owned","FORTRAN-based computer code that solves a system coupled non-linear differential equations that describe the transformation of multiple nitrogen species in soil as described in the following publication:
+https://doi.org/10.1016/j.soilbio.2021.108341"
+"132","Golden Thread",NA,"private","ARS","commercial","image file analysis tool"
+"147","MAIZIM source code","Model","public","ARS","opensource","comprehensive simulation model of maize growth and below ground soil processes"
+"149","Software Downloads:","Model","public","ARS","owned","https://www.ars.usda.gov/midwest-area/morris-mn/soil-management-research/docs/software-downloads-available/
+
+AGNPS, Global RainSIM, Global RempSIM, Nitrogen Decision Aid, SeedChaser, Soil temperature and Moisture Model, SolarCalc, SolarCalcQ, WeedCase, ZipSearch"
+"150","GADAS","Model","hybrid","FAS","owned","It is with great pleasure that I introduce you to a state-of-the-art web-based GIS system called GADAS (Global Agricultural and Disaster Assessment System). I encourage you to explore this system to learn more about what GADAS can do for you.
+
+The International Production Assessment Division (IPAD) is part of the Global Market Analysis (GMA) within the Foreign Agricultural Service (FAS), an agency within the US Department of Agriculture (USDA). FAS-IPAD uses satellite imagery and remote sensing data to assist in its agricultural estimates of global crop conditions. The division provides monthly estimates of area, yield and production for 17 distinct commodities in over 160 countries around the world, including post-disaster assessments. GADAS is a powerful visualization tool based on an ArcGIS platform that enables FAS-IPAD analysts, and other users, to rapidly assess real-time crop conditions using a wide variety of data layers from a multitude of sources.
+
+GADAS integrates a vast array of highly detailed data streams to include daily precipitation data, vegetation index, crop masks, land cover data, irrigation and water data, elevation and infrastructure, political data, and much more. In addition, FAS-IPAD has partnered with the Pacific Disaster Center (PDC) in Hawaii to incorporate real-time data streams into GADAS for worldwide monitoring, tracking, and pre- and post-disaster agricultural assessments resulting from hurricanes, typhoons, tsunamis, floods, droughts, earthquakes and volcanic eruptions."
+"159","Synthetic Daily Weather Generator [SYNTOR]","Model","public","ARS","owned","SYNTOR Version 5 generates time-series of synthetic daily precipitation, daily minimum & maximum air temperature, and daily solar radiation at a location of interest.
+
+https://www.ars.usda.gov/research/software/download/?softwareid=SYNTOR&modecode=30-70-05-00"
+"160","LabView",NA,"private","ARS","private","Software license purchased for running our IRGAS gas analyzer"
+"161","Office 365",NA,"public","ARS","commercial","Commonly used apps (Word, Excel, Powerpoint, etc.)"
+"162","Zoom",NA,"public","ARS","commercial","Online meetings"
+"173","Agricultural Conservation Planning Framework","Decision Support","public","ARS","opensource","The ACPF was developed by ARS scientist Mark Tomer and a team at the National Laboratory for Agriculture and the Environment in Ames, IA.    The ACPF is a decision support tool to assist in the placement of conservation practices on agricultural lands. The ACPF uses ArcGIS toolboxes and workflows to analyze small watersheds and high light landscape positions that are good options for effective conservation practice placement. Supporting high resolution DEMs and common land use data are critical for the implementation of the ACPF.  The tools and training materials is now hosted by Iowa State University with support from NRCS.
+https://acpf4watersheds.org/"
+"180","STARFM",NA,"public","ARS","owned","https://www.ars.usda.gov/research/software/download/?softwareid=432&modecode=80-42-05-10"
+"181","SPAW",NA,"public","ARS","owned","https://www.ars.usda.gov/research/software/download/?softwareid=492&modecode=80-42-05-10"
+"182","AROP",NA,"public","ARS","owned","https://www.ars.usda.gov/research/software/download/?softwareid=364&modecode=80-42-05-10"

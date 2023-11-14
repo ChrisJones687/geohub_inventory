@@ -1,0 +1,12 @@
+resource_name,type,format,storage_location,private_public,agency,size,Type
+Plant Stress & Water Conservation Meteorological Tower,dataset,excel,server,public,ARS,100gb,Weather
+Big Spring Meteorological Tower,dataset,excel,server,public,ARS,100gb,Weather
+"Data Archive for the PSWC Meteorological Tower, Lubbock, Texas",dataset,excel,other,public,ARS,100gb,Weather
+Meteorological station data,dataset,excel,server,hybrid,ARS,1tb,Weather
+NDAWN weather data,dataset,excel,cloud,public,ARS,unknown,Weather
+local weather data collected at various sites across Texas,dataset,excel,local,hybrid,ARS,100gb,Weather
+Weather data,dataset,database,server,hybrid,FAS,1tbplus,Weather
+"Standard Quality Controlled Research Weather Data – USDA-ARS, Bushland, Texas",dataset,excel,server,public,ARS,100gb,Weather
+"Standard Weather Data for the Bushland, Texas, Alfalfa Experiments",dataset,excel,server,public,ARS,100gb,Weather
+"Standard Weather Data for the Bushland, Texas, Large Weighing Lysimeter Experiments",dataset,excel,server,public,ARS,100gb,Weather
+Weather data from Swan Lake Research Farm,dataset,excel,local,public,ARS,unknown,Weather

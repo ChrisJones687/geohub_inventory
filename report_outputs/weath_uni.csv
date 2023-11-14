@@ -1,0 +1,11 @@
+,Name,Type,Duplicate
+1,AERMOD,Weather,2
+2,AgriMet,Weather,1
+3,AWIS,Weather,1
+4,canopy temp,Weather,1
+5,CHIRPS,Weather,1
+6,MODIS NDVI Weather Data,Weather,1
+7,NLDAS,Weather,1
+8,NWS weather,Weather,1
+9,Tetroons,Weather,1
+10,weather station,Weather,11

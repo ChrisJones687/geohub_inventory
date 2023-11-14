@@ -1,0 +1,6 @@
+name,details,ownership_status,Storage,Privacy,agency,size
+NAIP,We use the NAIP imagery all the time.  This imagery is flown by FPAC GEO,owned,server,public,NRCS,1tbplus
+NAIP,Natural color digital imagery flown from about 2003 to the present in quarter quad format.  Imagery is georeferenced.,owned,server,public,FPAC,unknown
+NAIP,Dataset that contains the NAIP quarter quad boundary polygons for each program year.,owned,server,public,FPAC,unknown
+NAIP,"NAIP imagery is a critical tool for assessing landscape integrity and status. Imagery is normally color leaf-on photography at 1 meter resolution  There are normally additional derivatives that may accompany the data including point clouds, infrared imagery, and others.",shared,cloud,public,FS,unknown
+NAIP,high-definition landcover,owned,other,public,APHIS,unknown

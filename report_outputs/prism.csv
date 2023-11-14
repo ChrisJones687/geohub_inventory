@@ -1,0 +1,5 @@
+Name,details,Ownership,Format,Storage,Privacy,Agency,Size,Type
+PRISM,"https://www.prism.oregonstate.edu   this dataset contains lots of precipitation data, as well as other climate observation data.",opensource,geoformat,local,public,NRCS,unknown,Climate
+PRISM,https://www.prism.oregonstate.edu/,freeware,geoformat,other,public,ARS,1tb,Climate
+PRISM,"The PRISM Climate Group gathers climate observations from a wide range of monitoring networks, applies sophisticated quality control measures, and develops spatial climate datasets to reveal short- and long-term climate patterns. The resulting datasets incorporate a variety of modeling techniques and are available at multiple spatial/temporal resolutions, covering the period from 1895 to the present. Whenever possible, we offer these datasets to the public, either free of charge or for a fee (depending on data set size/complexity and funding available for the activity).",opensource,database,cloud,public,ARS,unknown,Climate
+PRISM,PRISM Climate Data - Oregon State University,opensource,geoformat,other,public,ARS,unknown,Climate
