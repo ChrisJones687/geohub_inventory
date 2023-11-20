@@ -11,12 +11,16 @@ contact <- resources  <- read_excel("data/GEA_survey_contacts.xlsx", "Summary")
 
 resources  <- read_excel("data/GEA_Digital_Inventory_Draft_stakeholder5.xlsm", "resourceinfobeg_1")
 #
-resources2 <- read.csv("data/Survey2/resourceinfobeg_1.csv")
+resources2 <- read_excel("data/GEA_Digital_Inventory.xlsm", "resourceinfobeg_1")
 resources2$`Managing Agency or Business Center:`[resources2$`Managing Agency or Business Center:` == "RHS"] <- "RD"
 # table(resources2$Survey)
 # reps <-
 #   data.frame(table(resources2$`Managing Agency or Business Center:`[resources2$`Managing Agency or Business Center:` != "RMA"]))
 
+# Survey 2 Personnel
+personnel <- read.csv("data/Survey2/GEA_Digital_Inventory_2023_v5_0.csv")
+# Survey 2 metadata
+metadata <- read.csv("data/Survey2/resourceinfobeg_1.csv")
 
 agencies <- length(unique(resources$`Managing Agency or Business Center:`))
 n_res <- nrow(resources)
@@ -393,6 +397,53 @@ ggplot(datasets2, aes(x = private_public)) +
   scale_fill_brewer(palette = "Dark2")
 
 ggsave("report2_outputs/privacy.jpeg")
+
+# Does the resource have associated metadata?
+ggplot(metadata, aes(x = Does.the.resource.have.associated.metadata.)) +
+  geom_bar(aes(fill = Does.the.resource.have.associated.metadata.)) +
+  theme_classic() +
+  labs(title = "Dataset Metadata Status",
+       x = "Metadata Status",
+       y = "Number of Datasets",
+       fill = "Metadata Status") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "Dark2")
+
+ggsave("report2_outputs/metadata.jpeg")
+# What format is the metadata?
+# Metadata link?
+# Is the metadata designed with a standard (e.g., ISO) in mind?
+ggplot(metadata, aes(x = Is.the.metadata.designed.with.a.standard..e.g...ISO.19115..in.mind.)) +
+  geom_bar(aes(fill = Is.the.metadata.designed.with.a.standard..e.g...ISO.19115..in.mind.)) +
+  theme_classic() +
+  labs(title = "Dataset Metadata Standard Status",
+       x = "Metadata Standard Status",
+       y = "Number of Datasets",
+       fill = "Metadata Standard Status") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "Dark2")
+
+ggsave("report2_outputs/metadata_standard.jpeg")
+# Which metadata standard does this resource use?
+# In your estimation, how closely does the metadata currently meet standard?
+# What is needed to increase alignment with metadata standards?
+# What is need to meet standard?
 
 q <- data.frame(table(datasets2$collection_method))
 ## Inhouse applications
