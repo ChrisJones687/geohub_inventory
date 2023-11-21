@@ -21,6 +21,15 @@ resources2$`Managing Agency or Business Center:`[resources2$`Managing Agency or 
 personnel <- read.csv("data/Survey2/GEA_Digital_Inventory_2023_v5_0.csv")
 # Survey 2 metadata
 metadata <- read.csv("data/Survey2/resourceinfobeg_1.csv")
+metadata <- metadata %>%
+  rename(metadata_status = Does.the.resource.have.associated.metadata.,
+         metadata_format = What.format.is.the.metadata.,
+         metadata_standard_status = Is.the.metadata.designed.with.a.standard..e.g...ISO.19115..in.mind.,
+         metadata_standard = Which.metadata.standard.does.this.resource.use.,
+         metadata_standard_measure = In.your.estimation..how.closely.does.the.metadata.currently.meet.that.standard..Choose.a.value.between.0.10..10.meaning.the.metadata.most.closely.meets.the.standard.)
+
+metadata$metadata_standard_status[metadata$metadata_standard_status == ""] <- NA
+metadata$metadata_standard[metadata$metadata_standard == ""] <- NA
 
 agencies <- length(unique(resources$`Managing Agency or Business Center:`))
 n_res <- nrow(resources)
@@ -398,14 +407,15 @@ ggplot(datasets2, aes(x = private_public)) +
 
 ggsave("report2_outputs/privacy.jpeg")
 
+# Metadata charts
 # Does the resource have associated metadata?
-ggplot(metadata, aes(x = Does.the.resource.have.associated.metadata.)) +
-  geom_bar(aes(fill = Does.the.resource.have.associated.metadata.)) +
+ggplot(metadata, aes(x = metadata_status)) +
+  geom_bar(aes(fill = metadata_status)) +
   theme_classic() +
   labs(title = "Dataset Metadata Status",
-       x = "Metadata Status",
+       x = "Metadata Status (Yes/No)",
        y = "Number of Datasets",
-       fill = "Metadata Status") +
+       fill = "Dataset Metadata Association Status") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
         text = element_text(family = "Rubik"),
@@ -417,17 +427,17 @@ ggplot(metadata, aes(x = Does.the.resource.have.associated.metadata.)) +
             size = 8.0) +
   scale_fill_brewer(palette = "Dark2")
 
-ggsave("report2_outputs/metadata.jpeg")
+ggsave("report2_outputs/metadata_status.jpeg")
 # What format is the metadata?
 # Metadata link?
 # Is the metadata designed with a standard (e.g., ISO) in mind?
-ggplot(metadata, aes(x = Is.the.metadata.designed.with.a.standard..e.g...ISO.19115..in.mind.)) +
-  geom_bar(aes(fill = Is.the.metadata.designed.with.a.standard..e.g...ISO.19115..in.mind.)) +
+ggplot(metadata, aes(x = metadata_standard_status)) +
+  geom_bar(aes(fill = metadata_standard_status)) +
   theme_classic() +
   labs(title = "Dataset Metadata Standard Status",
        x = "Metadata Standard Status",
        y = "Number of Datasets",
-       fill = "Metadata Standard Status") +
+       fill = "Dataset Associated Metadata Standard Assigned") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
         text = element_text(family = "Rubik"),
@@ -439,9 +449,28 @@ ggplot(metadata, aes(x = Is.the.metadata.designed.with.a.standard..e.g...ISO.191
             size = 8.0) +
   scale_fill_brewer(palette = "Dark2")
 
-ggsave("report2_outputs/metadata_standard.jpeg")
+ggsave("report2_outputs/metadata_standard_status.jpeg")
 # Which metadata standard does this resource use?
 # In your estimation, how closely does the metadata currently meet standard?
+ggplot(metadata, aes(x = metadata_standard_measure)) +
+  geom_bar(aes(fill = metadata_standard_measure)) +
+  theme_classic() +
+  labs(title = "Measure of Dataset Metadata to Standard",
+       x = "Measure of Dataset Metadata Standard",
+       y = "Number of Datasets",
+       fill = "1-10 How Well Metadata to Standard") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "Dark2")
+
+ggsave("report2_outputs/metadata_standard_measure.jpeg")
 # What is needed to increase alignment with metadata standards?
 # What is need to meet standard?
 
