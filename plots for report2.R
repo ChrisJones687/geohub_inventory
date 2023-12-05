@@ -19,7 +19,8 @@ contact <- contact %>%
 # Survey 2 resources
 resources <- read.csv("data/Survey2/resourceinfobeg_1.csv")
 resources <- resources %>%
-  rename(metadata_status = Does.the.resource.have.associated.metadata.,
+  rename(data_type = Describe.the.resource.or.product.in.detail..If.there.is.additional.information.you.wish.to.provide..please.include.the.URL.of.any.relevant.documents.or.websites.,
+         metadata_status = Does.the.resource.have.associated.metadata.,
          metadata_format = What.format.is.the.metadata.,
          metadata_standard_status = Is.the.metadata.designed.with.a.standard..e.g...ISO.19115..in.mind.,
          metadata_standard = Which.metadata.standard.does.this.resource.use.,
@@ -253,6 +254,26 @@ ggplot(resources, aes(x = storage_location)) +
 
 ggsave("report2_outputs/storage_size.jpeg")
 
+resources$data_type[resources$data_type == ''] <- NA
+resources$data_type[grepl("NOT SURE",toupper(resources$data_type))] <- NA
+resources$data_type[grepl("HTTPS",toupper(resources$data_type))] <- NA
+resources$data_type[grepl("SOIL",toupper(resources$data_type))] <- "Soil"
+resources$data_type[grepl("LAND",toupper(resources$data_type))] <- "Land"
+resources$data_type[grepl("AERIAL",toupper(resources$data_type))] <- "UAS/Imagery"
+resources$data_type[grepl("CLIMATE",toupper(resources$data_type))] <- "Climate"
+resources$data_type[grepl("BOUNDARY",toupper(resources$data_type))] <- "Boundary"
+resources$data_type[grepl("CROP",toupper(resources$data_type))] <- "Crop"
+resources$data_type[grepl("FARM",toupper(resources$data_type))] <- "Crop"
+resources$data_type[grepl("PEST",toupper(resources$data_type))] <- "Pest/Disease"
+resources$data_type[grepl("TRANSPORT",toupper(resources$data_type))] <- "Transportation"
+resources$data_type[grepl("DISEASE",toupper(resources$data_type))] <- "Pest/Disease"
+resources$data_type[grepl("IMAGERY",toupper(resources$data_type))] <- "Imagery"
+resources$data_type[grepl("VEGETATION",toupper(resources$data_type))] <- "Vegetation"
+resources$data_type[grepl("FOREST",toupper(resources$data_type))] <- "Vegetation"
+resources$data_type[grepl("WATER",toupper(resources$data_type))] <- "Water"
+resources$data_type[grepl("TOPOGRAPHY",toupper(resources$data_type))] <- "Land"
+resources$data_type[grepl("TOPOGRAPHY",toupper(resources$data_type))] <- "Land"
+resources$data_type[grepl("LIDAR",toupper(resources$data_type))] <- "LiDAR"
 # datasets2$data_type[datasets2$data_type == ''] <- NA
 # datasets2$data_type[datasets2$data_type == 'Animal'] <- NA
 # datasets2$data_type[datasets2$data_type == 'Soil Water'] <- NA
@@ -491,7 +512,7 @@ ggplot(resources, aes(x = ownership_status)) +
   theme(axis.title = element_text(),
         text = element_text(family = "Rubik"),
         plot.title = element_text(hjust = 0.5),
-        legend.position = "right") +
+        legend.position = "none") +
   geom_text(aes(label = ..count..),
             stat = "count",
             vjust = 1.5,
@@ -501,25 +522,10 @@ ggplot(resources, aes(x = ownership_status)) +
 ggsave("report2_outputs/metadata_ownership.jpeg")
 
 # What format is the metadata?
-ggplot(resources, aes(x = metadata_format)) +
-  geom_bar(aes(fill = metadata_format)) +
-  theme_classic() +
-  labs(title = "Data Format",
-       x = "Data Format",
-       y = "Number of Datasets",
-       fill = "Ownership/license status") +
-  theme_fivethirtyeight() +
-  theme(axis.title = element_text(),
-        text = element_text(family = "Rubik"),
-        plot.title = element_text(hjust = 0.5),
-        legend.position = "none") +
-  geom_text(aes(label = ..count..),
-            stat = "count",
-            vjust = 1.5,
-            size = 8.0) +
-  scale_fill_brewer(palette = "PuOr")
+library(gridExtra)
+metadata_format <- data.frame(unique(resources$metadata_format))
+grid.table(metadata_format)
 
-ggsave("report2_outputs/metadata_format.jpeg")
 # Metadata link?
 # Is the metadata designed with a standard (e.g., ISO) in mind?
 ggplot(resources, aes(x = metadata_standard_status)) +
