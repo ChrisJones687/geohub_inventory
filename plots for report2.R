@@ -16,8 +16,6 @@ contact <- contact %>%
   group_by(Agency) %>%
   summarise('Sum of # of contacts' = n())
 
-# resources  <- read_excel("data/GEA_Digital_Inventory_Draft_stakeholder5.xlsm", "resourceinfobeg_1")
-
 # Survey 2 resources
 resources <- read.csv("data/Survey2/resourceinfobeg_1.csv")
 resources <- resources %>%
@@ -40,28 +38,35 @@ resources <- resources %>%
          continuous = if_else(grepl("CONTINUOUS", toupper(collection_method)),TRUE,FALSE))
 
 resources$Managing.Agency.or.Business.Center.[resources$Managing.Agency.or.Business.Center. == "RHS"] <- "RD"
+
+# Classify and clean answers to metadata standard
 resources$metadata_standard_status[resources$metadata_standard_status == ""] <- NA
 resources$metadata_standard[resources$metadata_standard == ""] <- NA
 resources$metadata_standard[grepl("do not know",resources$metadata_standard)] <- NA
 resources$metadata_standard[resources$metadata_standard == "EGMO Directive"] <- "ISO 19115"
 resources$metadata_standard[grepl("19115",resources$metadata_standard)] <- "ISO 19115"
-resources$metadata_standard[grepl("ISO",resources$metadata_standard)] <- "ISO 19115"
+resources$metadata_standard[grepl("ISO",toupper(resources$metadata_standard))] <- "ISO 19115"
 
+# Classify and clean answers to metadata format
+resources$metadata_format[resources$metadata_format == ""] <- NA
+resources$metadata_format[grepl("UNKNOWN",toupper(resources$metadata_format))] <- NA
+resources$metadata_format[grepl("NOT",resources$metadata_format)] <- NA
+resources$metadata_format[grepl("VARIETY",toupper(resources$metadata_format))] <- NA
+resources$metadata_format[grepl("VARIOUS",toupper(resources$metadata_format))] <- NA
+resources$metadata_format[grepl("VARIES",toupper(resources$metadata_format))] <- NA
+resources$metadata_format[resources$metadata_format == "?"] <- NA
+resources$metadata_format[grepl("DON'T KNOW",toupper(resources$metadata_format))] <- NA
+resources$metadata_format[grepl("UNSURE",toupper(resources$metadata_format))] <- NA
+resources$metadata_format[grepl("IDK",toupper(resources$metadata_format))] <- NA
+resources$metadata_format[resources$metadata_format == "I have no idea"] <- NA
+resources$metadata_format[resources$metadata_format == "Not certain.  "] <- NA
+resources$metadata_format[grepl("HTTP",toupper(resources$metadata_format))] <- "WEBSITE"
+resources$metadata_format[grepl("ONLINE",toupper(resources$metadata_format))] <- "WEBSITE"
+resources$metadata_format[grepl("WEBSITE",toupper(resources$metadata_format))] <- "WEBSITE"
 resources$metadata_format[grepl("ISO",resources$metadata_format)] <- "ISO 19115"
 resources$metadata_format[grepl("19115",resources$metadata_format)] <- "ISO 19115"
 resources$metadata_format[grepl("PDF",toupper(resources$metadata_format))] <- "PDF"
 resources$metadata_format[grepl("CSV",toupper(resources$metadata_format))] <- "CSV"
-resources$metadata_format[resources$metadata_format == ""] <- NA
-resources$metadata_format[grepl("UNKNOWN",toupper(resources$metadata_format))] <- NA
-resources$metadata_format[grepl("Not sure",resources$metadata_format)] <- NA
-resources$metadata_format[grepl("VARIETY",resources$metadata_format)] <- NA
-resources$metadata_format[grepl("VARIOUS",resources$metadata_format)] <- NA
-resources$metadata_format[grepl("VARIES",resources$metadata_format)] <- NA
-resources$metadata_format[resources$metadata_format == "?"] <- NA
-resources$metadata_format[grepl("DON'T KNOW",toupper(resources$metadata_format))] <- NA
-resources$metadata_format[grepl("IDK",toupper(resources$metadata_format))] <- NA
-resources$metadata_format[resources$metadata_format == "I have no idea"] <- NA
-resources$metadata_format[resources$metadata_format == "Not certain.  "] <- NA
 resources$metadata_format[grepl("EXCEL",toupper(resources$metadata_format))] <- "EXCEL"
 resources$metadata_format[grepl("XML",toupper(resources$metadata_format))] <- "XML"
 resources$metadata_format[grepl("HTML",toupper(resources$metadata_format))] <- "HTML"
@@ -73,9 +78,11 @@ resources$`Managing Agency or Business Center:`[resources$`Managing.Agency.or.Bu
 # reps <-
 #   data.frame(table(resources2$`Managing Agency or Business Center:`[resources2$`Managing Agency or Business Center:` != "RMA"]))
 
+# Listing of records with inhouse listed as digital resource
 inhouse <- resources %>%
   filter(digital_resource == "inhouse")
 
+# Listing of records with dataset listed as digital resource
 dataset <- resources %>%
   filter(digital_resource == "dataset")
 
@@ -474,7 +481,7 @@ ggsave("report2_outputs/metadata_status.jpeg")
 
 #Metadata ownership status
 ggplot(resources, aes(x = ownership_status)) +
-  geom_bar(aes(fill = metadata_status)) +
+  geom_bar(aes(fill = metadata_status), position = "dodge") +
   theme_classic() +
   labs(title = "Dataset Metadata Status by Ownership",
        x = "Ownership Status",
@@ -484,7 +491,7 @@ ggplot(resources, aes(x = ownership_status)) +
   theme(axis.title = element_text(),
         text = element_text(family = "Rubik"),
         plot.title = element_text(hjust = 0.5),
-        legend.position = "none") +
+        legend.position = "right") +
   geom_text(aes(label = ..count..),
             stat = "count",
             vjust = 1.5,
@@ -518,10 +525,10 @@ ggsave("report2_outputs/metadata_format.jpeg")
 ggplot(resources, aes(x = metadata_standard_status)) +
   geom_bar(aes(fill = metadata_standard_status)) +
   theme_classic() +
-  labs(title = "Dataset Metadata Standard Status",
-       x = "Metadata Standard Status",
+  labs(title = "Datasets with Standard Associated with Metadata",
+       x = "Metadata Associated with Standard (Yes/No/NA)",
        y = "Number of Datasets",
-       fill = "Dataset Associated Metadata Standard Assigned") +
+       fill = "Datasets with Standard Associated with Metadata") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
         text = element_text(family = "Rubik"),
@@ -578,14 +585,14 @@ ggplot(inhouse, aes(x = app_type)) +
             size = 8.0) +
   scale_fill_brewer(palette = "Purples")
 
-
+ggsave("report2_outputs/app_type.jpeg")
 
 ggplot(inhouse, aes(x = app_type)) +
   geom_bar(aes(fill = ownership_status)) +
   theme_classic() +
   labs(x = "Application type",
        y = "Number of Applications",
-       fill = "Application Purpose") +
+       fill = "Application Ownership") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
         text = element_text(family = "Rubik"),
@@ -595,6 +602,8 @@ ggplot(inhouse, aes(x = app_type)) +
             vjust = 1.0,
             size = 8.0) +
   scale_fill_brewer(palette = "PuOr")
+
+ggsave("report2_outputs/app_type_ownership.jpeg")
 
 ## Fixing Errors
 # inhouse_nona <- inhouse[!is.na(inhouse$app_purpose), ]
@@ -717,3 +726,4 @@ ggsave("report2_outputs/inhouse_privacy_ownership.jpeg")
 #
 # nas <- models[is.na(models$app_purpose), ]
 # models <- models[!is.na(models$app_purpose), ]
+
