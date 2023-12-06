@@ -266,12 +266,14 @@ resources$data_type[grepl("WSS",toupper(resources$data_type))] <- "Soil"
 resources$data_type[grepl("IMAGERY",toupper(resources$data_type))] <- "Imagery"
 resources$data_type[grepl("IMAGES",toupper(resources$data_type))] <- "Imagery"
 resources$data_type[grepl("RASTER",toupper(resources$data_type))] <- "Imagery"
+resources$data_type[grepl("DIGITALGLOBE",toupper(resources$data_type))] <- "Imagery"
 
 resources$data_type[grepl("CLIMATE",toupper(resources$data_type))] <- "Climate"
 resources$data_type[grepl("TEMPERATURE",toupper(resources$data_type))] <- "Climate"
 
 resources$data_type[grepl("CROP",toupper(resources$data_type))] <- "Crop"
 resources$data_type[grepl("FARM",toupper(resources$data_type))] <- "Crop"
+resources$data_type[grepl("USDA",toupper(resources$data_type))] <- "Crop"
 
 resources$data_type[grepl("TRANSPORT",toupper(resources$data_type))] <- "Transportation"
 
@@ -284,6 +286,7 @@ resources$data_type[grepl("FIA",toupper(resources$data_type))] <- "Genomic"
 
 resources$data_type[grepl("WATER",toupper(resources$data_type))] <- "Water"
 resources$data_type[grepl("USFWS NWI",toupper(resources$data_type))] <- "Water"
+resources$data_type[grepl("FLOOD",toupper(resources$data_type))] <- "Water"
 
 resources$data_type[grepl("TOPOGRAPHY",toupper(resources$data_type))] <- "Land"
 resources$data_type[grepl("LIDAR",toupper(resources$data_type))] <- "Land"
@@ -292,7 +295,9 @@ resources$data_type[grepl("LAND",toupper(resources$data_type))] <- "Land"
 resources$data_type[grepl("ROADS",toupper(resources$data_type))] <- "Land"
 resources$data_type[grepl("USGS",toupper(resources$data_type))] <- "Land"
 resources$data_type[grepl("WEPP",toupper(resources$data_type))] <- "Land"
-resources$data_type[grepl("GOOGLE EARTH",toupper(resources$data_type))] <- "Land"
+resources$data_type[grepl("EARTH",toupper(resources$data_type))] <- "Land"
+resources$data_type[grepl("SITE",toupper(resources$data_type))] <- "Land"
+
 
 resources$data_type[grepl("PUBLIC HEAL",toupper(resources$data_type))] <- "Health"
 
@@ -303,38 +308,43 @@ resources$data_type[grepl("AGOL",toupper(resources$data_type))] <- "Boundary"
 resources$data_type[grepl("ARCMAP",toupper(resources$data_type))] <- "Boundary"
 resources$data_type[grepl("ARCGIS",toupper(resources$data_type))] <- "Boundary"
 resources$data_type[grepl("SPATIAL TABLES",toupper(resources$data_type))] <- "Boundary"
+resources$data_type[grepl("SUBDIVISIONS",toupper(resources$data_type))] <- "Boundary"
 
 resources$data_type[grepl("GENOMIC",toupper(resources$data_type))] <- "Genomic"
 resources$data_type[grepl("BEE BIOLOGY",toupper(resources$data_type))] <- "Genomic"
 resources$data_type[grepl("SPECIES",toupper(resources$data_type))] <- "Genomic"
 resources$data_type[grepl("WILDLIFE",toupper(resources$data_type))] <- "Genomic"
 
-resources$data_type[grepl("ACCESS",toupper(resources$data_type))] <- "Collection/Storage"
-resources$data_type[grepl("DATABASE",toupper(resources$data_type))] <- "Collection/Storage"
-resources$data_type[grepl("COLLECTION",toupper(resources$data_type))] <- "Collection/Storage"
-resources$data_type[grepl("SURVEY 123",toupper(resources$data_type))] <- "Collection/Storage"
-resources$data_type[grepl("RD APPLY",toupper(resources$data_type))] <- "Collection/Storage"
-resources$data_type[grepl("CSV",toupper(resources$data_type))] <- "Collection/Storage"
-resources$data_type[grepl("XCEL",toupper(resources$data_type))] <- "Collection/Storage"
-resources$data_type[grepl("LOCATIONS",toupper(resources$data_type))] <- "Collection/Storage"
-resources$data_type[grepl("TOOLS",toupper(resources$data_type))] <- "Collection/Storage"
-resources$data_type[grepl("HERITAGE",toupper(resources$data_type))] <- "Collection/Storage"
-resources$data_type[grepl("CITRIX",toupper(resources$data_type))] <- "Collection/Storage"
-resources$data_type[grepl("COLLECT",toupper(resources$data_type))] <- "Collection/Storage"
-resources$data_type[grepl("CONTACT",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("ACCESS",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("DATABASE",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("COLLECTION",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("SURVEY 123",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("RD APPLY",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("CSV",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("XCEL",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("LOCATIONS",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("TOOLS",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("PLANNING TOOL",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("HERITAGE",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("CITRIX",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("COLLECT",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("CONTACT",toupper(resources$data_type))] <- "Collection\nStorage"
+resources$data_type[grepl("DATA.GOV",toupper(resources$data_type))] <- "Collection\nStorage"
 
 # Dataset for the purpose of plotting data_type independently
 dataset2 <- resources[!is.na(resources$data_type), ]
 
 # Fixing Errors
 ggplot(dataset2, aes(x = data_type)) +
-  geom_bar(aes(fill = data_type)) +
+  geom_bar(aes(fill = data_type), position = position_dodge(0.5)) +
+  ylim(0, 30) +
   theme_classic() +
   labs(x = "Dataset Type",
        y = "Number of Datasets",
        fill = "data_type") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
+        axis.text.x = element_text(size = 8),
         text = element_text(family = "Rubik"),
         plot.title = element_text(hjust = 0.5),
         legend.position = "none") +
@@ -348,12 +358,14 @@ ggsave("report2_outputs/data_type.jpeg")
 
 ggplot(dataset2, aes(x = data_type)) +
   geom_bar(aes(fill = storage_location)) +
+  ylim(0, 30) +
   theme_classic() +
   labs(x = "Dataset Type",
        y = "Number of Datasets",
        fill = "data_type") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
+        axis.text.x = element_text(size = 8),
         text = element_text(family = "Rubik"),
         plot.title = element_text(hjust = 0.5)) +
   geom_text(aes(label = ..count..),
@@ -510,8 +522,8 @@ ggplot(resources, aes(x = private_public)) +
 
 ggsave("report2_outputs/privacy.jpeg")
 
-# Metadata charts
-# Does the resource have associated metadata?
+## Metadata charts
+# 1. Does the resource have associated metadata?
 ggplot(resources, aes(x = metadata_status)) +
   geom_bar(aes(fill = metadata_status)) +
   theme_classic() +
@@ -532,33 +544,85 @@ ggplot(resources, aes(x = metadata_status)) +
 
 ggsave("report2_outputs/metadata_status.jpeg")
 
-#Metadata ownership status
+#2. Which Agency has metadata associated with data?
 ggplot(resources, aes(x = Managing.Agency.or.Business.Center.)) +
   geom_bar(aes(fill = metadata_status)) +
   theme_classic() +
   labs(title = "Datasets with Metadata by Agency",
        x = "Agency",
        y = "Number of Datasets",
-       fill = "Metadata Status (Yes/No)") +
+       fill = "Dataset has Metadata?") +
+  ylim(0, 100) +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
         text = element_text(family = "Rubik"),
         plot.title = element_text(hjust = 0.5)) +
-  geom_text(aes(label = ..count..),
+  geom_text(aes(fill = metadata_status,label = ..count..),
             stat = "count",
-            vjust = 0.5,
-            size = 8.0) +
+            vjust = -0.5,
+            size = 2.0,
+            position = "stack") +
   scale_fill_brewer(palette = "Dark2")
 
 ggsave("report2_outputs/agency_metadata.jpeg")
 
-# Metadata link?
-# Is the metadata designed with a standard (e.g., ISO) in mind?
-ggplot(resources, aes(x = metadata_standard_status)) +
+#3. Which data types have associated metadata?
+ggplot(dataset2, aes(x = data_type)) +
+  geom_bar(aes(fill = metadata_status)) +
+  theme_classic() +
+  ylim(0,25) +
+  labs(title = "Datasets with Metadata by Type of Data",
+       x = "data_type",
+       y = "Number of Datasets",
+       fill = "Dataset has Metadata?") +
+  ylim(0, 25) +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        axis.text.x = element_text(size = 8),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(fill = metadata_status,label = ..count..),
+            stat = "count",
+            vjust = -0.5,
+            size = 5.0,
+            position = "stack") +
+  scale_fill_brewer(palette = "Dark2")
+
+ggsave("report2_outputs/data_type_metadata.jpeg")
+
+dataset3 <- dataset2[dataset2$app_type != '',]
+
+# 4. Which app types have associated metadata?
+ggplot(dataset3, aes(x = app_type)) +
+  geom_bar(aes(fill = metadata_status)) +
+  theme_classic() +
+  labs(title = "Datasets with Metadata by Type of Application",
+       x = "Type of Application",
+       y = "Number of Datasets",
+       fill = "Dataset has Metadata?") +
+  ylim(0, 20) +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        axis.text.x = element_text(size = 8),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(fill = metadata_status,label = ..count..),
+            stat = "count",
+            vjust = -0.5,
+            size = 5.0,
+            position = "stack") +
+  scale_fill_brewer(palette = "Dark2")
+
+ggsave("report2_outputs/app_type_metadata.jpeg")
+
+metadata_stnd <- dataset2[!is.na(dataset2$metadata_standard_status),]
+
+# 5. Is the metadata designed with a standard (e.g., ISO) in mind?
+ggplot(metadata_stnd, aes(x = metadata_standard_status)) +
   geom_bar(aes(fill = metadata_standard_status)) +
   theme_classic() +
   labs(title = "Datasets with Standard Associated with Metadata",
-       x = "Metadata Associated with Standard (Yes/No/NA)",
+       x = "Does Metadata have a Standard?",
        y = "Number of Datasets",
        fill = "Datasets with Standard Associated with Metadata") +
   theme_fivethirtyeight() +
@@ -573,15 +637,46 @@ ggplot(resources, aes(x = metadata_standard_status)) +
   scale_fill_brewer(palette = "Dark2")
 
 ggsave("report2_outputs/metadata_standard_status.jpeg")
-# Which metadata standard does this resource use?
-# In your estimation, how closely does the metadata currently meet standard?
+
+# Metadata formats
+metadata_fmts <- resources %>%
+  filter(metadata_status == "yes",
+         metadata_format != '')
+metadata_fmts <- metadata_fmts[c("Managing.Agency.or.Business.Center.",
+                       "Name",
+                       "metadata_format")]
+
+respon_fmts <- data.frame(table(metadata_fmts[,c('metadata_format')]))
+respon_fmts <- respon_fmts %>%
+  rename(metadata_format = Var1)
+metadata_fmts <- data.frame(metadata_fmts[c("Managing.Agency.or.Business.Center.","metadata_format")])
+
+metadata_compl_fmts <- inner_join(metadata_fmts, respon_fmts, by = join_by(metadata_format))
+metadata_compl_fmts <- metadata_compl_fmts %>%
+  dplyr::group_by(Managing.Agency.or.Business.Center.,
+                  metadata_format) %>%
+  summarise(.groups = "drop")
+
+write.csv(metadata_compl_fmts, "report2_outputs/metadata_format.csv")
+
+# 5. Which metadata standard does this resource use?
+standard <- resources %>%
+  filter(metadata_status == "yes",
+         metadata_standard != '')
+standard <- standard[c("Managing.Agency.or.Business.Center.",
+                       "Name",
+                       "metadata_standard")]
+
+write.csv(standard, "report2_outputs/metadata_standard.csv")
+
+# 6. In your estimation, how closely does the metadata currently meet standard?
 ggplot(resources, aes(x = metadata_standard_measure)) +
   geom_bar(aes(fill = metadata_standard_measure)) +
   theme_classic() +
-  labs(title = "Measure of Dataset Metadata to Standard",
-       x = "Measure of Dataset Metadata Standard",
+  labs(title = "Measure of Dataset Metadata Conforming to Standard",
+       x = "Estimation of Fit to Standard (10=Closely Meets Standard)",
        y = "Number of Datasets",
-       fill = "1-10 How Well Metadata to Standard") +
+       fill = "Measure of Fit to Standard (10=Closely Meets Standard") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
         text = element_text(family = "Rubik"),
@@ -594,8 +689,19 @@ ggplot(resources, aes(x = metadata_standard_measure)) +
   scale_fill_brewer(palette = "Dark2")
 
 ggsave("report2_outputs/metadata_standard_measure.jpeg")
+
 # What is needed to increase alignment with metadata standards?
-# What is need to meet standard?
+alignment <- resources %>%
+  filter(metadata_status == "yes",
+         metadata_standard_status == "yes",
+         metadata_standard_measure != '',
+         What.is.needed.to.increase.the.resource.s.alignment.with.the.metadata.standard. != '')
+alignment <- alignment[c("Managing.Agency.or.Business.Center.",
+                         "Name",
+                         "metadata_standard_measure",
+                         "What.is.needed.to.increase.the.resource.s.alignment.with.the.metadata.standard.")]
+
+write.csv(alignment, "report2_outputs/metadata_alignment.csv")
 
 ggplot(inhouse, aes(x = app_type)) +
   geom_bar(aes(fill = app_type)) +
@@ -715,7 +821,6 @@ ggplot(inhouse, aes(x = private_public)) +
 
 ggsave("report2_outputs/inhouse_privacy_ownership.jpeg")
 
-## Fixing Errors
 ggplot(inhouse_nona, aes(x = app_purpose)) +
   geom_bar(aes(fill = app_purpose)) +
   theme_classic() +
