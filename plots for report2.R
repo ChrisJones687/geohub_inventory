@@ -638,6 +638,28 @@ ggplot(metadata_stnd, aes(x = metadata_standard_status)) +
 
 ggsave("report2_outputs/metadata_standard_status.jpeg")
 
+# 6. Does the storage location correlate to metadata presence?
+ggplot(resources, aes(x = storage_location)) +
+  geom_bar(aes(fill = metadata_status)) +
+  theme_classic() +
+  ylim(0, 110) +
+  labs(title = "Datasets by Storage Location and Metadata",
+       x = "Dataset Storage Location",
+       y = "Number of Datasets",
+       fill = "Metadata Associated with Dataset?") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(fill = metadata_status, label = ..count..),
+            stat = "count",
+            vjust = -0.5,
+            size = 3.0,
+            position = "stack") +
+  scale_fill_brewer(palette = "Dark2")
+
+ggsave("report2_outputs/metadata_storage.jpeg")
+
 # Metadata formats
 metadata_fmts <- resources %>%
   filter(metadata_status == "yes",
