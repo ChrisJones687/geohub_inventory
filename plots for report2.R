@@ -20,6 +20,9 @@ contact <- contact %>%
 resources <- read.csv("data/Survey2/resourceinfobeg_1.csv")
 resources <- resources %>%
   rename(data_type = Describe.the.resource.or.product.in.detail..If.there.is.additional.information.you.wish.to.provide..please.include.the.URL.of.any.relevant.documents.or.websites.,
+         app_purpose = Please.provide.additional.detail.regarding.the.type.of.application.,
+         Details = Please.provide.additional.detail.regarding.the.method.of.data.collection.,
+         Name = Name.of.Digital.Resource.,
          metadata_status = Does.the.resource.have.associated.metadata.,
          metadata_format = What.format.is.the.metadata.,
          metadata_standard_status = Is.the.metadata.designed.with.a.standard..e.g...ISO.19115..in.mind.,
@@ -98,13 +101,15 @@ reps <- reps[reps$Var1 != "RMA", ]
 
 contact$respondents <- reps$Freq
 contact$resp_rate <- contact$respondents / contact$`Sum of # of contacts` * 100
+inhouse <- inhouse %>%
+  rename(Agency = Managing.Agency.or.Business.Center.)
 ## write out supplemental tables
-webapps <- inhouse[inhouse$app_type == 'webapp', c('Name', 'app_purpose', 'private_public', 'agency', 'ownership_status', 'Details')]
+webapps <- inhouse[inhouse$app_type == 'webapp', c('Name', 'app_purpose', 'private_public', 'Agency', 'ownership_status', 'Details')]
 
-desktop <- inhouse[inhouse$app_type == 'desktop', c('Name', 'app_purpose', 'private_public', 'agency', 'ownership_status', 'Details')]
+desktop <- inhouse[inhouse$app_type == 'desktop', c('Name', 'app_purpose', 'private_public', 'Agency', 'ownership_status', 'Details')]
 #
-# write.csv(webapps, 'report2_outputs/webapps.csv')
-# write.csv(desktop, 'report2_outputs/desktop.csv')
+write.csv(webapps, 'report2_outputs/webapps.csv')
+write.csv(desktop, 'report2_outputs/desktop.csv')
 
 num_colors <- 11
 spectralplus <- colorRampPalette(brewer.pal(11, "Spectral"))(num_colors)
@@ -160,42 +165,23 @@ ggplot(respon_agen, aes(x = `Managing.Agency.or.Business.Center.`)) +
 
 ggsave("report2_outputs/respondants_agency.jpeg")
 
-## Fixing Errors
-# ggplot(resources, aes(x = Managing.Agency.or.Business.Center.)) +
-#   geom_bar(aes(fill = Name.of.Digital.Resource.)) +
-#   theme_classic() +
-#   labs(title = "Digital Assets by type",
-#        x = "Digital Asset Type",
-#        y = "Number of Resources",
-#        color = "Survey") +
-#   theme_fivethirtyeight() +
-#   theme(axis.title = element_text(),
-#         text = element_text(family = "Rubik"),
-#         plot.title = element_text(hjust = 0.5)) +
-#   geom_text(aes(label = ..count..),
-#             stat = "count",
-#             vjust = 1.5,
-#             size = 8.0) +
-#   scale_fill_brewer(palette = "Dark2")
-
-## Fixing Errors
-# ggplot(resources, aes(x = digital_resource)) +
-#   geom_bar(aes(fill = `Survey`)) +
-#   theme_classic() +
-#   labs(x = "Digital Asset Type",
-#        y = "Number of Resources",
-#        color = "Survey") +
-#   theme_fivethirtyeight() +
-#   theme(axis.title = element_text(),
-#         text = element_text(family = "Rubik"),
-#         plot.title = element_text(hjust = 0.5)) +
-#   geom_text(aes(label = ..count..),
-#             stat = "count",
-#             vjust = 1.5,
-#             size = 8.0) +
-#   scale_fill_brewer(palette = "Dark2")
-#
-# ggsave("report2_outputs/asset-type.jpeg")
+# Fixing Errors
+ggplot(resources, aes(x = Managing.Agency.or.Business.Center.)) +
+  geom_bar(aes(fill = Name)) +
+  theme_classic() +
+  labs(title = "Digital Assets by type",
+       x = "Digital Asset Type",
+       y = "Number of Resources",
+       color = "Survey") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "Dark2")
 
 ggplot(resources, aes(x = storage_location)) +
   geom_bar(aes(fill = storage_location)) +
@@ -255,82 +241,128 @@ ggplot(resources, aes(x = storage_location)) +
 ggsave("report2_outputs/storage_size.jpeg")
 
 resources$data_type[resources$data_type == ''] <- NA
+resources$data_type[resources$data_type == 'l'] <- NA
+resources$data_type[resources$data_type == 'No'] <- NA
+resources$data_type[resources$data_type == 'click to sign'] <- NA
+resources$data_type[resources$data_type == 'abcd123'] <- NA
+resources$data_type[resources$data_type == 'MIDAS, CARS'] <- NA
+resources$data_type[resources$data_type == 'dd'] <- NA
+resources$data_type[resources$data_type == 'Mission critical to Program Administration.'] <- NA
+resources$data_type[grepl("TOO MANY",toupper(resources$data_type))] <- NA
+resources$data_type[grepl("VARIETY",toupper(resources$data_type))] <- NA
+resources$data_type[grepl("ASSESS DVMO",toupper(resources$data_type))] <- NA
+resources$data_type[grepl("HELP OPTION",toupper(resources$data_type))] <- NA
+resources$data_type[grepl("ELIGIBILITY",toupper(resources$data_type))] <- NA
 resources$data_type[grepl("NOT SURE",toupper(resources$data_type))] <- NA
-resources$data_type[grepl("HTTPS",toupper(resources$data_type))] <- NA
+resources$data_type[grepl("N/A",toupper(resources$data_type))] <- NA
+resources$data_type[grepl("DON'T KNOW",toupper(resources$data_type))] <- NA
+resources$data_type[grepl("DO NOT",toupper(resources$data_type))] <- NA
+resources$data_type[grepl("NA",toupper(resources$data_type))] <- NA
+resources$data_type[grepl("NONE",toupper(resources$data_type))] <- NA
+
 resources$data_type[grepl("SOIL",toupper(resources$data_type))] <- "Soil"
-resources$data_type[grepl("LAND",toupper(resources$data_type))] <- "Land"
-resources$data_type[grepl("AERIAL",toupper(resources$data_type))] <- "UAS/Imagery"
+resources$data_type[grepl("WSS",toupper(resources$data_type))] <- "Soil"
+
+resources$data_type[grepl("IMAGERY",toupper(resources$data_type))] <- "Imagery"
+resources$data_type[grepl("IMAGES",toupper(resources$data_type))] <- "Imagery"
+resources$data_type[grepl("RASTER",toupper(resources$data_type))] <- "Imagery"
+
 resources$data_type[grepl("CLIMATE",toupper(resources$data_type))] <- "Climate"
-resources$data_type[grepl("BOUNDARY",toupper(resources$data_type))] <- "Boundary"
+resources$data_type[grepl("TEMPERATURE",toupper(resources$data_type))] <- "Climate"
+
 resources$data_type[grepl("CROP",toupper(resources$data_type))] <- "Crop"
 resources$data_type[grepl("FARM",toupper(resources$data_type))] <- "Crop"
-resources$data_type[grepl("PEST",toupper(resources$data_type))] <- "Pest/Disease"
+
 resources$data_type[grepl("TRANSPORT",toupper(resources$data_type))] <- "Transportation"
+
+resources$data_type[grepl("PEST",toupper(resources$data_type))] <- "Pest/Disease"
 resources$data_type[grepl("DISEASE",toupper(resources$data_type))] <- "Pest/Disease"
-resources$data_type[grepl("IMAGERY",toupper(resources$data_type))] <- "Imagery"
+
 resources$data_type[grepl("VEGETATION",toupper(resources$data_type))] <- "Vegetation"
 resources$data_type[grepl("FOREST",toupper(resources$data_type))] <- "Vegetation"
-resources$data_type[grepl("WATER",toupper(resources$data_type))] <- "Water"
-resources$data_type[grepl("TOPOGRAPHY",toupper(resources$data_type))] <- "Land"
-resources$data_type[grepl("TOPOGRAPHY",toupper(resources$data_type))] <- "Land"
-resources$data_type[grepl("LIDAR",toupper(resources$data_type))] <- "LiDAR"
-# datasets2$data_type[datasets2$data_type == ''] <- NA
-# datasets2$data_type[datasets2$data_type == 'Animal'] <- NA
-# datasets2$data_type[datasets2$data_type == 'Soil Water'] <- NA
-# datasets2$data_type[datasets2$data_type == 'Yield'] <- 'Crop'
-#
-# datasets3 <- datasets2[!is.na(datasets2$data_type), ]
-# datasets3$data_type[datasets3$data_type == 'Aerial Photo'] <- NA
-# datasets3$data_type[datasets3$data_type == 'Publications'] <- NA
-# datasets3$data_type[datasets3$data_type == 'Timber'] <- NA
-# datasets3$data_type[datasets3$data_type == 'Fungal'] <- NA
-# datasets3$data_type[datasets3$data_type == 'LU/LC'] <- NA
-# datasets3$data_type[datasets3$data_type == 'Maps'] <- NA
-# datasets3$data_type[datasets3$data_type == 'Conservation'] <- NA
-# datasets3$data_type[datasets3$data_type == 'Nutrients'] <- NA
-# datasets3$data_type[datasets3$data_type == 'Pollinators'] <- NA
-# datasets3$data_type[datasets3$data_type == 'Photographs'] <- NA
-# datasets3$data_type[datasets3$data_type == 'Large Data Repo'] <- NA
-#
-# datasets3 <- datasets3[!is.na(datasets3$data_type), ]
+resources$data_type[grepl("FIA",toupper(resources$data_type))] <- "Genomic"
 
-## Fixing Errors
-# ggplot(datasets3, aes(x = data_type)) +
-#   geom_bar(aes(fill = data_type)) +
-#   theme_classic() +
-#   labs(x = "Dataset Type",
-#        y = "Number of Datasets",
-#        fill = "data_type") +
-#   theme_fivethirtyeight() +
-#   theme(axis.title = element_text(),
-#         text = element_text(family = "Rubik"),
-#         plot.title = element_text(hjust = 0.5),
-#         legend.position = "none") +
-#   geom_text(aes(label = ..count..),
-#             stat = "count",
-#             vjust = 0,
-#             size = 8.0) +
-#   scale_fill_brewer(palette = "Spectral")
-#
-# ggsave("report2_outputs/data_type.jpeg")
-#
-# ggplot(datasets3, aes(x = data_type)) +
-#   geom_bar(aes(fill = storage_location)) +
-#   theme_classic() +
-#   labs(x = "Dataset Type",
-#        y = "Number of Datasets",
-#        fill = "data_type") +
-#   theme_fivethirtyeight() +
-#   theme(axis.title = element_text(),
-#         text = element_text(family = "Rubik"),
-#         plot.title = element_text(hjust = 0.5)) +
-#   geom_text(aes(label = ..count..),
-#             stat = "count",
-#             vjust = 0,
-#             size = 8.0) +
-#   scale_fill_brewer(palette = "PuOr")
-#
-# ggsave("report2_outputs/data_type_storage.jpeg")
+resources$data_type[grepl("WATER",toupper(resources$data_type))] <- "Water"
+resources$data_type[grepl("USFWS NWI",toupper(resources$data_type))] <- "Water"
+
+resources$data_type[grepl("TOPOGRAPHY",toupper(resources$data_type))] <- "Land"
+resources$data_type[grepl("LIDAR",toupper(resources$data_type))] <- "Land"
+resources$data_type[grepl("ELEVATION",toupper(resources$data_type))] <- "Land"
+resources$data_type[grepl("LAND",toupper(resources$data_type))] <- "Land"
+resources$data_type[grepl("ROADS",toupper(resources$data_type))] <- "Land"
+resources$data_type[grepl("USGS",toupper(resources$data_type))] <- "Land"
+resources$data_type[grepl("WEPP",toupper(resources$data_type))] <- "Land"
+resources$data_type[grepl("GOOGLE EARTH",toupper(resources$data_type))] <- "Land"
+
+resources$data_type[grepl("PUBLIC HEAL",toupper(resources$data_type))] <- "Health"
+
+resources$data_type[grepl("BOUNDARY",toupper(resources$data_type))] <- "Boundary"
+resources$data_type[grepl("SHAPEFILE",toupper(resources$data_type))] <- "Boundary"
+resources$data_type[grepl("LAYER",toupper(resources$data_type))] <- "Boundary"
+resources$data_type[grepl("AGOL",toupper(resources$data_type))] <- "Boundary"
+resources$data_type[grepl("ARCMAP",toupper(resources$data_type))] <- "Boundary"
+resources$data_type[grepl("ARCGIS",toupper(resources$data_type))] <- "Boundary"
+resources$data_type[grepl("SPATIAL TABLES",toupper(resources$data_type))] <- "Boundary"
+
+resources$data_type[grepl("GENOMIC",toupper(resources$data_type))] <- "Genomic"
+resources$data_type[grepl("BEE BIOLOGY",toupper(resources$data_type))] <- "Genomic"
+resources$data_type[grepl("SPECIES",toupper(resources$data_type))] <- "Genomic"
+resources$data_type[grepl("WILDLIFE",toupper(resources$data_type))] <- "Genomic"
+
+resources$data_type[grepl("ACCESS",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("DATABASE",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("COLLECTION",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("SURVEY 123",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("RD APPLY",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("CSV",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("XCEL",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("LOCATIONS",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("TOOLS",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("HERITAGE",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("CITRIX",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("COLLECT",toupper(resources$data_type))] <- "Collection/Storage"
+resources$data_type[grepl("CONTACT",toupper(resources$data_type))] <- "Collection/Storage"
+
+# Dataset for the purpose of plotting data_type independently
+dataset2 <- resources[!is.na(resources$data_type), ]
+
+# Fixing Errors
+ggplot(dataset2, aes(x = data_type)) +
+  geom_bar(aes(fill = data_type)) +
+  theme_classic() +
+  labs(x = "Dataset Type",
+       y = "Number of Datasets",
+       fill = "data_type") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 0,
+            size = 8.0) +
+  scale_fill_brewer(palette = "Spectral")
+
+ggsave("report2_outputs/data_type.jpeg")
+
+ggplot(dataset2, aes(x = data_type)) +
+  geom_bar(aes(fill = storage_location)) +
+  theme_classic() +
+  labs(x = "Dataset Type",
+       y = "Number of Datasets",
+       fill = "data_type") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 0,
+            size = 8.0) +
+  scale_fill_brewer(palette = "PuOr")
+
+ggsave("report2_outputs/data_type_storage.jpeg")
 
 
 ggplot(resources, aes(x = format)) +
@@ -483,8 +515,8 @@ ggsave("report2_outputs/privacy.jpeg")
 ggplot(resources, aes(x = metadata_status)) +
   geom_bar(aes(fill = metadata_status)) +
   theme_classic() +
-  labs(title = "Dataset Metadata Status",
-       x = "Metadata Status (Yes/No)",
+  labs(title = "Dataset Metadata",
+       x = "Metadata with Dataset",
        y = "Number of Datasets",
        fill = "Dataset Metadata Association Status") +
   theme_fivethirtyeight() +
@@ -501,30 +533,24 @@ ggplot(resources, aes(x = metadata_status)) +
 ggsave("report2_outputs/metadata_status.jpeg")
 
 #Metadata ownership status
-ggplot(resources, aes(x = ownership_status)) +
-  geom_bar(aes(fill = metadata_status), position = "dodge") +
+ggplot(resources, aes(x = Managing.Agency.or.Business.Center.)) +
+  geom_bar(aes(fill = metadata_status)) +
   theme_classic() +
-  labs(title = "Dataset Metadata Status by Ownership",
-       x = "Ownership Status",
+  labs(title = "Datasets with Metadata by Agency",
+       x = "Agency",
        y = "Number of Datasets",
        fill = "Metadata Status (Yes/No)") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
         text = element_text(family = "Rubik"),
-        plot.title = element_text(hjust = 0.5),
-        legend.position = "none") +
+        plot.title = element_text(hjust = 0.5)) +
   geom_text(aes(label = ..count..),
             stat = "count",
-            vjust = 1.5,
+            vjust = 0.5,
             size = 8.0) +
   scale_fill_brewer(palette = "Dark2")
 
-ggsave("report2_outputs/metadata_ownership.jpeg")
-
-# What format is the metadata?
-library(gridExtra)
-metadata_format <- data.frame(unique(resources$metadata_format))
-grid.table(metadata_format)
+ggsave("report2_outputs/agency_metadata.jpeg")
 
 # Metadata link?
 # Is the metadata designed with a standard (e.g., ISO) in mind?
@@ -571,9 +597,6 @@ ggsave("report2_outputs/metadata_standard_measure.jpeg")
 # What is needed to increase alignment with metadata standards?
 # What is need to meet standard?
 
-# q <- data.frame(table(datasets2$collection_method))
-## Inhouse applications
-
 ggplot(inhouse, aes(x = app_type)) +
   geom_bar(aes(fill = app_type)) +
   theme_classic() +
@@ -611,27 +634,27 @@ ggplot(inhouse, aes(x = app_type)) +
 
 ggsave("report2_outputs/app_type_ownership.jpeg")
 
-## Fixing Errors
-# inhouse_nona <- inhouse[!is.na(inhouse$app_purpose), ]
-#
-# ggplot(inhouse_nona, aes(x = app_type)) +
-#   geom_bar(aes(fill = app_purpose)) +
-#   theme_classic() +
-#   labs(x = "Application type",
-#        y = "Number of Applications",
-#        fill = "Application Purpose") +
-#   theme_fivethirtyeight() +
-#   theme(axis.title = element_text(),
-#         text = element_text(family = "Rubik"),
-#         plot.title = element_text(hjust = 0.5)) +
-#   geom_text(aes(label = ..count..),
-#             stat = "count",
-#             vjust = 0,
-#             size = 8.0) +
-#   scale_fill_brewer(palette = "PuOr")
-#
-#
-# ggsave("report2_outputs/app_type_purpose.jpeg")
+# Fixing Errors
+inhouse_nona <- inhouse[!is.na(inhouse$app_purpose), ]
+
+ggplot(inhouse_nona, aes(x = app_type)) +
+  geom_bar(aes(fill = app_purpose)) +
+  theme_classic() +
+  labs(x = "Application type",
+       y = "Number of Applications",
+       fill = "Application Purpose") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 0,
+            size = 8.0) +
+  scale_fill_brewer(palette = "PuOr")
+
+
+ggsave("report2_outputs/app_type_purpose.jpeg")
 
 
 ggplot(inhouse, aes(x = ownership_status)) +
@@ -693,43 +716,43 @@ ggplot(inhouse, aes(x = private_public)) +
 ggsave("report2_outputs/inhouse_privacy_ownership.jpeg")
 
 ## Fixing Errors
-# ggplot(inhouse_nona, aes(x = app_purpose)) +
-#   geom_bar(aes(fill = app_purpose)) +
-#   theme_classic() +
-#   labs(x = "Application Purpose",
-#        y = "Number of Datasets",
-#        fill = "Application Purpose") +
-#   theme_fivethirtyeight() +
-#   theme(axis.title = element_text(),
-#         text = element_text(family = "Rubik"),
-#         plot.title = element_text(hjust = 0.5),
-#         legend.position = "none") +
-#   geom_text(aes(label = ..count..),
-#             stat = "count",
-#             vjust = 1.5,
-#             size = 8.0) +
-#   scale_fill_brewer(palette = "Purples")
-#
-# ggsave("report2_outputs/app_purpose.jpeg")
+ggplot(inhouse_nona, aes(x = app_purpose)) +
+  geom_bar(aes(fill = app_purpose)) +
+  theme_classic() +
+  labs(x = "Application Purpose",
+       y = "Number of Datasets",
+       fill = "Application Purpose") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "Purples")
 
-# ggplot(inhouse, aes(x = app_purpose)) +
-#   geom_bar(aes(fill = ownership_status)) +
-#   theme_classic() +
-#   labs(x = "Application Purpose",
-#        y = "Number of Datasets",
-#        fill = "Application Purpose") +
-#   theme_fivethirtyeight() +
-#   theme(axis.title = element_text(),
-#         text = element_text(family = "Rubik"),
-#         plot.title = element_text(hjust = 0.5)) +
-#   geom_text(aes(label = ..count..),
-#             stat = "count",
-#             vjust = 1.5,
-#             size = 8.0) +
-#   scale_fill_brewer(palette = "PuOr")
-#
-# models <- inhouse[inhouse$app_purpose == "Model", ]
-#
-# nas <- models[is.na(models$app_purpose), ]
-# models <- models[!is.na(models$app_purpose), ]
+ggsave("report2_outputs/app_purpose.jpeg")
+
+ggplot(inhouse, aes(x = app_purpose)) +
+  geom_bar(aes(fill = ownership_status)) +
+  theme_classic() +
+  labs(x = "Application Purpose",
+       y = "Number of Datasets",
+       fill = "Application Purpose") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "PuOr")
+
+models <- inhouse[inhouse$app_purpose == "Model", ]
+
+nas <- models[is.na(models$app_purpose), ]
+models <- models[!is.na(models$app_purpose), ]
 
