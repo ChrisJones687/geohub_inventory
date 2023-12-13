@@ -552,15 +552,14 @@ ggplot(resources, aes(x = Managing.Agency.or.Business.Center.)) +
        x = "Agency",
        y = "Number of Datasets",
        fill = "Dataset has Metadata?") +
-  ylim(0, 100) +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
         text = element_text(family = "Rubik"),
         plot.title = element_text(hjust = 0.5)) +
   geom_text(aes(fill = metadata_status,label = ..count..),
             stat = "count",
-            vjust = -0.5,
-            size = 2.0,
+            vjust = 1.5,
+            size = 5.0,
             position = "stack") +
   scale_fill_brewer(palette = "Dark2")
 
@@ -575,7 +574,6 @@ ggplot(dataset2, aes(x = data_type)) +
        x = "data_type",
        y = "Number of Datasets",
        fill = "Dataset has Metadata?") +
-  ylim(0, 25) +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
         axis.text.x = element_text(size = 8),
@@ -583,7 +581,7 @@ ggplot(dataset2, aes(x = data_type)) +
         plot.title = element_text(hjust = 0.5)) +
   geom_text(aes(fill = metadata_status,label = ..count..),
             stat = "count",
-            vjust = -0.5,
+            vjust = 1.5,
             size = 5.0,
             position = "stack") +
   scale_fill_brewer(palette = "Dark2")
@@ -600,7 +598,6 @@ ggplot(dataset3, aes(x = app_type)) +
        x = "Type of Application",
        y = "Number of Datasets",
        fill = "Dataset has Metadata?") +
-  ylim(0, 20) +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
         axis.text.x = element_text(size = 8),
@@ -608,8 +605,8 @@ ggplot(dataset3, aes(x = app_type)) +
         plot.title = element_text(hjust = 0.5)) +
   geom_text(aes(fill = metadata_status,label = ..count..),
             stat = "count",
-            vjust = -0.5,
-            size = 5.0,
+            vjust = 1.5,
+            size = 8.0,
             position = "stack") +
   scale_fill_brewer(palette = "Dark2")
 
@@ -642,7 +639,6 @@ ggsave("report2_outputs/metadata_standard_status.jpeg")
 ggplot(resources, aes(x = storage_location)) +
   geom_bar(aes(fill = metadata_status)) +
   theme_classic() +
-  ylim(0, 110) +
   labs(title = "Datasets by Storage Location and Metadata",
        x = "Dataset Storage Location",
        y = "Number of Datasets",
@@ -653,8 +649,8 @@ ggplot(resources, aes(x = storage_location)) +
         plot.title = element_text(hjust = 0.5)) +
   geom_text(aes(fill = metadata_status, label = ..count..),
             stat = "count",
-            vjust = -0.5,
-            size = 3.0,
+            vjust = 1.5,
+            size = 5.0,
             position = "stack") +
   scale_fill_brewer(palette = "Dark2")
 
