@@ -183,7 +183,10 @@ ggplot(resources, aes(x = Managing.Agency.or.Business.Center.)) +
             size = 8.0) +
   scale_fill_brewer(palette = "Dark2")
 
-ggplot(resources, aes(x = storage_location)) +
+resources2 <- resources %>%
+  filter(size != '')
+
+ggplot(resources2, aes(x = storage_location)) +
   geom_bar(aes(fill = storage_location)) +
   theme_classic() +
   labs(title = "Data Storage Location",
@@ -203,8 +206,10 @@ ggplot(resources, aes(x = storage_location)) +
 
 ggsave("report2_outputs/storage.jpeg")
 
+resources3 <- resources %>%
+  filter(storage_location != '')
 
-ggplot(resources, aes(x = storage_location)) +
+ggplot(resources3, aes(x = storage_location)) +
   geom_bar(aes(fill = format)) +
   theme_classic() +
   labs(x = "Storage Location",
@@ -222,7 +227,7 @@ ggplot(resources, aes(x = storage_location)) +
 
 ggsave("report2_outputs/storage_format.jpeg")
 
-ggplot(resources, aes(x = storage_location)) +
+ggplot(resources3, aes(x = storage_location)) +
   geom_bar(aes(fill = size)) +
   theme_classic() +
   labs(x = "Storage Location",
@@ -376,8 +381,10 @@ ggplot(dataset2, aes(x = data_type)) +
 
 ggsave("report2_outputs/data_type_storage.jpeg")
 
+resources4 <- resources %>%
+  filter(format != '')
 
-ggplot(resources, aes(x = format)) +
+ggplot(resources4, aes(x = format)) +
   geom_bar(aes(fill = format)) +
   theme_classic() +
   labs(title = "Data Format",
@@ -418,7 +425,7 @@ ggplot(resources, aes(x = ownership_status)) +
 ggsave("report2_outputs/ownership.jpeg")
 
 
-ggplot(resources, aes(x = size)) +
+ggplot(resources2, aes(x = size)) +
   geom_bar(aes(fill = size)) +
   theme_classic() +
   labs(title = "Data Size",
