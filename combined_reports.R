@@ -196,6 +196,32 @@ ggplot(respon_agen, aes(x = `Managing.Agency.or.Business.Center.`)) +
 
 ggsave("combined_survey_outputs/respondants_agency.jpeg", width = 7, height = 5)
 
+## resources combined
+resources_s1_2$CreationDate <- as.character(resources_s1_2$CreationDate)
+resources_s1_2$EditDate <- as.character(resources_s1_2$EditDate)
+resources_s1_2$digital_resource <- resources_s1_2$`Which of the following best describes the digital resource?`
+resources_s2$Survey <- "GeoHub Inventory 2"
+resources2 <- bind_rows(resources_s1_2, resources_s2)
+
+
+ggplot(resources2, aes(x = digital_resource)) +
+  geom_bar(aes(fill = `Survey`)) +
+  theme_classic() +
+  labs(x = "Digital Asset Type",
+       y = "Number of Resources",
+       color = "Survey") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Rubik"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "Dark2")
+
+ggsave("combined_survey_outputs/asset-type.jpeg")
+
 
 ## combine datasets
 datasets <- bind_rows(datasets_s1, dataset_s2)
@@ -221,6 +247,13 @@ ggplot(datasets, aes(x = private_public)) +
 
 ggsave("combined_survey_outputs/privacy.jpeg")
 
+
+
+
+
+
+
+ggsave("combined_survey_outputs/privacy.jpeg")
 
 # ggplot(datasets, aes(x = data_type)) +
 #   geom_bar(aes(fill = data_type), position = position_dodge(0.5)) +
