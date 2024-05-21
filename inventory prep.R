@@ -1,4 +1,3 @@
-library(folderfun)
 library(readxl)
 library(ggplot2)
 folderfun::setff("In", "H:/Shared drives/GEA Project Workspace (USDA)/")

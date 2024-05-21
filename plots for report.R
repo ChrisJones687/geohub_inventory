@@ -1,4 +1,3 @@
-library(folderfun)
 library(readxl)
 library(ggplot2)
 library("ggthemes")
