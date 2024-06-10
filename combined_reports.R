@@ -162,11 +162,11 @@ for (agency in contact_s1$Agency) {
 
 }
 
-
-pie(contact$contacts, labels = contact_s2$Agency, border = "white", col = spectralplus) +
-  theme(axis.text.x = element_blank())
-
-ggsave("combined_survey_outputs/contact_by_agency.jpeg")
+#
+# pie(contact$contacts, labels = contact_s2$Agency, border = "white", col = spectralplus) +
+#   theme(axis.text.x = element_blank())
+#
+# ggsave("combined_survey_outputs/contact_by_agency.jpeg")
 
 
 num_colors <- 17
@@ -245,33 +245,373 @@ ggplot(datasets, aes(x = private_public)) +
             size = 8.0) +
   scale_fill_brewer(palette = "Dark2")
 
-ggsave("combined_survey_outputs/privacy.jpeg")
+ggsave("combined_survey_outputs/privacy.jpeg", width = 6, height = 4.5)
+
+
+ggplot(datasets, aes(x = ownership_status)) +
+  geom_bar(aes(fill = ownership_status)) +
+  theme_classic() +
+  labs(x = "Ownership/license status",
+       y = "Number of Datasets",
+       fill = "Ownership/license status") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 0.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "PuOr")
+
+ggsave("combined_survey_outputs/ownership.jpeg", width = 6, height = 4.5)
+
+
+ggplot(datasets, aes(x = storage_location)) +
+  geom_bar(aes(fill = format)) +
+  theme_classic() +
+  labs(x = "Storage Location",
+       y = "Number of Datasets",
+       fill = "Data Format") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 0.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "PuOr")
+
+
+ggsave("combined_survey_outputs/storage_format.jpeg", width = 6, height = 4.5)
+
+
+ggplot(datasets, aes(x = storage_location)) +
+  geom_bar(aes(fill = size)) +
+  theme_classic() +
+  labs(x = "Storage Location",
+       y = "Number of Datasets",
+       fill = "Data Size") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 0.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "PuOr")
+
+ggsave("combined_survey_outputs/storage_size.jpeg", width = 6, height = 4.5)
+
+## datatype
+datasets$data_type[datasets$data_type == ''] <- NA
+datasets$data_type[datasets$data_type == 'l'] <- NA
+datasets$data_type[datasets$data_type == 'No'] <- NA
+datasets$data_type[datasets$data_type == 'click to sign'] <- NA
+datasets$data_type[datasets$data_type == 'abcd123'] <- NA
+datasets$data_type[datasets$data_type == 'MIDAS, CARS'] <- NA
+datasets$data_type[datasets$data_type == 'dd'] <- NA
+datasets$data_type[datasets$data_type == 'Mission critical to Program Administration.'] <- NA
+datasets$data_type[grepl("TOO MANY",toupper(datasets$data_type))] <- NA
+datasets$data_type[grepl("VARIETY",toupper(datasets$data_type))] <- NA
+datasets$data_type[grepl("ASSESS DVMO",toupper(datasets$data_type))] <- NA
+datasets$data_type[grepl("HELP OPTION",toupper(datasets$data_type))] <- NA
+datasets$data_type[grepl("ELIGIBILITY",toupper(datasets$data_type))] <- NA
+datasets$data_type[grepl("NOT SURE",toupper(datasets$data_type))] <- NA
+datasets$data_type[grepl("N/A",toupper(datasets$data_type))] <- NA
+datasets$data_type[grepl("DON'T KNOW",toupper(datasets$data_type))] <- NA
+datasets$data_type[grepl("DO NOT",toupper(datasets$data_type))] <- NA
+datasets$data_type[grepl("NA",toupper(datasets$data_type))] <- NA
+datasets$data_type[grepl("NONE",toupper(datasets$data_type))] <- NA
+
+datasets$data_type[grepl("SOIL",toupper(datasets$data_type))] <- "Soil"
+datasets$data_type[grepl("WSS",toupper(datasets$data_type))] <- "Soil"
+
+datasets$data_type[grepl("IMAGERY",toupper(datasets$data_type))] <- "Imagery"
+datasets$data_type[grepl("IMAGES",toupper(datasets$data_type))] <- "Imagery"
+datasets$data_type[grepl("RASTER",toupper(datasets$data_type))] <- "Imagery"
+datasets$data_type[grepl("DIGITALGLOBE",toupper(datasets$data_type))] <- "Imagery"
+
+datasets$data_type[grepl("CLIMATE",toupper(datasets$data_type))] <- "Climate"
+datasets$data_type[grepl("TEMPERATURE",toupper(datasets$data_type))] <- "Climate"
+
+datasets$data_type[grepl("CROP",toupper(datasets$data_type))] <- "Crop"
+datasets$data_type[grepl("FARM",toupper(datasets$data_type))] <- "Crop"
+datasets$data_type[grepl("USDA",toupper(datasets$data_type))] <- "Crop"
+
+datasets$data_type[grepl("TRANSPORT",toupper(datasets$data_type))] <- "Transportation"
+
+datasets$data_type[grepl("PEST",toupper(datasets$data_type))] <- "Pest/Disease"
+datasets$data_type[grepl("DISEASE",toupper(datasets$data_type))] <- "Pest/Disease"
+
+datasets$data_type[grepl("VEGETATION",toupper(datasets$data_type))] <- "Vegetation"
+datasets$data_type[grepl("FOREST",toupper(datasets$data_type))] <- "Vegetation"
+datasets$data_type[grepl("FIA",toupper(datasets$data_type))] <- "Genomic"
+
+datasets$data_type[grepl("WATER",toupper(datasets$data_type))] <- "Water"
+datasets$data_type[grepl("USFWS NWI",toupper(datasets$data_type))] <- "Water"
+datasets$data_type[grepl("FLOOD",toupper(datasets$data_type))] <- "Water"
+
+datasets$data_type[grepl("TOPOGRAPHY",toupper(datasets$data_type))] <- "Land"
+datasets$data_type[grepl("LIDAR",toupper(datasets$data_type))] <- "Land"
+datasets$data_type[grepl("ELEVATION",toupper(datasets$data_type))] <- "Land"
+datasets$data_type[grepl("LAND",toupper(datasets$data_type))] <- "Land"
+datasets$data_type[grepl("ROADS",toupper(datasets$data_type))] <- "Land"
+datasets$data_type[grepl("USGS",toupper(datasets$data_type))] <- "Land"
+datasets$data_type[grepl("WEPP",toupper(datasets$data_type))] <- "Land"
+datasets$data_type[grepl("EARTH",toupper(datasets$data_type))] <- "Land"
+datasets$data_type[grepl("SITE",toupper(datasets$data_type))] <- "Land"
+
+
+datasets$data_type[grepl("PUBLIC HEAL",toupper(datasets$data_type))] <- "Health"
+
+datasets$data_type[grepl("BOUNDARY",toupper(datasets$data_type))] <- "Boundary"
+datasets$data_type[grepl("SHAPEFILE",toupper(datasets$data_type))] <- "Boundary"
+datasets$data_type[grepl("LAYER",toupper(datasets$data_type))] <- "Boundary"
+datasets$data_type[grepl("AGOL",toupper(datasets$data_type))] <- "Boundary"
+datasets$data_type[grepl("ARCMAP",toupper(datasets$data_type))] <- "Boundary"
+datasets$data_type[grepl("ARCGIS",toupper(datasets$data_type))] <- "Boundary"
+datasets$data_type[grepl("SPATIAL TABLES",toupper(datasets$data_type))] <- "Boundary"
+datasets$data_type[grepl("SUBDIVISIONS",toupper(datasets$data_type))] <- "Boundary"
+
+datasets$data_type[grepl("GENOMIC",toupper(datasets$data_type))] <- "Genomic"
+datasets$data_type[grepl("BEE BIOLOGY",toupper(datasets$data_type))] <- "Genomic"
+datasets$data_type[grepl("SPECIES",toupper(datasets$data_type))] <- "Genomic"
+datasets$data_type[grepl("WILDLIFE",toupper(datasets$data_type))] <- "Genomic"
+
+datasets$data_type[grepl("ACCESS",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("DATABASE",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("COLLECTION",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("SURVEY 123",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("RD APPLY",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("CSV",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("XCEL",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("LOCATIONS",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("TOOLS",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("PLANNING TOOL",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("HERITAGE",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("CITRIX",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("COLLECT",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("CONTACT",toupper(datasets$data_type))] <- "Collection\nStorage"
+datasets$data_type[grepl("DATA.GOV",toupper(datasets$data_type))] <- "Collection\nStorage"
+
+s <- data.frame(t(table(datasets$data_type)))
+
+# Dataset for the purpose of plotting data_type independently
+dataset2 <- datasets[!is.na(datasets$data_type), ]
+data_types_kept <- data.frame(t(table(dataset2$data_type)))
+data_kept <- data_types_kept$Var2[data_types_kept$Freq > 14]
+dataset2 <- dataset2[dataset2$data_type %in% data_kept,]
+
+num_colors <- 12
+spectralplus <- colorRampPalette(brewer.pal(11, "Spectral"))(num_colors)
+
+ggplot(dataset2, aes(x = data_type)) +
+  geom_bar(aes(fill = data_type), position = position_dodge(0.5)) +
+  theme_classic() +
+  labs(x = "Dataset Type",
+       y = "Number of Datasets",
+       fill = "data_type") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        axis.text.x = element_text(size = 8),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 0.2,
+            size = 8.0) +
+  scale_fill_manual(values = spectralplus)
+
+ggsave("combined_survey_outputs/datatype.jpeg", width = 6, height = 4.5)
+
+
+ggplot(dataset2, aes(x = data_type)) +
+  geom_bar(aes(fill = storage_location)) +
+  theme_classic() +
+  labs(x = "Dataset Type",
+       y = "Number of Datasets",
+       fill = "data_type") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        axis.text.x = element_text(size = 8),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 0.3,
+            size = 8.0) +
+  scale_fill_brewer(palette = "PuOr")
+
+ggsave("combined_survey_outputs/data_type_storage.jpeg", width = 6, height = 4.5)
+
+## inhouse applications
+inhouse <- bind_rows(inhouse_s1, inhouse_s2)
+
+ggplot(inhouse, aes(x = app_type)) +
+  geom_bar(aes(fill = app_type)) +
+  theme_classic() +
+  labs(x = "Application type",
+       y = "Number of Applications",
+       fill = "Ownership/license status") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.0,
+            size = 8.0) +
+  scale_fill_brewer(palette = "Purples")
+
+
+ggsave("combined_survey_outputs/app_type.jpeg", width = 6, height = 4.5)
+
+ggplot(inhouse, aes(x = app_type)) +
+  geom_bar(aes(fill = ownership_status)) +
+  theme_classic() +
+  labs(x = "Application type",
+       y = "Number of Applications",
+       fill = "Application Ownership") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.0,
+            size = 8.0) +
+  scale_fill_brewer(palette = "PuOr")
+
+ggsave("combined_survey_outputs/app_type_ownership.jpeg", width = 6, height = 4.5)
+
+# Fixing Errors
+inhouse_nona <- inhouse[!is.na(inhouse$app_purpose), ]
+
+ggplot(inhouse_nona, aes(x = app_type)) +
+  geom_bar(aes(fill = app_purpose)) +
+  theme_classic() +
+  labs(x = "Application type",
+       y = "Number of Applications",
+       fill = "Application Purpose") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 0.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "PuOr")
+
+
+ggsave("combined_survey_outputs/app_type_purpose.jpeg", width = 6, height = 4.5)
+
+
+ggplot(inhouse, aes(x = ownership_status)) +
+  geom_bar(aes(fill = ownership_status)) +
+  theme_classic() +
+  labs(x = "Ownership/license status",
+       y = "Number of Applications",
+       fill = "Ownership/license status") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 0.4,
+            size = 8.0) +
+  scale_fill_brewer(palette = "PuOr")
+
+ggsave("combined_survey_outputs/app_ownership.jpeg", width = 6, height = 4.5)
+
+
+ggplot(inhouse, aes(x = private_public)) +
+  geom_bar(aes(fill = private_public)) +
+  theme_classic() +
+  labs(x = "Privacy Status",
+       y = "Number of Applications",
+       fill = "Ownership/license status") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "Dark2")
+
+
+ggsave("combined_survey_outputs/app_privacy.jpeg", width = 6, height = 4.5)
+
+
+ggplot(inhouse, aes(x = private_public)) +
+  geom_bar(aes(fill = ownership_status)) +
+  theme_classic() +
+  labs(x = "Privacy Status",
+       y = "Number of Applications",
+       fill = "Ownership/license status") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "PuOr")
+
+ggsave("combined_survey_outputs/inhouse_privacy_ownership.jpeg", width = 6, height = 4.5)
+
+
+inhouse_nona$app_purpose[inhouse_nona$app_purpose == "model"] <- "Model"
+inhouse_nona$app_purpose[inhouse_nona$app_purpose == "not sure why I was assigned the training?"] <- "Data Viz"
+inhouse_nona$app_purpose[inhouse_nona$app_purpose == ""] <- "Model"
+
+ggplot(inhouse_nona, aes(x = app_purpose)) +
+  geom_bar(aes(fill = app_purpose)) +
+  theme_classic() +
+  labs(x = "Application Purpose",
+       y = "Number of Datasets",
+       fill = "Application Purpose") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5),
+        legend.position = "none") +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "Purples")
+
+ggsave("combined_survey_outputs/app_purpose.jpeg", width = 6, height = 4.5)
 
 
 
+ggplot(inhouse_nona, aes(x = app_purpose)) +
+  geom_bar(aes(fill = ownership_status)) +
+  theme_classic() +
+  labs(x = "Application Purpose",
+       y = "Number of Datasets",
+       fill = "Application Purpose") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text(),
+        text = element_text(family = "Arial"),
+        plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = ..count..),
+            stat = "count",
+            vjust = 1.5,
+            size = 8.0) +
+  scale_fill_brewer(palette = "PuOr")
 
-
-
-
-ggsave("combined_survey_outputs/privacy.jpeg")
-
-# ggplot(datasets, aes(x = data_type)) +
-#   geom_bar(aes(fill = data_type), position = position_dodge(0.5)) +
-#   ylim(0, 30) +
-#   theme_classic() +
-#   labs(x = "Dataset Type",
-#        y = "Number of Datasets",
-#        fill = "data_type") +
-#   theme_fivethirtyeight() +
-#   theme(axis.title = element_text(),
-#         axis.text.x = element_text(size = 8),
-#         text = element_text(family = "Arial"),
-#         plot.title = element_text(hjust = 0.5),
-#         legend.position = "none") +
-#   geom_text(aes(label = ..count..),
-#             stat = "count",
-#             vjust = 0,
-#             size = 8.0) +
-#   scale_fill_brewer(palette = "Spectral")
-#
-# ggsave("report2_outputs/data_type.jpeg")
+ggsave("combined_survey_outputs/app_purpose_ownership.jpeg", width = 6, height = 4.5)
