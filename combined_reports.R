@@ -184,7 +184,7 @@ ggplot(respon_agen, aes(x = `Managing.Agency.or.Business.Center.`)) +
     color = "Survey") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
-        text = element_text(family = "Rubik"),
+        text = element_text(family = "Arial"),
         plot.title = element_text(hjust = 0.5),
         legend.position = "none") +
   geom_text(aes(label = ..count..),
@@ -194,7 +194,7 @@ ggplot(respon_agen, aes(x = `Managing.Agency.or.Business.Center.`)) +
   scale_fill_manual(values = spectralplus) +
   guides(fill = guide_legend(title = "Agency"))
 
-ggsave("combined_survey_outputs/respondants_agency.jpeg", width = 7, height = 5)
+ggsave("combined_survey_outputs/respondants_agency.jpeg", width = 6, height = 4.5)
 
 ## resources combined
 resources_s1_2$CreationDate <- as.character(resources_s1_2$CreationDate)
@@ -212,7 +212,7 @@ ggplot(resources2, aes(x = digital_resource)) +
        color = "Survey") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
-        text = element_text(family = "Rubik"),
+        text = element_text(family = "Arial"),
         plot.title = element_text(hjust = 0.5)) +
   geom_text(aes(label = ..count..),
             stat = "count",
@@ -236,7 +236,7 @@ ggplot(datasets, aes(x = private_public)) +
        fill = "Ownership/license status") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text(),
-        text = element_text(family = "Rubik"),
+        text = element_text(family = "Arial"),
         plot.title = element_text(hjust = 0.5),
         legend.position = "none") +
   geom_text(aes(label = ..count..),
@@ -265,7 +265,7 @@ ggsave("combined_survey_outputs/privacy.jpeg")
 #   theme_fivethirtyeight() +
 #   theme(axis.title = element_text(),
 #         axis.text.x = element_text(size = 8),
-#         text = element_text(family = "Rubik"),
+#         text = element_text(family = "Arial"),
 #         plot.title = element_text(hjust = 0.5),
 #         legend.position = "none") +
 #   geom_text(aes(label = ..count..),
